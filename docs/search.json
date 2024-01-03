@@ -4,21 +4,112 @@
     "href": "index.html",
     "title": "2024-01-DSTBX2024",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 3, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 31, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "DSTBX2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/asdf.html",
+    "href": "posts/asdf.html",
+    "title": "DSTBX2023",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "dir, mkdir, cd, cd..\n\n\n\n\n\n질문1: 파이썬코드가 실행되는 속도는 어떤 컴퓨터의 spec에 결정될까?\n\n\n\n\n\n!dir, !mkdir,\n\n\n\n\n\ncd Desktop\nmkdir asdf # 폴더생성\nmv asdf asdf2 # 폴더이름 변경\nrm -rf asdf # 폴더삭제\n질문2: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?\n\n\n\n\n\n깃 다운로드: https://git-scm.com/downloads\n토큰생성 및 복사: https://github.com/settings/tokens\n원격과 로칼의 연결\n\n\n\n\n\n원격제어 + 깃을 동시에 이해해야함.\n터미널에서 “컨트롤(커맨드) C + 컨트롤(커맨드) V” 가능하도록 허용\n“컨트롤(커맨드) + 쉬프트 + P” -&gt; jupyter 입력 -&gt; 새로운 노트북파일 만들기\n\n\n\n\n\ni, esc\n파일만들기, 파일수정하기\n복사 & 붙여넣기\n저장후 종료, 그냥 종료, 강제종료\n/asdf + 엔터 + n + (쉬프트+n)\n단어끝으로 이동=e, 단어처음으로 이동=b\n\n\n\n\n\nssh toolbox@210.117.173.182\n비밀번호는 jbnu\n\n\n\n\n\n휴대폰 테더링으로 잡고 본인 노트북으로 해보세요.\n실패함.\n\n\n\n\n\nquarto 설치: https://quarto.org/docs/download/\nquarto create-project –type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n\n\n\n\ngit clone ??\n몇 가지 변경 (index.qmd 에서 자기소개 추가하기, _quarto.yml 에서 블로그 타이틀 설정하기)\ngit add .\ngit commit -m .\ngit push\nquarto publish –no-browser –no-prompt\n\n\n\n\n\nhttps://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\nhttps://guebin.github.io/IR2021/2021/10/14/(6주차)-10월14일-특강.html\n최상단에 raw 셀로 아래의 내용입력\n\n---\ntitle: \"my title\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---\n\n\n\n\ngit switch gh-pages\ngit add .\ngit commit -m .\ngit switch main\ngit add .\ngit commit -m .\ngit push\n\n\n\n\n\n질문1: git add . -&gt; git commit -m . -&gt; git push -&gt; quarto publish –no-browser –no-prompt 순서로 꼭 업로드 해야하는가? 그냥 단순히 “quarto publish –no-browser –no-prompt” 만 하면 안되는가?"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/asdf.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "dir, mkdir, cd, cd.."
+  },
+  {
+    "objectID": "posts/asdf.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "질문1: 파이썬코드가 실행되는 속도는 어떤 컴퓨터의 spec에 결정될까?"
+  },
+  {
+    "objectID": "posts/asdf.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "!dir, !mkdir,"
+  },
+  {
+    "objectID": "posts/asdf.html#실습4-원격제어-맥북",
+    "href": "posts/asdf.html#실습4-원격제어-맥북",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "cd Desktop\nmkdir asdf # 폴더생성\nmv asdf asdf2 # 폴더이름 변경\nrm -rf asdf # 폴더삭제\n질문2: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?"
+  },
+  {
+    "objectID": "posts/asdf.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "깃 다운로드: https://git-scm.com/downloads\n토큰생성 및 복사: https://github.com/settings/tokens\n원격과 로칼의 연결"
+  },
+  {
+    "objectID": "posts/asdf.html#실습6-코드스페이스-코드스페이스",
+    "href": "posts/asdf.html#실습6-코드스페이스-코드스페이스",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "원격제어 + 깃을 동시에 이해해야함.\n터미널에서 “컨트롤(커맨드) C + 컨트롤(커맨드) V” 가능하도록 허용\n“컨트롤(커맨드) + 쉬프트 + P” -&gt; jupyter 입력 -&gt; 새로운 노트북파일 만들기"
+  },
+  {
+    "objectID": "posts/asdf.html#실습7-vi-벼락치기-코드스페이스",
+    "href": "posts/asdf.html#실습7-vi-벼락치기-코드스페이스",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "i, esc\n파일만들기, 파일수정하기\n복사 & 붙여넣기\n저장후 종료, 그냥 종료, 강제종료\n/asdf + 엔터 + n + (쉬프트+n)\n단어끝으로 이동=e, 단어처음으로 이동=b"
+  },
+  {
+    "objectID": "posts/asdf.html#실습8-서버접속-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습8-서버접속-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "ssh toolbox@210.117.173.182\n비밀번호는 jbnu"
+  },
+  {
+    "objectID": "posts/asdf.html#실습9-서버접속2-개인-노트북",
+    "href": "posts/asdf.html#실습9-서버접속2-개인-노트북",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "휴대폰 테더링으로 잡고 본인 노트북으로 해보세요.\n실패함."
+  },
+  {
+    "objectID": "posts/asdf.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "quarto 설치: https://quarto.org/docs/download/\nquarto create-project –type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "posts/asdf.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
+    "href": "posts/asdf.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "git clone ??\n몇 가지 변경 (index.qmd 에서 자기소개 추가하기, _quarto.yml 에서 블로그 타이틀 설정하기)\ngit add .\ngit commit -m .\ngit push\nquarto publish –no-browser –no-prompt"
+  },
+  {
+    "objectID": "posts/asdf.html#실습12-블로그-포스트-업로드-코드스페이스",
+    "href": "posts/asdf.html#실습12-블로그-포스트-업로드-코드스페이스",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\nhttps://guebin.github.io/IR2021/2021/10/14/(6주차)-10월14일-특강.html\n최상단에 raw 셀로 아래의 내용입력\n\n---\ntitle: \"my title\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---"
+  },
+  {
+    "objectID": "posts/asdf.html#실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "git switch gh-pages\ngit add .\ngit commit -m .\ngit switch main\ngit add .\ngit commit -m .\ngit push"
+  },
+  {
+    "objectID": "posts/asdf.html#실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터",
+    "href": "posts/asdf.html#실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터",
+    "title": "DSTBX2023",
+    "section": "",
+    "text": "질문1: git add . -&gt; git commit -m . -&gt; git push -&gt; quarto publish –no-browser –no-prompt 순서로 꼭 업로드 해야하는가? 그냥 단순히 “quarto publish –no-browser –no-prompt” 만 하면 안되는가?"
   },
   {
     "objectID": "about.html",
