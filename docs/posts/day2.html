@@ -184,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="실습13-숙제검사">실습13: 숙제검사</h2>
 <p><code>-</code> 이거 클론하세요</p>
 <p><code>-</code> 방법1</p>
-<div id="df4f3b45-a1c7-449f-8747-f06a6ce773e6" class="cell" data-tags="[]" data-execution_count="1">
+<div id="df4f3b45-a1c7-449f-8747-f06a6ce773e6" class="cell" data-tags="[]" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ls ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>baek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt
@@ -193,42 +193,90 @@ coco.txt      hyeonji.txt    leejjae.txt  soonwon.txt
 daehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt</code></pre>
 </div>
 </div>
-<div id="d67534cc-7ba9-4e70-8efc-0e026378d7b2" class="cell" data-tags="[]" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cat ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span><span class="op">/</span>choyun.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="26d8136d-1f53-4dc5-85df-c8be4669e00d" class="cell" data-tags="[]" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cat ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span><span class="op">/</span>baek_gm.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>github : https://github.com/baekgyeongmin
+blog : https://baekgyeongmin.github.io/blogggg/
+201821967 백경민</code></pre>
+</div>
+</div>
+<div id="57a3869b-9f49-49df-a0d5-6c735de6f3d8" class="cell" data-tags="[]" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cat ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span><span class="op">/</span>choyun.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>github : https://github.com/jeongchoyun
 202350543 정초윤 https://jeongchoyun.github.io/TBX2024/</code></pre>
 </div>
 </div>
 <p><code>-</code> 방법2</p>
-<div id="055fd2c5-64a3-475e-8071-512a66266660" class="cell" data-tags="[]" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ls ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span> <span class="op">&gt;</span> fnames.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="1afbabce-48ec-44a9-b1c0-3d3b067fe681" class="cell" data-tags="[]" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ls ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span> <span class="op">&gt;</span> fnames.txt </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="55173dc9-7f7a-49b3-b16e-7c3aa928f9cb" class="cell" data-tags="[]" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>chmod <span class="op">+</span>x show.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>chmod <span class="op">+</span>x show.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="72fa87f4-1a9e-4fa8-9138-4133b7fb82e3" class="cell" data-tags="[]" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!./show.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="72fa87f4-1a9e-4fa8-9138-4133b7fb82e3" class="cell" data-tags="[]" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>.<span class="op">/</span>show.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>github : https://github.com/baekgyeongmin
+blog : https://baekgyeongmin.github.io/blogggg/
+201821967 백경민
+github : https://github.com/jeongchoyun
+202350543 정초윤 https://jeongchoyun.github.io/TBX2024/
+coco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102
+daehyeon
+201319536
+github:https://github.com/kobron
+최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/
+한도희
+지구환경과학과
+201916288
+https://github.com/handoehee
+전현지
+201918834
+github.com/hyeonji07
+https://hyeonji07.github.io/blog_last/
+ijeongmin 202115820
+github =&gt; https://github.com/amondmomo
+이정민
+https://amondmomo.github.io/blog_test/ 
+김진실
+201920273
+https://github.com/jinisili
+https://jinisili.github.io/blog-please
+전준한,2020-16239,https://github.com/Pogjunan
+
+quarto blog 제작중입니다.
+
+leejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/
+강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/
+유성준,201810648,
+https://sjoon0305.github.io/blog_test2/
+양승훈 201916332 https://github.com/yangsh12
+
+권순원 201816897 https://github.com/sw1kwon
+201916240 김수환 https://github.com/swany00</code></pre>
+</div>
 </div>
 <p><code>-</code> 방법3: 아래의 파일을 생성하고 출력</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>show2.sh</strong></pre>
 </div>
-<div class="sourceCode" id="cb8" data-filename="show2.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="va">fnames</span><span class="op">=</span><span class="va">(</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"baek_gm.txt"</span> <span class="st">"guebin.txt"</span> <span class="st">"jinsil.txt"</span> <span class="st">"seongjoon.txt"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"choyun.txt"</span> <span class="st">"handoehee.txt"</span> <span class="st">"junhan.txt"</span> <span class="st">"seunghoon.txt"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coco.txt"</span> <span class="st">"hyeonji.txt"</span> <span class="st">"leejjae.txt"</span> <span class="st">"soonwon.txt"</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"daehyeon.txt"</span> <span class="st">"jeongmin.txt"</span> <span class="st">"mingu.txt"</span> <span class="st">"suwhan.txt"</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="va">)</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fname <span class="kw">in</span> <span class="st">"</span><span class="va">${fnames</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"File: </span><span class="va">$fname</span><span class="st">"</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span> <span class="st">"../1dayhw/</span><span class="va">$fname</span><span class="st">"</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"----------------"</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11" data-filename="show2.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="va">fnames</span><span class="op">=</span><span class="va">(</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"baek_gm.txt"</span> <span class="st">"guebin.txt"</span> <span class="st">"jinsil.txt"</span> <span class="st">"seongjoon.txt"</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"choyun.txt"</span> <span class="st">"handoehee.txt"</span> <span class="st">"junhan.txt"</span> <span class="st">"seunghoon.txt"</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coco.txt"</span> <span class="st">"hyeonji.txt"</span> <span class="st">"leejjae.txt"</span> <span class="st">"soonwon.txt"</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"daehyeon.txt"</span> <span class="st">"jeongmin.txt"</span> <span class="st">"mingu.txt"</span> <span class="st">"suwhan.txt"</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="va">)</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fname <span class="kw">in</span> <span class="st">"</span><span class="va">${fnames</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"File: </span><span class="va">$fname</span><span class="st">"</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span> <span class="st">"../1dayhw/</span><span class="va">$fname</span><span class="st">"</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"----------------"</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="c19aab69-7d70-4beb-b7b4-51c02a0c885b" class="cell" data-tags="[]" data-execution_count="17">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!bash show2.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!bash show2.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><code>-</code> <code>./show2.sh</code> 와 <code>bash show2.sh</code> 의 차이?</p>
 <ul>
@@ -238,17 +286,26 @@ daehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt</code></pre>
 <hr>
 <p>저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.</p>
 <p><strong><em>그냥 참고용.. 이렇게도 가능함 ㅎㅎ</em></strong></p>
-<div id="9f440189-d30d-494e-8448-1edfb51a12a3" class="cell" data-tags="[]" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>file_names <span class="op">=</span> [</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"baek_gm"</span>, <span class="st">"guebin"</span>, <span class="st">"jinsil"</span>, <span class="st">"seongjoon"</span>,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"choyun"</span>, <span class="st">"handoehee"</span>, <span class="st">"junhan"</span>, <span class="st">"seunghoon"</span>,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coco"</span>, <span class="st">"hyeonji"</span>, <span class="st">"leejjae"</span>, <span class="st">"soonwon"</span>,</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"daehyeon"</span>, <span class="st">"jeongmin"</span>, <span class="st">"mingu"</span>, <span class="st">"suwhan"</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="331534a6-af47-40b0-bec4-a66920169785" class="cell" data-tags="[]" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ls ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span><span class="op">/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>baek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt
+choyun.txt    handoehee.txt  junhan.txt   seunghoon.txt
+coco.txt      hyeonji.txt    leejjae.txt  soonwon.txt
+daehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt</code></pre>
 </div>
-<div id="c306efa5-86c0-43a9-b7b5-d1748af07ecb" class="cell" data-tags="[]" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> username <span class="kw">in</span> file_names:</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'adduser </span><span class="sc">{</span>username<span class="sc">}</span><span class="ss"> --gecos "" --disabled-password &amp;&amp; echo "</span><span class="sc">{</span>username<span class="sc">}</span><span class="ss">:jbnu" | chpasswd &amp;&amp; usermod -aG sudo </span><span class="sc">{</span>username<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="9f440189-d30d-494e-8448-1edfb51a12a3" class="cell" data-tags="[]" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>file_names <span class="op">=</span> [</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"baek_gm"</span>, <span class="st">"guebin"</span>, <span class="st">"jinsil"</span>, <span class="st">"seongjoon"</span>,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"choyun"</span>, <span class="st">"handoehee"</span>, <span class="st">"junhan"</span>, <span class="st">"seunghoon"</span>,</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coco"</span>, <span class="st">"hyeonji"</span>, <span class="st">"leejjae"</span>, <span class="st">"soonwon"</span>,</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"daehyeon"</span>, <span class="st">"jeongmin"</span>, <span class="st">"mingu"</span>, <span class="st">"suwhan"</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="c306efa5-86c0-43a9-b7b5-d1748af07ecb" class="cell" data-tags="[]" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> username <span class="kw">in</span> file_names:</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'adduser </span><span class="sc">{</span>username<span class="sc">}</span><span class="ss"> --gecos "" --disabled-password &amp;&amp; echo "</span><span class="sc">{</span>username<span class="sc">}</span><span class="ss">:jbnu" | chpasswd &amp;&amp; usermod -aG sudo </span><span class="sc">{</span>username<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>adduser baek_gm --gecos "" --disabled-password &amp;&amp; echo "baek_gm:jbnu" | chpasswd &amp;&amp; usermod -aG sudo baek_gm
 adduser guebin --gecos "" --disabled-password &amp;&amp; echo "guebin:jbnu" | chpasswd &amp;&amp; usermod -aG sudo guebin
@@ -307,9 +364,13 @@ adduser suwhan --gecos "" --disabled-password &amp;&amp; echo "suwhan:jbnu" | ch
 <li>conda create py310 python=3.10</li>
 <li>conda activate py310</li>
 <li>conda install -c conda-forge jupyterlab</li>
-<li>conda install -c notebook</li>
+<li>conda install -c conda-forge notebook</li>
 </ul>
 <p><code>-</code> 접속하는 방법1</p>
+<ul>
+<li>jupyter lab –ip “0.0.0.0” –port {8,학번끝3자리}</li>
+<li><code>http://127.0.0.1:8052/lab?token=b88352215f68009c7643ad7f5847ea82161e950459bdd504</code> 와 같은 주소 형식을 <code>http://210.117.173.183:8052/lab?token=b88352215f68009c7643ad7f5847ea82161e950459bdd504</code> 와 같이 바꾸고 들어오세요</li>
+</ul>
 <p><code>-</code> 접속하는 방법2</p>
 <ul>
 <li>jupyter notebook password</li>
@@ -320,7 +381,7 @@ adduser suwhan --gecos "" --disabled-password &amp;&amp; echo "suwhan:jbnu" | ch
 <p>https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html</p>
 <p><code>-</code> 깃헙에서 홈페이지 만들경우 대응하는 레포지토리를 찾으면 쉽게 복사가능.</p>
 <div id="fce70ae4-3e5d-46d5-9bcd-6108a3fe6ffd" class="cell" data-tags="[]" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!wget "https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!wget "https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="실습20-블로그-꾸미기" class="level2">
@@ -334,7 +395,7 @@ adduser suwhan --gecos "" --disabled-password &amp;&amp; echo "suwhan:jbnu" | ch
 <h2 class="anchored" data-anchor-id="실습21-이미지-그리기-슈퍼유저">실습21: 이미지 그리기 (슈퍼유저)</h2>
 <p><code>-</code> 방법1</p>
 <div id="d9609e23-f02d-4056-85e6-10c67902acdb" class="cell" data-tags="[]" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>imgs.xkcd.com<span class="op">/</span>comics<span class="op">/</span>sandwich.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>imgs.xkcd.com<span class="op">/</span>comics<span class="op">/</span>sandwich.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>--2024-01-03 14:08:48--  https://imgs.xkcd.com/comics/sandwich.png
 Resolving imgs.xkcd.com (imgs.xkcd.com)... 146.75.48.67, 2a04:4e42:7c::67
