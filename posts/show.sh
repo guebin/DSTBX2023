@@ -1,0 +1,16 @@
+cat ../1dayhw/baek_gm.txt
+cat ../1dayhw/choyun.txt
+cat ../1dayhw/coco.txt
+cat ../1dayhw/daehyeon.txt
+cat ../1dayhw/guebin.txt
+cat ../1dayhw/handoehee.txt
+cat ../1dayhw/hyeonji.txt
+cat ../1dayhw/jeongmin.txt
+cat ../1dayhw/jinsil.txt
+cat ../1dayhw/junhan.txt
+cat ../1dayhw/leejjae.txt
+cat ../1dayhw/mingu.txt
+cat ../1dayhw/seongjoon.txt
+cat ../1dayhw/seunghoon.txt
+cat ../1dayhw/soonwon.txt
+cat ../1dayhw/suwhan.txt

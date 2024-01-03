@@ -1,0 +1,16 @@
+adduser baek_gm --gecos "" --disabled-password && echo "baek_gm:jbnu" | chpasswd && usermod -aG baek_gm
+adduser guebin --gecos "" --disabled-password && echo "guebin:jbnu" | chpasswd && usermod -aG guebin
+adduser jinsil --gecos "" --disabled-password && echo "jinsil:jbnu" | chpasswd && usermod -aG jinsil
+adduser seongjoon --gecos "" --disabled-password && echo "seongjoon:jbnu" | chpasswd && usermod -aG seongjoon
+adduser choyun --gecos "" --disabled-password && echo "choyun:jbnu" | chpasswd && usermod -aG choyun
+adduser handoehee --gecos "" --disabled-password && echo "handoehee:jbnu" | chpasswd && usermod -aG handoehee
+adduser junhan --gecos "" --disabled-password && echo "junhan:jbnu" | chpasswd && usermod -aG junhan
+adduser seunghoon --gecos "" --disabled-password && echo "seunghoon:jbnu" | chpasswd && usermod -aG seunghoon
+adduser coco --gecos "" --disabled-password && echo "coco:jbnu" | chpasswd && usermod -aG coco
+adduser hyeonji --gecos "" --disabled-password && echo "hyeonji:jbnu" | chpasswd && usermod -aG hyeonji
+adduser leejjae --gecos "" --disabled-password && echo "leejjae:jbnu" | chpasswd && usermod -aG leejjae
+adduser soonwon --gecos "" --disabled-password && echo "soonwon:jbnu" | chpasswd && usermod -aG soonwon
+adduser daehyeon --gecos "" --disabled-password && echo "daehyeon:jbnu" | chpasswd && usermod -aG daehyeon
+adduser jeongmin --gecos "" --disabled-password && echo "jeongmin:jbnu" | chpasswd && usermod -aG jeongmin
+adduser mingu --gecos "" --disabled-password && echo "mingu:jbnu" | chpasswd && usermod -aG mingu
+adduser suwhan --gecos "" --disabled-password && echo "suwhan:jbnu" | chpasswd && usermod -aG suwhan
