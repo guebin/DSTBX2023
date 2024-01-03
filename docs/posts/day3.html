@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-01-02">
 
-<title>2024-01-DSTBX2024 - Day2: 실습13 - ?? (draft)</title>
+<title>2024-01-DSTBX2024 - Day3: ?? - ?? (draft)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -151,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day2: 실습13 - ?? (draft)</h1>
+<h1 class="title">Day3: ?? - ?? (draft)</h1>
 </div>
 
 
@@ -180,195 +146,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="실습13-숙제검사" class="level2">
-<h2 class="anchored" data-anchor-id="실습13-숙제검사">실습13: 숙제검사</h2>
-<p><code>-</code> 이거 클론하세요</p>
-<p><code>-</code> 방법1</p>
-<div id="df4f3b45-a1c7-449f-8747-f06a6ce773e6" class="cell" data-tags="[]" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ls ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>baek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt
-choyun.txt    handoehee.txt  junhan.txt   seunghoon.txt
-coco.txt      hyeonji.txt    leejjae.txt  soonwon.txt
-daehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt</code></pre>
-</div>
-</div>
-<div id="d67534cc-7ba9-4e70-8efc-0e026378d7b2" class="cell" data-tags="[]" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cat ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span><span class="op">/</span>choyun.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>github : https://github.com/jeongchoyun
-202350543 정초윤 https://jeongchoyun.github.io/TBX2024/</code></pre>
-</div>
-</div>
-<p><code>-</code> 방법2</p>
-<div id="055fd2c5-64a3-475e-8071-512a66266660" class="cell" data-tags="[]" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ls ..<span class="op">/</span><span class="dv">1</span><span class="er">dayhw</span> <span class="op">&gt;</span> fnames.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="55173dc9-7f7a-49b3-b16e-7c3aa928f9cb" class="cell" data-tags="[]" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>chmod <span class="op">+</span>x show.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="72fa87f4-1a9e-4fa8-9138-4133b7fb82e3" class="cell" data-tags="[]" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!./show.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><code>-</code> 방법3: 아래의 파일을 생성하고 출력</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>show2.sh</strong></pre>
-</div>
-<div class="sourceCode" id="cb8" data-filename="show2.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="va">fnames</span><span class="op">=</span><span class="va">(</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"baek_gm.txt"</span> <span class="st">"guebin.txt"</span> <span class="st">"jinsil.txt"</span> <span class="st">"seongjoon.txt"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"choyun.txt"</span> <span class="st">"handoehee.txt"</span> <span class="st">"junhan.txt"</span> <span class="st">"seunghoon.txt"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coco.txt"</span> <span class="st">"hyeonji.txt"</span> <span class="st">"leejjae.txt"</span> <span class="st">"soonwon.txt"</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"daehyeon.txt"</span> <span class="st">"jeongmin.txt"</span> <span class="st">"mingu.txt"</span> <span class="st">"suwhan.txt"</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="va">)</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fname <span class="kw">in</span> <span class="st">"</span><span class="va">${fnames</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"File: </span><span class="va">$fname</span><span class="st">"</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span> <span class="st">"../1dayhw/</span><span class="va">$fname</span><span class="st">"</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"----------------"</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="c19aab69-7d70-4beb-b7b4-51c02a0c885b" class="cell" data-tags="[]" data-execution_count="17">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!bash show2.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><code>-</code> <code>./show2.sh</code> 와 <code>bash show2.sh</code> 의 차이?</p>
+<section id="실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터" class="level2">
+<h2 class="anchored" data-anchor-id="실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터">실습13: 코드스페이스에 작업한 블로그를 윈도우로 pull (강의용 윈도우 컴퓨터)</h2>
+<p><code>-</code> 코드스페이스에서 작업한 블로그를 윈도우 컴퓨터에서 이어서 작업하는 방법</p>
 <ul>
-<li>스크립트의 권한, 셸 지정</li>
-<li>잘 모르겠어요</li>
-</ul>
-<hr>
-<p>저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.</p>
-<p><strong><em>그냥 참고용.. 이렇게도 가능함 ㅎㅎ</em></strong></p>
-<div id="9f440189-d30d-494e-8448-1edfb51a12a3" class="cell" data-tags="[]" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>file_names <span class="op">=</span> [</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"baek_gm"</span>, <span class="st">"guebin"</span>, <span class="st">"jinsil"</span>, <span class="st">"seongjoon"</span>,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"choyun"</span>, <span class="st">"handoehee"</span>, <span class="st">"junhan"</span>, <span class="st">"seunghoon"</span>,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"coco"</span>, <span class="st">"hyeonji"</span>, <span class="st">"leejjae"</span>, <span class="st">"soonwon"</span>,</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"daehyeon"</span>, <span class="st">"jeongmin"</span>, <span class="st">"mingu"</span>, <span class="st">"suwhan"</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="c306efa5-86c0-43a9-b7b5-d1748af07ecb" class="cell" data-tags="[]" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> username <span class="kw">in</span> file_names:</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'adduser </span><span class="sc">{</span>username<span class="sc">}</span><span class="ss"> --gecos "" --disabled-password &amp;&amp; echo "</span><span class="sc">{</span>username<span class="sc">}</span><span class="ss">:jbnu" | chpasswd &amp;&amp; usermod -aG sudo </span><span class="sc">{</span>username<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>adduser baek_gm --gecos "" --disabled-password &amp;&amp; echo "baek_gm:jbnu" | chpasswd &amp;&amp; usermod -aG sudo baek_gm
-adduser guebin --gecos "" --disabled-password &amp;&amp; echo "guebin:jbnu" | chpasswd &amp;&amp; usermod -aG sudo guebin
-adduser jinsil --gecos "" --disabled-password &amp;&amp; echo "jinsil:jbnu" | chpasswd &amp;&amp; usermod -aG sudo jinsil
-adduser seongjoon --gecos "" --disabled-password &amp;&amp; echo "seongjoon:jbnu" | chpasswd &amp;&amp; usermod -aG sudo seongjoon
-adduser choyun --gecos "" --disabled-password &amp;&amp; echo "choyun:jbnu" | chpasswd &amp;&amp; usermod -aG sudo choyun
-adduser handoehee --gecos "" --disabled-password &amp;&amp; echo "handoehee:jbnu" | chpasswd &amp;&amp; usermod -aG sudo handoehee
-adduser junhan --gecos "" --disabled-password &amp;&amp; echo "junhan:jbnu" | chpasswd &amp;&amp; usermod -aG sudo junhan
-adduser seunghoon --gecos "" --disabled-password &amp;&amp; echo "seunghoon:jbnu" | chpasswd &amp;&amp; usermod -aG sudo seunghoon
-adduser coco --gecos "" --disabled-password &amp;&amp; echo "coco:jbnu" | chpasswd &amp;&amp; usermod -aG sudo coco
-adduser hyeonji --gecos "" --disabled-password &amp;&amp; echo "hyeonji:jbnu" | chpasswd &amp;&amp; usermod -aG sudo hyeonji
-adduser leejjae --gecos "" --disabled-password &amp;&amp; echo "leejjae:jbnu" | chpasswd &amp;&amp; usermod -aG sudo leejjae
-adduser soonwon --gecos "" --disabled-password &amp;&amp; echo "soonwon:jbnu" | chpasswd &amp;&amp; usermod -aG sudo soonwon
-adduser daehyeon --gecos "" --disabled-password &amp;&amp; echo "daehyeon:jbnu" | chpasswd &amp;&amp; usermod -aG sudo daehyeon
-adduser jeongmin --gecos "" --disabled-password &amp;&amp; echo "jeongmin:jbnu" | chpasswd &amp;&amp; usermod -aG sudo jeongmin
-adduser mingu --gecos "" --disabled-password &amp;&amp; echo "mingu:jbnu" | chpasswd &amp;&amp; usermod -aG sudo mingu
-adduser suwhan --gecos "" --disabled-password &amp;&amp; echo "suwhan:jbnu" | chpasswd &amp;&amp; usermod -aG sudo suwhan</code></pre>
-</div>
-</div>
-<hr>
-</section>
-<section id="실습14-183-컴퓨터-접속-passwd" class="level2">
-<h2 class="anchored" data-anchor-id="실습14-183-컴퓨터-접속-passwd">실습14: 183 컴퓨터 접속 + passwd</h2>
-<ul>
-<li>passwd</li>
+<li><p><code>git clone {repo-name}</code></p></li>
+<li><p><code>git pull</code></p></li>
+<li><p>git switch gh-pages</p></li>
+<li><p>git add .</p></li>
+<li><p>git commit -m .</p></li>
+<li><p>git switch main</p></li>
+<li><p>git add .</p></li>
+<li><p>git commit -m .</p></li>
+<li><p>git push</p></li>
 </ul>
 </section>
-<section id="실습15-183에서-git의-설치-및-연결" class="level2">
-<h2 class="anchored" data-anchor-id="실습15-183에서-git의-설치-및-연결">실습15: 183에서 git의 설치 및 연결</h2>
+<section id="실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터" class="level2">
+<h2 class="anchored" data-anchor-id="실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터">실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)</h2>
 <ul>
-<li>which git</li>
-<li>sudo apt-get install git</li>
-<li>sudo apt-get remove git</li>
+<li>질문1: git add . -&gt; git commit -m . -&gt; git push -&gt; quarto publish –no-browser –no-prompt 순서로 꼭 업로드 해야하는가? 그냥 단순히 “quarto publish –no-browser –no-prompt” 만 하면 안되는가?</li>
 </ul>
-</section>
-<section id="실습16-183에서-quarto의-설치" class="level2">
-<h2 class="anchored" data-anchor-id="실습16-183에서-quarto의-설치">실습16: 183에서 quarto의 설치</h2>
-<ul>
-<li>which quarto</li>
-<li>wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</li>
-<li>sudo dpkg -i quarto-1.4.533-linux-amd64.deb</li>
-<li>sudo dpkg -r quarto</li>
-</ul>
-</section>
-<section id="실습17-183에서-아나콘다-설치" class="level2">
-<h2 class="anchored" data-anchor-id="실습17-183에서-아나콘다-설치">실습17: 183에서 아나콘다 설치</h2>
-<ul>
-<li>https://www.anaconda.com/download &lt;- 여기서 다운받을 수 있는 주소 get 하세여</li>
-<li>bash Anaconda3-2019.03-Linux-x86_64.sh</li>
-</ul>
-<p>아나콘다와 git/quarto의 차이는?</p>
-</section>
-<section id="실습18-183에서-주피터랩-설치" class="level2">
-<h2 class="anchored" data-anchor-id="실습18-183에서-주피터랩-설치">실습18: 183에서 주피터랩 설치</h2>
-<ul>
-<li>conda create py310 python=3.10</li>
-<li>conda activate py310</li>
-<li>conda install -c conda-forge jupyterlab</li>
-<li>conda install -c notebook</li>
-</ul>
-<p><code>-</code> 접속하는 방법1</p>
-<p><code>-</code> 접속하는 방법2</p>
-<ul>
-<li>jupyter notebook password</li>
-</ul>
-</section>
-<section id="실습19-1일차-숙제-쉽게-하는-방법" class="level2">
-<h2 class="anchored" data-anchor-id="실습19-1일차-숙제-쉽게-하는-방법">실습19: 1일차 숙제 쉽게 하는 방법</h2>
-<p>https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html</p>
-<p><code>-</code> 깃헙에서 홈페이지 만들경우 대응하는 레포지토리를 찾으면 쉽게 복사가능.</p>
-<div id="fce70ae4-3e5d-46d5-9bcd-6108a3fe6ffd" class="cell" data-tags="[]" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!wget "https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="실습20-블로그-꾸미기" class="level2">
-<h2 class="anchored" data-anchor-id="실습20-블로그-꾸미기">실습20: 블로그 꾸미기</h2>
-<p><code>-</code> 보람</p>
-<ul>
-<li>https://boram-coco.github.io/coco/</li>
-</ul>
-</section>
-<section id="실습21-이미지-그리기-슈퍼유저" class="level2">
-<h2 class="anchored" data-anchor-id="실습21-이미지-그리기-슈퍼유저">실습21: 이미지 그리기 (슈퍼유저)</h2>
-<p><code>-</code> 방법1</p>
-<div id="d9609e23-f02d-4056-85e6-10c67902acdb" class="cell" data-tags="[]" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>imgs.xkcd.com<span class="op">/</span>comics<span class="op">/</span>sandwich.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>--2024-01-03 14:08:48--  https://imgs.xkcd.com/comics/sandwich.png
-Resolving imgs.xkcd.com (imgs.xkcd.com)... 146.75.48.67, 2a04:4e42:7c::67
-Connecting to imgs.xkcd.com (imgs.xkcd.com)|146.75.48.67|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 11828 (12K) [image/png]
-Saving to: ‘sandwich.png’
-
-sandwich.png        100%[===================&gt;]  11.55K  --.-KB/s    in 0s      
-
-2024-01-03 14:08:48 (69.3 MB/s) - ‘sandwich.png’ saved [11828/11828]
-</code></pre>
-</div>
-</div>
-<p><img src="sandwich.png" class="img-fluid"></p>
-<p><code>-</code> 방법2</p>
-<p><img src="https://imgs.xkcd.com/comics/sandwich.png" class="img-fluid"></p>
-<p><code>-</code> 방법3: 스크린샷</p>
-</section>
-<section id="실습22-182-ssh차단-우회하기-배운적x" class="level2">
-<h2 class="anchored" data-anchor-id="실습22-182-ssh차단-우회하기-배운적x">실습22: 182 ssh차단 우회하기 (배운적X)</h2>
-<ul>
-<li>sudo vi /etc/ssh/sshd_config</li>
-<li>sudo systemctl restart ssh.service</li>
-</ul>
-</section>
-<section id="실습23-186-컴퓨터-접속" class="level2">
-<h2 class="anchored" data-anchor-id="실습23-186-컴퓨터-접속">실습23: 186 컴퓨터 접속</h2>
-</section>
-<section id="실습24-186-ssh차단-우회하기-배운적x" class="level2">
-<h2 class="anchored" data-anchor-id="실습24-186-ssh차단-우회하기-배운적x">실습24: 186 ssh차단 우회하기 (배운적X)</h2>
-</section>
-<section id="실습25-186-컴퓨터-개발환경-셋팅하기" class="level2">
-<h2 class="anchored" data-anchor-id="실습25-186-컴퓨터-개발환경-셋팅하기">실습25: 186 컴퓨터 개발환경 셋팅하기</h2>
 
 
 </section>
