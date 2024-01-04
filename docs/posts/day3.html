@@ -516,15 +516,24 @@ zlib                      1.2.13               h5eee18b_0  </code></pre>
 <li>설치되는 레벨의 차이</li>
 <li>설치에서 느껴지는 편안함의 차이</li>
 <li>삭제할때 느껴지는 불편함의 차이</li>
+<li><code>pip install pandas</code>는 사실 <code>install.packages("tidyverse")</code>에 대응되는 것임</li>
 </ul>
-<p><code>-</code> 질문2: 언제 <code>pip install</code>을 쓰고 언제 <code>conda install</code>을 써야할까?</p>
-<ul>
-<li>답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)
+<p><code>-</code> 질문2: 언제 <code>pip install</code>을 쓰고 언제 <code>conda install</code>을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)</p>
 <ul>
 <li>만만한 패키지는 pip install 로 설치: numpy, pandas</li>
 <li>까다로운 패키지는 conda install 로 설치: torch, autogluon</li>
-</ul></li>
 </ul>
+</section>
+<section id="실습43-base에서-rpy에-있는-r-실행" class="level2">
+<h2 class="anchored" data-anchor-id="실습43-base에서-rpy에-있는-r-실행">실습43: (base)에서 (rpy)에 있는 R 실행</h2>
+<p><code>-</code> 원래는 불가능한 일이겠죠?</p>
+<p><code>-</code> 억지로 가능하게 하려면?</p>
+</section>
+<section id="실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기">실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기</h2>
+<p><code>-</code> R을 실행</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> envs/r/lib/R/library/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
