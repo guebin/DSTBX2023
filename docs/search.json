@@ -130,90 +130,90 @@
     "href": "posts/day1.html",
     "title": "Day1: 실습1 - 실습12",
     "section": "",
-    "text": "dir, mkdir, cd, cd.."
+    "text": "dir\nmkdir asdf\ncd\ncd.."
   },
   {
     "objectID": "posts/day1.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
     "href": "posts/day1.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
     "title": "Day1: 실습1 - 실습12",
     "section": "",
-    "text": "dir, mkdir, cd, cd.."
+    "text": "dir\nmkdir asdf\ncd\ncd.."
   },
   {
     "objectID": "posts/day1.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
     "href": "posts/day1.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)",
-    "text": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)\n\n질문1: 파이썬코드가 실행되는 속도는 어떤 컴퓨터의 spec에 결정될까?"
+    "text": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)\n- 질문1: 파이썬코드가 실행되는 속도는 어떤 컴퓨터의 spec에 결정될까?"
   },
   {
     "objectID": "posts/day1.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
     "href": "posts/day1.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)",
-    "text": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)\n\n!dir, !mkdir,"
+    "text": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)\n!dir\n!mkdir asdf"
   },
   {
     "objectID": "posts/day1.html#실습4-원격제어-맥북",
     "href": "posts/day1.html#실습4-원격제어-맥북",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습4: 원격제어 (맥북)",
-    "text": "실습4: 원격제어 (맥북)\n\ncd Desktop\nmkdir asdf # 폴더생성\nmv asdf asdf2 # 폴더이름 변경\nrm -rf asdf # 폴더삭제\n질문2: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?"
+    "text": "실습4: 원격제어 (맥북)\n- 실습시간에 눈으로 보여줌!\n- 질문2: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?"
   },
   {
     "objectID": "posts/day1.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
     "href": "posts/day1.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)",
-    "text": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)\n\n깃 다운로드: https://git-scm.com/downloads\n토큰생성 및 복사: https://github.com/settings/tokens\n원격과 로칼의 연결"
+    "text": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)\n- 깃 다운로드: https://git-scm.com/downloads\n- 토큰생성 및 복사: https://github.com/settings/tokens\n- 원격과 로칼의 연결"
   },
   {
     "objectID": "posts/day1.html#실습6-코드스페이스-코드스페이스",
     "href": "posts/day1.html#실습6-코드스페이스-코드스페이스",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습6: 코드스페이스 (코드스페이스)",
-    "text": "실습6: 코드스페이스 (코드스페이스)\n\n원격제어 + 깃을 동시에 이해해야함.\n터미널에서 “컨트롤(커맨드) C + 컨트롤(커맨드) V” 가능하도록 허용\n“컨트롤(커맨드) + 쉬프트 + P” -&gt; jupyter 입력 -&gt; 새로운 노트북파일 만들기"
+    "text": "실습6: 코드스페이스 (코드스페이스)\n- 원격제어 + 깃을 동시에 이해해야함.\n- 터미널에서 “컨트롤(커맨드) C + 컨트롤(커맨드) V” 가능하도록 허용\n- “컨트롤(커맨드) + 쉬프트 + P” -&gt; jupyter 입력 -&gt; 새로운 노트북파일 만들기"
   },
   {
     "objectID": "posts/day1.html#실습7-vi-벼락치기-코드스페이스",
     "href": "posts/day1.html#실습7-vi-벼락치기-코드스페이스",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습7: VI 벼락치기 (코드스페이스)",
-    "text": "실습7: VI 벼락치기 (코드스페이스)\n\ni, esc\n파일만들기, 파일수정하기\n복사 & 붙여넣기\n저장후 종료, 그냥 종료, 강제종료\n/asdf + 엔터 + n + (쉬프트+n)\n단어끝으로 이동=e, 단어처음으로 이동=b"
+    "text": "실습7: VI 벼락치기 (코드스페이스)\n- i, esc 차이점.\n- Vi를 이용하여 파일만들기, Vi를 이용하여 파일수정하기\n- 복사 & 붙여넣기\n- Vi에서 편집후 저장 후 종료, 그냥 종료, 강제종료\n- 찾기: /asdf \\(\\to\\) 엔터 \\(\\to\\) n / shift+n\n- 단어끝으로 이동=e, 단어처음으로 이동=b"
   },
   {
     "objectID": "posts/day1.html#실습8-서버접속-강의용-윈도우-컴퓨터",
     "href": "posts/day1.html#실습8-서버접속-강의용-윈도우-컴퓨터",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습8: 서버접속 (강의용 윈도우 컴퓨터)",
-    "text": "실습8: 서버접속 (강의용 윈도우 컴퓨터)\n\nssh toolbox@210.117.173.182\n비밀번호는 jbnu"
+    "text": "실습8: 서버접속 (강의용 윈도우 컴퓨터)\n- 접속하기\nssh toolbox@210.117.173.182\n- 비밀번호는 jbnu"
   },
   {
     "objectID": "posts/day1.html#실습9-서버접속2-개인-노트북",
     "href": "posts/day1.html#실습9-서버접속2-개인-노트북",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습9: 서버접속2 (개인 노트북)",
-    "text": "실습9: 서버접속2 (개인 노트북)\n\n휴대폰 테더링으로 잡고 본인 노트북으로 해보세요.\n실패함."
+    "text": "실습9: 서버접속2 (개인 노트북)\n- 휴대폰 테더링으로 인터넷연결하고 본인 노트북으로 해보세요.\n- 실패할거에요"
   },
   {
     "objectID": "posts/day1.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
     "href": "posts/day1.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)",
-    "text": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)\n\nquarto 설치: https://quarto.org/docs/download/\nquarto create-project –type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages"
+    "text": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)\n- quarto 설치: https://quarto.org/docs/download/\n- 아래를 실행\nquarto create-project --type website:blog \ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages"
   },
   {
     "objectID": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
     "href": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)",
-    "text": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)\n\ngit clone ??\n몇 가지 변경 (index.qmd 에서 자기소개 추가하기, _quarto.yml 에서 블로그 타이틀 설정하기)\ngit add .\ngit commit -m .\ngit push\nquarto publish –no-browser –no-prompt"
+    "text": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)\n- 클론\ngit clone ??\n- 몇 가지 변경\n\nindex.qmd 에서 자기소개 추가하기\n_quarto.yml에서 블로그 타이틀 설정하기\n\n- 변경사항 업데이트\ngit add .\ngit commit -m .\ngit push\nquarto publish --no-browser --no-prompt"
   },
   {
     "objectID": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
     "href": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
     "title": "Day1: 실습1 - 실습12",
     "section": "실습12: 블로그 포스트 업로드 (코드스페이스)",
-    "text": "실습12: 블로그 포스트 업로드 (코드스페이스)\n\nhttps://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\nhttps://guebin.github.io/IR2021/2021/10/14/(6주차)-10월14일-특강.html\n최상단에 raw 셀로 아래의 내용입력\n\n---\ntitle: \"my title\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---"
+    "text": "실습12: 블로그 포스트 업로드 (코드스페이스)\n- 숙제: 아래내용 공부 - https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html - https://guebin.github.io/IR2021/2021/10/14/(6주차)-10월14일-특강.html\n- 공부한것을 바탕으로 포싀트작성. 포스트 작성시 최상단에 raw 셀로 아래의 내용입력\n---\ntitle: \"my title\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---"
   }
 ]
