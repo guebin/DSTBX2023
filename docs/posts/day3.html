@@ -223,12 +223,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="실습30-코드를-숨기는-블로그-야메" class="level2">
 <h2 class="anchored" data-anchor-id="실습30-코드를-숨기는-블로그-야메">실습30: 코드를 숨기는 블로그 (야메)</h2>
-<p><code>-</code> 기분나빴던 보람학생..</p>
-<p><code>-</code> 이것을 응용하여 코드가 없는 블로그를 만들어보자</p>
+<p><code>-</code> 주피터다운로드 후 블로그를 만드는 것은 포스트를 엄청 빠르게 만드는 사기적 능력임</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/auto_examples/index.html" class="uri">https://scikit-learn.org/stable/auto_examples/index.html</a></li>
+<li><a href="https://matplotlib.org/stable/gallery/index.html" class="uri">https://matplotlib.org/stable/gallery/index.html</a></li>
+</ul>
+<p><code>-</code> 내가 베낄때는 좋지만 누군가가 내 블로그를 베낀다 생각하면 기분나쁠 수 있음</p>
+<p><code>-</code> 실습29를 응용하여 코드가 없는 블로그를 만들어보자</p>
 </section>
 <section id="실습31-코드를-숨기는-블로그-합법" class="level2">
 <h2 class="anchored" data-anchor-id="실습31-코드를-숨기는-블로그-합법">실습31: 코드를 숨기는 블로그 (합법)</h2>
-<p><code>-</code> 전략:</p>
+<p><code>-</code> 의문점: 그런데 작업내용을 블로그에 올릴때 꼭</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add . </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish <span class="at">--no-browser</span> <span class="at">--no-prompt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>순서로 업로드 해야하는가? 그냥 단순히</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish <span class="at">--no-browser</span> <span class="at">--no-prompt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>만 하면 안되는가? (경험상 되던데요?)</p>
+<p><code>-</code> 코드를 숨길수 있는 블로그를 만들고 싶다면? 어떻게 하면 좋을지 생각해보자.</p>
 </section>
 <section id="실습32-pull-push-잘-쓰면-편해" class="level2">
 <h2 class="anchored" data-anchor-id="실습32-pull-push-잘-쓰면-편해">실습32: <code>pull</code> + <code>push</code> (잘 쓰면 편해)</h2>
@@ -246,33 +259,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><code>-</code> 186컴퓨터는 뭐야? <span class="math inline">\(\to\)</span> push 시도.. <span class="math inline">\(\to\)</span> 실패</p>
 <p><code>-</code> 해결책:</p>
 </section>
-<section id="실습34-gh-pages-에서-만들기-싫다면.." class="level2">
-<h2 class="anchored" data-anchor-id="실습34-gh-pages-에서-만들기-싫다면..">실습34: <code>gh-pages</code> 에서 만들기 싫다면..?</h2>
+<section id="실습34-gh-pages에서-만들기-싫다면.." class="level2">
+<h2 class="anchored" data-anchor-id="실습34-gh-pages에서-만들기-싫다면..">실습34: <code>gh-pages</code>에서 만들기 싫다면..?</h2>
 <p><code>-</code> 생각해보니까 딱히 내 코드가 비밀은 아님</p>
 <p><code>-</code> 브랜치를 쓰는게 이론상 깔끔하긴 한데 막상 쓰려니까 불편함. (그 파일이 순간적으로 없어지는 거잖아요?.. 엄청 찝찝해요)</p>
 <p><code>-</code> <code>quarto publish</code>는 아래동작의 결합이다.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># html파일들이 어딘가 만들어져있음. </span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch gh-pages</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 만들어진 html파일들이 복사됨. </span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># html파일들이 어딘가 만들어져있음. </span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch gh-pages</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 만들어진 html파일들이 복사됨. </span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아래와 같이 수정하고 싶다면?</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># html파일들을 docs라는 폴더에 저장</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># html파일들을 docs라는 폴더에 저장</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>그리고 깃헙설정을 변경한다면?</p>
 <p><code>-</code> 하는방법</p>
+<p><strong>step1</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin <span class="at">--delete</span> gh-pages <span class="co"># 로칼에서 브랜치삭제 + 원격으로 업데이트</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>step2</strong></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode" id="cb10" data-filename="_quarto.yml"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project:</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">type:</span> website</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">output-dir:</span> docs <span class="co"># &lt;- 이거 추가하세요</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 이 아래는 수정필요없음 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>step3</strong></p>
+<p>이후 <a href="https://github.com/%7Buser-name%7D/%7Brepo-name%7D/settings/pages" class="uri">https://github.com/{user-name}/{repo-name}/settings/pages</a> 로 이동하여 셋팅을 변경하면 된다.</p>
 </section>
 <section id="실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터" class="level2">
 <h2 class="anchored" data-anchor-id="실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터">실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)</h2>
-<ul>
-<li>질문1: git add . -&gt; git commit -m . -&gt; git push -&gt; quarto publish –no-browser –no-prompt 순서로 꼭 업로드 해야하는가? 그냥 단순히 “quarto publish –no-browser –no-prompt” 만 하면 안되는가?</li>
-</ul>
 
 
 </section>
