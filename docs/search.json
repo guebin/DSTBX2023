@@ -95,7 +95,7 @@
     "href": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
     "title": "Day3: 실습26 - 실습??",
     "section": "실습37: 저의 가장 최신 흑역사 재현",
-    "text": "실습37: 저의 가장 최신 흑역사 재현\n- 기억하고 싶지 않았음: https://guebin.github.io/DV2023/posts/13wk-2.html\n- py310 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- colab 환경의 python과 pandas 버전을 조사하고 유사환경을 만든다.\n# 이렇게 하면됩니당\nconda create -n co python=3.10.12\nconda activate co \npip install pandas==1.5.3\n- 아래의 코드를 실행해보자.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황 (포맷으로 귀결되는 엔딩)\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n다시 아나콘다 깔고 1-13을 반복함.\n\n- 부작용: 아나콘다 트라우마 발생해서 “리눅스에서 쓰는 모든 명령” 을 (base) 상태에서 실행해야하는지 (py310) 상태에서 실행해야 하는지 두려워함.\n- 부작용을 극복하는 방법: 서버사용하세요. 컴퓨터 망가뜨리면 찾아오세요. 모든 자료는 언제든 클론가능하게 깃헙에 저장하세요."
+    "text": "실습37: 저의 가장 최신 흑역사 재현\n- 기억하고 싶지 않았음: https://guebin.github.io/DV2023/posts/13wk-2.html\n- py310 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- colab 환경의 python과 pandas 버전을 조사하고 유사환경을 만든다.\n# 이렇게 하면됩니당\nconda create -n co python=3.10.12\nconda activate co \npip install pandas==1.5.3\n- 아래의 코드를 실행해보자.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n다시 아나콘다 깔고 1-13을 반복함.\n\n- 부작용: 아나콘다 트라우마 발생해서 “리눅스에서 쓰는 모든 명령” 을 (base) 상태에서 실행해야하는지 (py310) 상태에서 실행해야 하는지 알고 싶어하고, 그게 명확하지 않을 경우 두려워함.\n- 부작용을 극복하는 방법: 서버사용하세요. 막 쓰세요. 컴퓨터 망가뜨리면 찾아오세요. 모든 자료는 언제든 클론가능하게 깃헙에 저장하세요."
   },
   {
     "objectID": "posts/day3.html#실습38-여러개의-가상환경-생성",
@@ -109,7 +109,28 @@
     "href": "posts/day3.html#실습39-주피터랩-설정변경",
     "title": "Day3: 실습26 - 실습??",
     "section": "실습39: 주피터랩 설정변경",
-    "text": "실습39: 주피터랩 설정변경"
+    "text": "실습39: 주피터랩 설정변경\n- root유저의 홈에서 ls, ls -a를 쳐보자.\n- 들어가서 jupyter_notebook_config.py를 열어보자.\n없다면 아래를 이용하여 만들자.\njupyter notebook --generate-config\n- 아래의 내용을 변경\nc.ServerApp.ip = \"0.0.0.0\" \nc.ServerApp.port = 8888 # 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 \nc.ServerApp.allow_root = True \nc.ServerApp.allow_remote_access = True # 당장필요한건 아닌데요.. 해놓으세여 \n- 이제 켜보세요.."
+  },
+  {
+    "objectID": "posts/day3.html#실습40-주피터랩-평생-켜놓기",
+    "href": "posts/day3.html#실습40-주피터랩-평생-켜놓기",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습40: 주피터랩 평생 켜놓기",
+    "text": "실습40: 주피터랩 평생 켜놓기\n- 아래와 같이 하면 됩니다.\nnohup jupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --allow-root &gt; /dev/null 2&gt;&1 &"
+  },
+  {
+    "objectID": "posts/day3.html#실습41-rpython-사용가능한-개발환경-만들기",
+    "href": "posts/day3.html#실습41-rpython-사용가능한-개발환경-만들기",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습41: R+Python 사용가능한 개발환경 만들기",
+    "text": "실습41: R+Python 사용가능한 개발환경 만들기\n- 아래를 실행\nconda create -n rpy \nconda activate rpy\nconda install -c conda-forge r-essentials\nconda install -c conda-forge plotly\nconda install -c conda-forge rpy2\n- 여기에서 conda install -c conda-forge r-essentials로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.\n- 또한 R에는 이미 tidyverse, IRkernel 등의 패키지가 기본으로 깔려있다.\n- R이 설치된 경로를 찾아보자.\n- 수틀리면 이 R을 지우면 된다.\n- R이 설치될 수 있는 3가지 시나리오\nsudo apt-get install r-base # r 공식홈페이지, 수틀리면 리눅스 포맷  \n(base) conda install -c conda-forge ... # 수틀리면 아나콘다 삭제해야함. \n(rpy) conda install -c conda-forge ... # 수틀리면 가상환경 삭제"
+  },
+  {
+    "objectID": "posts/day3.html#실습42-여러가지-프로그램-여러가지-설치방법",
+    "href": "posts/day3.html#실습42-여러가지-프로그램-여러가지-설치방법",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습42: 여러가지 프로그램, 여러가지 설치방법",
+    "text": "실습42: 여러가지 프로그램, 여러가지 설치방법\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- 질문1: pip install vs conda install\n\n설치되는 레벨의 차이\n설치에서 느껴지는 편안함의 차이\n삭제할때 느껴지는 불편함의 차이\n\n- 질문2: 언제 pip install을 쓰고 언제 conda install을 써야할까?\n\n답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, autogluon"
   },
   {
     "objectID": "posts/day3.html#footnotes",
