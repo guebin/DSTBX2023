@@ -53,7 +53,7 @@
     "href": "posts/day3.html#실습31-코드를-숨기는-블로그-합법",
     "title": "Day3: 실습26 - 실습??",
     "section": "실습31: 코드를 숨기는 블로그 (합법)",
-    "text": "실습31: 코드를 숨기는 블로그 (합법)\n- 의문점: 그런데 작업내용을 블로그에 올릴때 꼭\ngit add . \ngit commit -m . \ngit push\nquarto publish --no-browser --no-prompt\n순서로 업로드 해야하는가? 그냥 단순히\nquarto publish --no-browser --no-prompt\n만 하면 안되는가? (경험상 되던데요?)\n- 코드를 숨길수 있는 블로그를 만들고 싶다면? 어떻게 하면 좋을지 생각해보자."
+    "text": "실습31: 코드를 숨기는 블로그 (합법)\n- 의문점: 그런데 작업내용을 블로그에 올릴때 꼭\ngit add . \ngit commit -m . \ngit push\nquarto publish --no-browser --no-prompt\n순서로 업로드 해야하는가? 그냥 단순히\nquarto publish --no-browser --no-prompt\n만 하면 안되는가? (경험상 되던데요?)\n- 코드를 숨길 수 있는 블로그를 만들고 싶다면? 어떻게 하면 좋을지 생각해보자."
   },
   {
     "objectID": "posts/day3.html#실습32-pull-push-잘-쓰면-편해",
@@ -77,11 +77,46 @@
     "text": "실습34: gh-pages에서 만들기 싫다면..?\n- 생각해보니까 딱히 내 코드가 비밀은 아님\n- 브랜치를 쓰는게 이론상 깔끔하긴 한데 막상 쓰려니까 불편함. (그 파일이 순간적으로 없어지는 거잖아요?.. 엄청 찝찝해요)\n- quarto publish는 아래동작의 결합이다.\nquarto render \n# html파일들이 어딘가 만들어져있음. \ngit switch gh-pages\n# 만들어진 html파일들이 복사됨. \ngit add .\ngit commit -m . \ngit push \ngit switch main \n- 아래와 같이 수정하고 싶다면?\nquarto render \n# html파일들을 docs라는 폴더에 저장\ngit add .\ngit commit -m . \ngit push \n그리고 깃헙설정을 변경한다면?\n- 하는방법\nstep1\ngit push origin --delete gh-pages # 로칼에서 브랜치삭제 + 원격으로 업데이트\ngit add .\ngit commit -m .\ngit push \nstep2\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs # &lt;- 이거 추가하세요\n# 이 아래는 수정필요없음 \n\nstep3\n이후 https://github.com/{user-name}/{repo-name}/settings/pages 로 이동하여 셋팅을 변경하면 된다."
   },
   {
-    "objectID": "posts/day3.html#실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터",
-    "href": "posts/day3.html#실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터",
+    "objectID": "posts/day3.html#실습35-파이썬-버전확인하기",
+    "href": "posts/day3.html#실습35-파이썬-버전확인하기",
     "title": "Day3: 실습26 - 실습??",
-    "section": "실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)",
-    "text": "실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)"
+    "section": "실습35: 파이썬 버전확인하기",
+    "text": "실습35: 파이썬 버전확인하기\n- 기본명령\npython --version \n- 이걸 이용해서 코랩의 파이썬 버전을 확인해보자."
+  },
+  {
+    "objectID": "posts/day3.html#실습36-가상환경-py310생성-pip으로-판다스-설치하고-버전확인",
+    "href": "posts/day3.html#실습36-가상환경-py310생성-pip으로-판다스-설치하고-버전확인",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습36: 가상환경 py310생성 + pip으로 판다스 설치하고 버전확인",
+    "text": "실습36: 가상환경 py310생성 + pip으로 판다스 설치하고 버전확인\n- 우리의 무기1: pip list\npip list \nPackage    Version\n---------- -------\npip        23.3.1\nsetuptools 68.2.2\nwheel      0.41.2\n- 우리의 무기2: conda list\nconda list \n# packages in environment at /root/anaconda3/envs/py310:\n#\n# Name                    Version                   Build  Channel\n_libgcc_mutex             0.1                        main  \n_openmp_mutex             5.1                       1_gnu  \nbzip2                     1.0.8                h7b6447c_0  \nca-certificates           2023.12.12           h06a4308_0  \nld_impl_linux-64          2.38                 h1181459_1  \nlibffi                    3.4.4                h6a678d5_0  \nlibgcc-ng                 11.2.0               h1234567_1  \nlibgomp                   11.2.0               h1234567_1  \nlibstdcxx-ng              11.2.0               h1234567_1  \nlibuuid                   1.41.5               h5eee18b_0  \nncurses                   6.4                  h6a678d5_0  \nopenssl                   3.0.12               h7f8727e_0  \npip                       23.3.1          py310h06a4308_0  \npython                    3.10.13              h955ad1f_0  \nreadline                  8.2                  h5eee18b_0  \nsetuptools                68.2.2          py310h06a4308_0  \nsqlite                    3.41.2               h5eee18b_0  \ntk                        8.6.12               h1ccaba5_0  \ntzdata                    2023c                h04d1e81_0  \nwheel                     0.41.2          py310h06a4308_0  \nxz                        5.4.5                h5eee18b_0  \nzlib                      1.2.13               h5eee18b_0  \n- 판다스의 설치\npip install pandas # 터미널에서 하는게 적성입니다. 나머지 야메에요\n- pip list로 확인\nPackage         Version\n--------------- ------------\nnumpy           1.26.3\npandas          2.1.4\npip             23.3.1\npython-dateutil 2.8.2\npytz            2023.3.post1\nsetuptools      68.2.2\nsix             1.16.0\ntzdata          2023.4\nwheel           0.41.2\n- conda list로 확인\n# packages in environment at /root/anaconda3/envs/py310:\n#\n# Name                    Version                   Build  Channel\n_libgcc_mutex             0.1                        main  \n_openmp_mutex             5.1                       1_gnu  \nbzip2                     1.0.8                h7b6447c_0  \nca-certificates           2023.12.12           h06a4308_0  \nld_impl_linux-64          2.38                 h1181459_1  \nlibffi                    3.4.4                h6a678d5_0  \nlibgcc-ng                 11.2.0               h1234567_1  \nlibgomp                   11.2.0               h1234567_1  \nlibstdcxx-ng              11.2.0               h1234567_1  \nlibuuid                   1.41.5               h5eee18b_0  \nncurses                   6.4                  h6a678d5_0  \nnumpy                     1.26.3                   pypi_0    pypi\nopenssl                   3.0.12               h7f8727e_0  \npandas                    2.1.4                    pypi_0    pypi\npip                       23.3.1          py310h06a4308_0  \npython                    3.10.13              h955ad1f_0  \npython-dateutil           2.8.2                    pypi_0    pypi\npytz                      2023.3.post1             pypi_0    pypi\nreadline                  8.2                  h5eee18b_0  \nsetuptools                68.2.2          py310h06a4308_0  \nsix                       1.16.0                   pypi_0    pypi\nsqlite                    3.41.2               h5eee18b_0  \ntk                        8.6.12               h1ccaba5_0  \ntzdata                    2023.4                   pypi_0    pypi\nwheel                     0.41.2          py310h06a4308_0  \nxz                        5.4.5                h5eee18b_0  \nzlib                      1.2.13               h5eee18b_0  \n- 방법3: 파이썬에서\nimport pandas as pd\npd.__version__"
+  },
+  {
+    "objectID": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
+    "href": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습37: 저의 가장 최신 흑역사 재현",
+    "text": "실습37: 저의 가장 최신 흑역사 재현\n- 기억하고 싶지 않았음: https://guebin.github.io/DV2023/posts/13wk-2.html\n- py310 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- colab 환경의 python과 pandas 버전을 조사하고 유사환경을 만든다.\n# 이렇게 하면됩니당\nconda create -n co python=3.10.12\nconda activate co \npip install pandas==1.5.3\n- 아래의 코드를 실행해보자.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데 -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황 (포맷으로 귀결되는 엔딩)\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n다시 아나콘다 깔고 (base)에 설치하기 시작함.\n\n- 부작용: 아나콘다 트라우마 발생해서 “리눅스에서 쓰는 모든 명령” 을 (base) 상태에서 실행해야하는지 (py310) 상태에서 실행해야 하는지 두려워함.\n- 부작용을 극복하는 방법: 서버사용하세요. 컴퓨터 망가뜨리면 찾아오세요. 모든 자료는 언제든 클론가능하게 깃헙에 저장하세요."
+  },
+  {
+    "objectID": "posts/day3.html#실습38-여러개의-가상환경-생성",
+    "href": "posts/day3.html#실습38-여러개의-가상환경-생성",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습38: 여러개의 가상환경 생성",
+    "text": "실습38: 여러개의 가상환경 생성\n- 가능하면 프로젝트별로 환경을 분리하는게 좋다.\n- 하나의 환경에 모든 패키지를 때려밖아 설치하는건 패키지 충돌나라고 기도하는 꼴이다."
+  },
+  {
+    "objectID": "posts/day3.html#실습39-주피터랩-설정변경",
+    "href": "posts/day3.html#실습39-주피터랩-설정변경",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습39: 주피터랩 설정변경",
+    "text": "실습39: 주피터랩 설정변경"
+  },
+  {
+    "objectID": "posts/day3.html#footnotes",
+    "href": "posts/day3.html#footnotes",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 소생가능성이 없음↩︎"
   },
   {
     "objectID": "posts/day2.html",
@@ -257,6 +292,13 @@
     "title": "Day1: 실습1 - 실습12",
     "section": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)",
     "text": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)\n- quarto 설치: https://quarto.org/docs/download/\n- 아래를 실행\nquarto create-project --type website:blog \ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
+    "href": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)",
+    "text": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)\n- 클론\ngit clone ??\n- 몇 가지 변경\n\nindex.qmd 에서 자기소개 추가하기\n_quarto.yml에서 블로그 타이틀 설정하기\n\n- 변경사항 업데이트\ngit add .\ngit commit -m .\ngit push\nquarto publish --no-browser --no-prompt"
   },
   {
     "objectID": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
