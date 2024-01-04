@@ -4,126 +4,126 @@
     "href": "index.html",
     "title": "데이터과학 툴박스 (2024)",
     "section": "",
-    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 2, 2024\n\n\nDay2: 실습13 - ?? (draft)\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay3: ?? - ?? (draft)\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습??\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/day3.html",
     "href": "posts/day3.html",
-    "title": "Day3: ?? - ?? (draft)",
+    "title": "Day3: 실습26 - 실습??",
     "section": "",
     "text": "- 코드스페이스에서 작업한 블로그를 윈도우 컴퓨터에서 이어서 작업하는 방법\n\ngit clone {repo-name}\ngit pull\ngit switch gh-pages\ngit add .\ngit commit -m .\ngit switch main\ngit add .\ngit commit -m .\ngit push"
   },
   {
     "objectID": "posts/day3.html#실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터",
     "href": "posts/day3.html#실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터",
-    "title": "Day3: ?? - ?? (draft)",
+    "title": "Day3: 실습26 - 실습??",
     "section": "",
     "text": "- 코드스페이스에서 작업한 블로그를 윈도우 컴퓨터에서 이어서 작업하는 방법\n\ngit clone {repo-name}\ngit pull\ngit switch gh-pages\ngit add .\ngit commit -m .\ngit switch main\ngit add .\ngit commit -m .\ngit push"
   },
   {
     "objectID": "posts/day3.html#실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터",
     "href": "posts/day3.html#실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터",
-    "title": "Day3: ?? - ?? (draft)",
+    "title": "Day3: 실습26 - 실습??",
     "section": "실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)",
     "text": "실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)\n\n질문1: git add . -&gt; git commit -m . -&gt; git push -&gt; quarto publish –no-browser –no-prompt 순서로 꼭 업로드 해야하는가? 그냥 단순히 “quarto publish –no-browser –no-prompt” 만 하면 안되는가?"
   },
   {
     "objectID": "posts/day2.html",
     "href": "posts/day2.html",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "",
-    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../1dayhw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../1dayhw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../1dayhw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../1dayhw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../1dayhw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../1dayhw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
+    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../1dayhw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../1dayhw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../1dayhw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../1dayhw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../1dayhw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n계정을 생성한 방법: 그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../1dayhw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
   },
   {
     "objectID": "posts/day2.html#실습13-숙제검사",
     "href": "posts/day2.html#실습13-숙제검사",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "",
-    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../1dayhw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../1dayhw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../1dayhw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../1dayhw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../1dayhw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../1dayhw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
+    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../1dayhw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../1dayhw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../1dayhw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../1dayhw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../1dayhw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n계정을 생성한 방법: 그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../1dayhw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
   },
   {
     "objectID": "posts/day2.html#실습14-183-컴퓨터-접속-passwd",
     "href": "posts/day2.html#실습14-183-컴퓨터-접속-passwd",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습14: 183 컴퓨터 접속 + passwd",
-    "text": "실습14: 183 컴퓨터 접속 + passwd\n\npasswd"
+    "text": "실습14: 183 컴퓨터 접속 + passwd\n- 183번 컴퓨터에 접속하기\nssh ????@???.???.???.183 \n- 비밀번호 변경하기\npasswd"
   },
   {
     "objectID": "posts/day2.html#실습15-183에서-git의-설치-및-연결",
     "href": "posts/day2.html#실습15-183에서-git의-설치-및-연결",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습15: 183에서 git의 설치 및 연결",
-    "text": "실습15: 183에서 git의 설치 및 연결\n\nwhich git\nsudo apt-get install git\nsudo apt-get remove git"
+    "text": "실습15: 183에서 git의 설치 및 연결\nwhich git # git의 생성\nsudo apt-get install git # git 설치\nsudo apt-get remove git # git 삭제"
   },
   {
     "objectID": "posts/day2.html#실습16-183에서-quarto의-설치",
     "href": "posts/day2.html#실습16-183에서-quarto의-설치",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습16: 183에서 quarto의 설치",
-    "text": "실습16: 183에서 quarto의 설치\n\nwhich quarto\nwget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\nsudo dpkg -i quarto-1.4.533-linux-amd64.deb\nsudo dpkg -r quarto"
+    "text": "실습16: 183에서 quarto의 설치\nwhich quarto \nwget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nsudo dpkg -r quarto"
   },
   {
     "objectID": "posts/day2.html#실습17-183에서-아나콘다-설치",
     "href": "posts/day2.html#실습17-183에서-아나콘다-설치",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습17: 183에서 아나콘다 설치",
-    "text": "실습17: 183에서 아나콘다 설치\n\nhttps://www.anaconda.com/download &lt;- 여기서 다운받을 수 있는 주소 get 하세여\nbash Anaconda3-2019.03-Linux-x86_64.sh\n\n아나콘다와 git/quarto의 차이는?"
+    "text": "실습17: 183에서 아나콘다 설치\n- https://www.anaconda.com/download &lt;- 여기서 다운받을 수 있는 주소 get 하세여\nbash Anaconda3-2019.03-Linux-x86_64.sh\n- 질문: Anaconda3와 git/quarto의 차이는?"
   },
   {
     "objectID": "posts/day2.html#실습18-183에서-주피터랩-설치",
     "href": "posts/day2.html#실습18-183에서-주피터랩-설치",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습18: 183에서 주피터랩 설치",
-    "text": "실습18: 183에서 주피터랩 설치\n\nconda create py310 python=3.10\nconda activate py310\nconda install -c conda-forge jupyterlab\nconda install -c conda-forge notebook\n\n- 접속하는 방법1\n\njupyter lab –ip “0.0.0.0” –port {8,학번끝3자리}\nhttp://127.0.0.1:8052/lab?token=b88352215f68009c7643ad7f5847ea82161e950459bdd504 와 같은 주소 형식을 http://210.117.173.183:8052/lab?token=b88352215f68009c7643ad7f5847ea82161e950459bdd504 와 같이 바꾸고 들어오세요\n\n- 접속하는 방법2\n\njupyter notebook password"
+    "text": "실습18: 183에서 주피터랩 설치\n- 가상환경 셋팅\nconda create py310 python=3.10 # 가상환경생성 \nconda activate py310 # 가상환경 활성화 \nconda install -c conda-forge jupyterlab # 주피터랩설치\nconda install -c conda-forge notebook # 노트북설치 \n- 접속하는 방법1\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n이후에\nhttp://127.0.0.1:8052/lab?token=???? 와 같은 주소 형식을 http://210.117.173.183:8052/lab?token=???? 와 같이 바꾸고 들어오세요\n- 접속하는 방법2\njupyter notebook password\n를 이용하여 passwd를 설정한 뒤 다시 아래를 실행\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}"
   },
   {
     "objectID": "posts/day2.html#실습19-1일차-숙제-쉽게-하는-방법",
     "href": "posts/day2.html#실습19-1일차-숙제-쉽게-하는-방법",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습19: 1일차 숙제 쉽게 하는 방법",
-    "text": "실습19: 1일차 숙제 쉽게 하는 방법\nhttps://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\n- 깃헙에서 홈페이지 만들경우 대응하는 레포지토리를 찾으면 쉽게 복사가능.\n\n#!wget \"https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb\""
+    "text": "실습19: 1일차 숙제 쉽게 하는 방법\n- 숙제위치: https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\n- 깃헙에서 홈페이지 만들경우 대응하는 레포지토리를 찾으면 쉽게 복사가능.\n\n#!wget \"https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb\""
   },
   {
     "objectID": "posts/day2.html#실습20-블로그-꾸미기",
     "href": "posts/day2.html#실습20-블로그-꾸미기",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습20: 블로그 꾸미기",
-    "text": "실습20: 블로그 꾸미기\n- 보람\n\nhttps://boram-coco.github.io/coco/"
+    "text": "실습20: 블로그 꾸미기\n- 보람 블로그\n\nhttps://boram-coco.github.io/coco/"
   },
   {
-    "objectID": "posts/day2.html#실습21-이미지-그리기-슈퍼유저",
-    "href": "posts/day2.html#실습21-이미지-그리기-슈퍼유저",
-    "title": "Day2: 실습13 - ?? (draft)",
-    "section": "실습21: 이미지 그리기 (슈퍼유저)",
-    "text": "실습21: 이미지 그리기 (슈퍼유저)\n- 방법1\n\n!wget https://imgs.xkcd.com/comics/sandwich.png\n\n--2024-01-03 14:08:48--  https://imgs.xkcd.com/comics/sandwich.png\nResolving imgs.xkcd.com (imgs.xkcd.com)... 146.75.48.67, 2a04:4e42:7c::67\nConnecting to imgs.xkcd.com (imgs.xkcd.com)|146.75.48.67|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 11828 (12K) [image/png]\nSaving to: ‘sandwich.png’\n\nsandwich.png        100%[===================&gt;]  11.55K  --.-KB/s    in 0s      \n\n2024-01-03 14:08:48 (69.3 MB/s) - ‘sandwich.png’ saved [11828/11828]\n\n\n\n\n- 방법2\n\n- 방법3: 스크린샷"
+    "objectID": "posts/day2.html#실습21-주피터노트북파일에-이미지-넣기",
+    "href": "posts/day2.html#실습21-주피터노트북파일에-이미지-넣기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습21: 주피터노트북파일에 이미지 넣기",
+    "text": "실습21: 주피터노트북파일에 이미지 넣기\n- 방법1\n\n!wget https://imgs.xkcd.com/comics/sandwich.png\n\n--2024-01-03 14:08:48--  https://imgs.xkcd.com/comics/sandwich.png\nResolving imgs.xkcd.com (imgs.xkcd.com)... 146.75.48.67, 2a04:4e42:7c::67\nConnecting to imgs.xkcd.com (imgs.xkcd.com)|146.75.48.67|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 11828 (12K) [image/png]\nSaving to: ‘sandwich.png’\n\nsandwich.png        100%[===================&gt;]  11.55K  --.-KB/s    in 0s      \n\n2024-01-03 14:08:48 (69.3 MB/s) - ‘sandwich.png’ saved [11828/11828]\n\n\n\n\n- 방법2\n\n- 방법3: 스크린샷"
   },
   {
-    "objectID": "posts/day2.html#실습22-182-ssh차단-우회하기-배운적x",
-    "href": "posts/day2.html#실습22-182-ssh차단-우회하기-배운적x",
-    "title": "Day2: 실습13 - ?? (draft)",
-    "section": "실습22: 182 ssh차단 우회하기 (배운적X)",
-    "text": "실습22: 182 ssh차단 우회하기 (배운적X)\n\nsudo vi /etc/ssh/sshd_config\nsudo systemctl restart ssh.service"
+    "objectID": "posts/day2.html#실습22-182-ssh차단-우회하기",
+    "href": "posts/day2.html#실습22-182-ssh차단-우회하기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습22: 182 ssh차단 우회하기",
+    "text": "실습22: 182 ssh차단 우회하기\n- 내용없음."
   },
   {
     "objectID": "posts/day2.html#실습23-186-컴퓨터-접속",
     "href": "posts/day2.html#실습23-186-컴퓨터-접속",
-    "title": "Day2: 실습13 - ?? (draft)",
+    "title": "Day2: 실습13 - 실습25",
     "section": "실습23: 186 컴퓨터 접속",
-    "text": "실습23: 186 컴퓨터 접속"
+    "text": "실습23: 186 컴퓨터 접속\n- ssh를 이용하여 접속\nssh {이후의 코드는 보안상 비밀임}"
   },
   {
-    "objectID": "posts/day2.html#실습24-186-ssh차단-우회하기-배운적x",
-    "href": "posts/day2.html#실습24-186-ssh차단-우회하기-배운적x",
-    "title": "Day2: 실습13 - ?? (draft)",
-    "section": "실습24: 186 ssh차단 우회하기 (배운적X)",
-    "text": "실습24: 186 ssh차단 우회하기 (배운적X)"
+    "objectID": "posts/day2.html#실습24-186-ssh차단-우회하기",
+    "href": "posts/day2.html#실습24-186-ssh차단-우회하기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습24: 186 ssh차단 우회하기",
+    "text": "실습24: 186 ssh차단 우회하기\n- 내용없음."
   },
   {
-    "objectID": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기",
-    "href": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기",
-    "title": "Day2: 실습13 - ?? (draft)",
-    "section": "실습25: 186 컴퓨터 개발환경 셋팅하기",
-    "text": "실습25: 186 컴퓨터 개발환경 셋팅하기\nhttps://guebin.github.io/MP2023/offline/231128.html\n여기에서 2-E, 2-G 빼고 하기"
+    "objectID": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기-hw",
+    "href": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기-hw",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습25: 186 컴퓨터 개발환경 셋팅하기 (HW)",
+    "text": "실습25: 186 컴퓨터 개발환경 셋팅하기 (HW)\n- ref: https://guebin.github.io/MP2023/offline/231128.html\n여기에서 2-E, 2-G 빼고 하기"
   },
   {
     "objectID": "posts/day1.html",
