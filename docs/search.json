@@ -144,7 +144,14 @@
     "href": "posts/day3.html#실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기",
     "title": "Day3: 실습26 - 실습??",
     "section": "실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기",
-    "text": "실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기\n- R을 실행\nconda activate rpy\ncd envs/r/lib/R/library/"
+    "text": "실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기\n- R을 실행\nconda activate rpy\nR\n- 또다른 터미널을 열고 아래의 폴더로 이동 + 패키지확인\ncd ~/anaconda3/envs/rpy/lib/R/library\nls\n- EPT패키지 설치\ninstall.packages(\"EPT\")\n- ~/anaconda3/envs/rpy/lib/R/library에서 확인"
+  },
+  {
+    "objectID": "posts/day3.html#실습45-rpy에-설치된-r과-주피터-연결하기",
+    "href": "posts/day3.html#실습45-rpy에-설치된-r과-주피터-연결하기",
+    "title": "Day3: 실습26 - 실습??",
+    "section": "실습45: (rpy)에 설치된 R과 주피터 연결하기",
+    "text": "실습45: (rpy)에 설치된 R과 주피터 연결하기\n- R을 실행\nIRkernel::installspec()\n- 주피터 실행"
   },
   {
     "objectID": "posts/day3.html#footnotes",

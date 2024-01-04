@@ -533,7 +533,19 @@ zlib                      1.2.13               h5eee18b_0  </code></pre>
 <h2 class="anchored" data-anchor-id="실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기">실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기</h2>
 <p><code>-</code> R을 실행</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> envs/r/lib/R/library/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 또다른 터미널을 열고 아래의 폴더로 이동 + 패키지확인</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cd <span class="sc">~</span><span class="er">/</span>anaconda3<span class="sc">/</span>envs<span class="sc">/</span>rpy<span class="sc">/</span>lib<span class="sc">/</span>R<span class="sc">/</span>library</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> EPT패키지 설치</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"EPT"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> <code>~/anaconda3/envs/rpy/lib/R/library</code>에서 확인</p>
+</section>
+<section id="실습45-rpy에-설치된-r과-주피터-연결하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습45-rpy에-설치된-r과-주피터-연결하기">실습45: (rpy)에 설치된 R과 주피터 연결하기</h2>
+<p><code>-</code> R을 실행</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 주피터 실행</p>
 
 
 </section>
