@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +103,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -146,20 +182,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터" class="level2">
-<h2 class="anchored" data-anchor-id="실습13-코드스페이스에-작업한-블로그를-윈도우로-pull-강의용-윈도우-컴퓨터">실습13: 코드스페이스에 작업한 블로그를 윈도우로 pull (강의용 윈도우 컴퓨터)</h2>
-<p><code>-</code> 코드스페이스에서 작업한 블로그를 윈도우 컴퓨터에서 이어서 작업하는 방법</p>
+<section id="실습26-186-컴퓨터에서-깃깃헙연결하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습26-186-컴퓨터에서-깃깃헙연결하기">실습26: 186 컴퓨터에서 깃+깃헙연결하기</h2>
+<p><code>-</code> 186에서 깃+깃헙연결할때 어려운점.</p>
 <ul>
-<li><p><code>git clone {repo-name}</code></p></li>
-<li><p><code>git pull</code></p></li>
-<li><p>git switch gh-pages</p></li>
-<li><p>git add .</p></li>
-<li><p>git commit -m .</p></li>
-<li><p>git switch main</p></li>
-<li><p>git add .</p></li>
-<li><p>git commit -m .</p></li>
-<li><p>git push</p></li>
+<li>토큰을 쳐야한다는게 어려움.</li>
+<li>윈도우에서는 직접로그인으로 인증했음. 코드스페이스에서는 별도의 인증과정이 필요없었음.</li>
+<li>일반서버에서는 토큰으로 해결해야함. (다른 방법도 있는데 그냥 이게 젤 편함)</li>
 </ul>
+<p><code>-</code> 비밀번호 치는게 귀찮으면?</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config credential.helper store <span class="co"># 이걸실행하고 이후에 한번만 푸시하면 된다. </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="실습27-작업하던-블로그를-강의실-윈도우로-clone" class="level2">
+<h2 class="anchored" data-anchor-id="실습27-작업하던-블로그를-강의실-윈도우로-clone">실습27: 작업하던 블로그를 강의실 윈도우로 clone</h2>
+<p><code>-</code> 아래를 실행하면 됩니당</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone {repo-name} <span class="co"># 처음부터 새로만듦</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="실습28-블로그-생성원리-이해하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습28-블로그-생성원리-이해하기">실습28: 블로그 생성원리 이해하기</h2>
+<p><code>-</code> 아래를 실행하고 <code>git switch</code>를 사용할시 무슨일이 생기는지 파악</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># git add . </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># git commit -m . # 이거 2개가 깃에서의 save 라고 생각하자. </span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch gh-pages</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 위의 과정을 반복해보면서 폴더를 관찰. 느낀점 서술</p>
+<p><code>-</code> <code>git switch gh-pages</code>한 상태에서 폴더에 존재하는 html파일들을 열어볼 것.</p>
+</section>
+<section id="실습29-블로그-깨기" class="level2">
+<h2 class="anchored" data-anchor-id="실습29-블로그-깨기">실습29: 블로그 깨기</h2>
+<p><code>-</code> <code>git swtich gh-pages</code>한 상태에서 폴더에 존재하는 모든 파일을 삭제 <span class="math inline">\(\to\)</span> 본인 홈페이지에 가보자. 홈페이지는 살아 있는가?</p>
+<p><code>-</code> 아래를 실행하고 본인홈페이지에 방문해보자. 홈페이지는 살아있는가?</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add . </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 왜 죽었다고 생각하는가?</p>
+<p><code>-</code> 깃헙 특수기능 중 하나인 웹페이지 배포능력에 대하여 스스로 이해한 바를 서술해보자.</p>
+</section>
+<section id="실습30-코드를-숨기는-블로그-야메" class="level2">
+<h2 class="anchored" data-anchor-id="실습30-코드를-숨기는-블로그-야메">실습30: 코드를 숨기는 블로그 (야메)</h2>
+<p><code>-</code> 기분나빴던 보람학생..</p>
+<p><code>-</code> 이것을 응용하여 코드가 없는 블로그를 만들어보자</p>
+</section>
+<section id="실습31-코드를-숨기는-블로그-합법" class="level2">
+<h2 class="anchored" data-anchor-id="실습31-코드를-숨기는-블로그-합법">실습31: 코드를 숨기는 블로그 (합법)</h2>
+<p><code>-</code> 전략:</p>
+</section>
+<section id="실습32-pull-push-잘-쓰면-편해" class="level2">
+<h2 class="anchored" data-anchor-id="실습32-pull-push-잘-쓰면-편해">실습32: <code>pull</code> + <code>push</code> (잘 쓰면 편해)</h2>
+<p><code>-</code> 186 컴퓨터 (혹은 본인이 주로 쓰는 서버 컴퓨터) 에서 pull</p>
+<p><code>-</code> 186 컴퓨터에서 수정 <span class="math inline">\(\to\)</span> push</p>
+<p><code>-</code> 실습실 컴퓨터에서 다시 pull</p>
+<p><code>-</code> 실습실 컴퓨터에서 수정 <span class="math inline">\(\to\)</span> push</p>
+<p><code>-</code> 소감:</p>
+</section>
+<section id="실습33-pull-push-난-불편해" class="level2">
+<h2 class="anchored" data-anchor-id="실습33-pull-push-난-불편해">실습33: <code>pull</code> + <code>push</code> (난 불편해)</h2>
+<p><code>-</code> 186 컴퓨터 (혹은 본인이 주로 쓰는 서버 컴퓨터) 에서 pull</p>
+<p><code>-</code> 186 컴퓨터에서 수정 <span class="math inline">\(\to\)</span> push 안함</p>
+<p><code>-</code> 실습실 컴퓨터에서 수정 <span class="math inline">\(\to\)</span> push</p>
+<p><code>-</code> 186컴퓨터는 뭐야? <span class="math inline">\(\to\)</span> push 시도.. <span class="math inline">\(\to\)</span> 실패</p>
+<p><code>-</code> 해결책:</p>
+</section>
+<section id="실습34-gh-pages-에서-만들기-싫다면.." class="level2">
+<h2 class="anchored" data-anchor-id="실습34-gh-pages-에서-만들기-싫다면..">실습34: <code>gh-pages</code> 에서 만들기 싫다면..?</h2>
+<p><code>-</code> 생각해보니까 딱히 내 코드가 비밀은 아님</p>
+<p><code>-</code> 브랜치를 쓰는게 이론상 깔끔하긴 한데 막상 쓰려니까 불편함. (그 파일이 순간적으로 없어지는 거잖아요?.. 엄청 찝찝해요)</p>
+<p><code>-</code> <code>quarto publish</code>는 아래동작의 결합이다.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># html파일들이 어딘가 만들어져있음. </span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch gh-pages</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 만들어진 html파일들이 복사됨. </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 아래와 같이 수정하고 싶다면?</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># html파일들을 docs라는 폴더에 저장</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> . </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>그리고 깃헙설정을 변경한다면?</p>
+<p><code>-</code> 하는방법</p>
 </section>
 <section id="실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터" class="level2">
 <h2 class="anchored" data-anchor-id="실습14-quarto-publish-의-동작이해-강의용-윈도우-컴퓨터">실습14: quarto publish 의 동작이해 (강의용 윈도우 컴퓨터)</h2>
