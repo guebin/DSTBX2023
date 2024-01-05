@@ -322,102 +322,11 @@
     "text": "- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 23052 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :23052\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:23052 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
   },
   {
-    "objectID": "posts/day4.html#실습41-py310-co-환경에-주피터를-설치",
-    "href": "posts/day4.html#실습41-py310-co-환경에-주피터를-설치",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "",
-    "text": "- 아래를 설치\n(py310) conda install -c conda-forge jupyterlab \n(py310) conda install -c conda-forge notebook \n(co) conda install -c conda-forge jupyterlab \n(co) conda install -c conda-forge notebook \n- 이래야 해당환경에서 주피터를 연결할 수 있음."
-  },
-  {
-    "objectID": "posts/day4.html#실습42-py310-co-환경에-주피터랩을-각각-띄우기",
-    "href": "posts/day4.html#실습42-py310-co-환경에-주피터랩을-각각-띄우기",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습42: py310, co 환경에 주피터랩을 각각 띄우기",
-    "text": "실습42: py310, co 환경에 주피터랩을 각각 띄우기\n- 아래를 이용\n(py310) jupyter lab --port 23052 \n(co) jupyter lab --port 33052 \n\n터미널 여러개 쓰는게 편할걸요?\n\n- 참고로 위의 명령은 vi jupyter_notebook_config.py 에 대한 설정이 올바르게 끝난 상태에서 가능한 명령어임.\n- 이제 23052 와 33052 는 각각 다른 파이썬 커널과 연결됨. 아래를 각각 실행해보자.\nimport pandas as pd\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n결과가 어떠한가? 왜 이런 결과가 나왔다고 생각하는가?"
-  },
-  {
     "objectID": "posts/day4.html#실습41-포트정리-lsof",
     "href": "posts/day4.html#실습41-포트정리-lsof",
     "title": "Day4: 실습41 - 실습??",
     "section": "",
     "text": "- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 23052 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :23052\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:23052 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
-  },
-  {
-    "objectID": "posts/day4.html#실습42-quarto-preview",
-    "href": "posts/day4.html#실습42-quarto-preview",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습42: quarto preview",
-    "text": "실습42: quarto preview\n- 블로그를 미리보면서 편집하고 싶음.\n- 1개의 포트에는 (py310)에 설치된 jupyterlab을 할당 + 1개의 포트에는 quarto preview를 할당\n# conda install -c conda-forge jupyterlab \n# conda install -c conda-forge notebook\njupyter lab --port 23052 # 230\nquarto preview --host \"0.0.0.0\" --port 33052"
-  },
-  {
-    "objectID": "posts/day4.html#실습42",
-    "href": "posts/day4.html#실습42",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습42:",
-    "text": "실습42:"
-  },
-  {
-    "objectID": "posts/day4.html#실습41-대시보드",
-    "href": "posts/day4.html#실습41-대시보드",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습41: 대시보드",
-    "text": "실습41: 대시보드"
-  },
-  {
-    "objectID": "posts/day4.html#실습42-대시보드-패키지-충돌",
-    "href": "posts/day4.html#실습42-대시보드-패키지-충돌",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습42: 대시보드 (패키지 충돌)",
-    "text": "실습42: 대시보드 (패키지 충돌)"
-  },
-  {
-    "objectID": "posts/day4.html#실습43",
-    "href": "posts/day4.html#실습43",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습43:",
-    "text": "실습43:"
-  },
-  {
-    "objectID": "posts/day4.html#실습41-배쉬커널의-이해",
-    "href": "posts/day4.html#실습41-배쉬커널의-이해",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습41: 배쉬커널의 이해",
-    "text": "실습41: 배쉬커널의 이해\n\n```bash\nlst = ('\n```"
-  },
-  {
-    "objectID": "posts/day4.html#실습41-rpython-사용가능한-개발환경-만들기",
-    "href": "posts/day4.html#실습41-rpython-사용가능한-개발환경-만들기",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습41: R+Python 사용가능한 개발환경 만들기",
-    "text": "실습41: R+Python 사용가능한 개발환경 만들기\n- 아래를 실행\nconda create -n rpy \nconda activate rpy\nconda install -c conda-forge r-essentials\nconda install -c conda-forge plotly\nconda install -c conda-forge rpy2\n- 여기에서 conda install -c conda-forge r-essentials로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.\n- 또한 R에는 이미 tidyverse, IRkernel 등의 패키지가 기본으로 깔려있다.\n- R이 설치된 경로를 찾아보자.\n- 수틀리면 이 R을 지우면 된다.\n- R이 설치될 수 있는 3가지 시나리오\nsudo apt-get install r-base # r 공식홈페이지, 수틀리면 리눅스 포맷  \n(base) conda install -c conda-forge ... # 수틀리면 아나콘다 삭제해야함. \n(rpy) conda install -c conda-forge ... # 수틀리면 가상환경 삭제"
-  },
-  {
-    "objectID": "posts/day4.html#실습42-여러가지-프로그램-여러가지-설치방법",
-    "href": "posts/day4.html#실습42-여러가지-프로그램-여러가지-설치방법",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습42: 여러가지 프로그램, 여러가지 설치방법",
-    "text": "실습42: 여러가지 프로그램, 여러가지 설치방법\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- 질문1: pip install vs conda install\n\n설치되는 레벨의 차이\n설치에서 느껴지는 편안함의 차이\n삭제할때 느껴지는 불편함의 차이\npip install pandas는 사실 install.packages(\"tidyverse\")에 대응되는 것임\n\n- 질문2: 언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, autogluon"
-  },
-  {
-    "objectID": "posts/day4.html#실습43-base에서-rpy에-있는-r-실행",
-    "href": "posts/day4.html#실습43-base에서-rpy에-있는-r-실행",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습43: (base)에서 (rpy)에 있는 R 실행",
-    "text": "실습43: (base)에서 (rpy)에 있는 R 실행\n- 원래는 불가능한 일이겠죠?\n- 억지로 가능하게 하려면?"
-  },
-  {
-    "objectID": "posts/day4.html#실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기",
-    "href": "posts/day4.html#실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기",
-    "text": "실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기\n- R을 실행\nconda activate rpy\nR\n- 또다른 터미널을 열고 아래의 폴더로 이동 + 패키지확인\ncd ~/anaconda3/envs/rpy/lib/R/library\nls\n- EPT패키지 설치\ninstall.packages(\"EPT\")\n- ~/anaconda3/envs/rpy/lib/R/library에서 확인"
-  },
-  {
-    "objectID": "posts/day4.html#실습45-rpy에-설치된-r과-주피터-연결하기",
-    "href": "posts/day4.html#실습45-rpy에-설치된-r과-주피터-연결하기",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습45: (rpy)에 설치된 R과 주피터 연결하기",
-    "text": "실습45: (rpy)에 설치된 R과 주피터 연결하기\n- R을 실행\nIRkernel::installspec()\n- 주피터 실행"
   },
   {
     "objectID": "posts/day4.html#실습42-py310-co-환경에-주피터를-설치",
@@ -448,67 +357,11 @@
     "text": "실습45: quarto preview test.qmd\n- 파일하나만 찍어서 preview\nquarto preview day4.qmd --host \"0.0.0.0\" --port 43052\n- QMD파일은 RMD의 진화. (구 Rmarkdown)\n\nMD –&gt; RMD, QMD\n\n- 마크다운 문법이 가능함. (MD의 기능)\n\n수식\n목록화\n\n- 또한 R, Python, Julia 등의 코드를 삽입하여 실행할 수 있음. (RMD, QMD의 기능??)\n```{python}\nimport matplotlib.pyplot as plt\na = [1,2,4]\na = a+[3] \nplt.plot(a)\n```\n- quarto는 .ipynb의 렌더링과 .qmd의 렌더링 모두 지원한다.\n- 그런데 좀 이상하지 않아요??"
   },
   {
-    "objectID": "posts/day4.html#실습45",
-    "href": "posts/day4.html#실습45",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습45:",
-    "text": "실습45:"
-  },
-  {
-    "objectID": "posts/day4.html#실습40-터미널-좋은거-쓰세요.",
-    "href": "posts/day4.html#실습40-터미널-좋은거-쓰세요.",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "",
-    "text": "- 터미널 빨 큽니다..\n- 맥은 그냥 기본터미널도 충분한것 같아요"
-  },
-  {
-    "objectID": "posts/day4.html#실습46",
-    "href": "posts/day4.html#실습46",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습46:",
-    "text": "실습46:"
-  },
-  {
-    "objectID": "posts/day4.html#실습46-quarto-preview-test.qmd",
-    "href": "posts/day4.html#실습46-quarto-preview-test.qmd",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습46: quarto preview test.qmd",
-    "text": "실습46: quarto preview test.qmd"
-  },
-  {
-    "objectID": "posts/day4.html#실습46-quarto-preview-py310.qmd-co.qmd",
-    "href": "posts/day4.html#실습46-quarto-preview-py310.qmd-co.qmd",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습46: quarto preview py310.qmd / co.qmd",
-    "text": "실습46: quarto preview py310.qmd / co.qmd"
-  },
-  {
-    "objectID": "posts/day4.html#실습46-py310.qmd-co.qmd",
-    "href": "posts/day4.html#실습46-py310.qmd-co.qmd",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습46: py310.qmd / co.qmd",
-    "text": "실습46: py310.qmd / co.qmd"
-  },
-  {
     "objectID": "posts/day4.html#실습46-py310.qmd-co.qmd-hw",
     "href": "posts/day4.html#실습46-py310.qmd-co.qmd-hw",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습46: py310.qmd / co.qmd (hw)",
     "text": "실습46: py310.qmd / co.qmd (hw)\n- 해보기1: 적당힌 ?.qmd 파일을 만들고 아래와 같은 포스트를 올려보자.\n- 해보기2: 적당힌 ?.qmd 파일을 만들고 아래와 같은 포스트를 올려보자."
-  },
-  {
-    "objectID": "posts/day4.html#실습47",
-    "href": "posts/day4.html#실습47",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습47",
-    "text": "실습47"
-  },
-  {
-    "objectID": "posts/day4.html#실습47-r의-설치",
-    "href": "posts/day4.html#실습47-r의-설치",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습47: R의 설치",
-    "text": "실습47: R의 설치"
   },
   {
     "objectID": "posts/day4.html#실습47-rpython-사용가능한-개발환경-만들기",
@@ -518,13 +371,6 @@
     "text": "실습47: R+Python 사용가능한 개발환경 만들기\n- 아래를 실행\nconda create -n rpy \nconda activate rpy\nconda install -c conda-forge r-essentials\nconda install -c conda-forge plotly\nconda install -c conda-forge rpy2\n- 여기에서 conda install -c conda-forge r-essentials로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.\n- 또한 R에는 이미 tidyverse, IRkernel 등의 패키지가 기본으로 깔려있다.\n- R이 설치된 경로를 찾아보자.\n- 수틀리면 이 R을 지우면 된다.\n- R이 설치될 수 있는 3가지 시나리오\nsudo apt-get install r-base # r 공식홈페이지, 수틀리면 리눅스 포맷  \n(base) conda install -c conda-forge ... # 수틀리면 아나콘다 삭제해야함. \n(rpy) conda install -c conda-forge ... # 수틀리면 가상환경 삭제"
   },
   {
-    "objectID": "posts/day4.html#실습48",
-    "href": "posts/day4.html#실습48",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습48",
-    "text": "실습48"
-  },
-  {
     "objectID": "posts/day4.html#실습48-포스트-업로드",
     "href": "posts/day4.html#실습48-포스트-업로드",
     "title": "Day4: 실습41 - 실습??",
@@ -532,39 +378,11 @@
     "text": "실습48: 포스트 업로드\n- 해보기1: 적당한 ?.qmd 파일을 만들고 아래와 같은 포스트를 올려보자.\n- 해보기2: 적당한 ?.ipynb 파일을 만들고 아래와 같은 포스트를 올려보자.\n- 해보기3: 적당한 ?.qmd 파일을 만들고 아래와 같은 포스트를 올려보자."
   },
   {
-    "objectID": "posts/day4.html#실습49-대시보드",
-    "href": "posts/day4.html#실습49-대시보드",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습49: 대시보드",
-    "text": "실습49: 대시보드"
-  },
-  {
-    "objectID": "posts/day4.html#실습50-배쉬커널의-이해",
-    "href": "posts/day4.html#실습50-배쉬커널의-이해",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습50: 배쉬커널의 이해",
-    "text": "실습50: 배쉬커널의 이해\n\n```bash\nlst = ('\n```"
-  },
-  {
-    "objectID": "posts/day4.html#실습51",
-    "href": "posts/day4.html#실습51",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습51:",
-    "text": "실습51:"
-  },
-  {
     "objectID": "posts/day4.html#실습49-포스트-업로드-쉽게-하는-방법",
     "href": "posts/day4.html#실습49-포스트-업로드-쉽게-하는-방법",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습49: 포스트 업로드 쉽게 하는 방법",
     "text": "실습49: 포스트 업로드 쉽게 하는 방법\n- 스크립트 파일 만들어요..\n\n\nupload\n\nquarto render \ngit add .\ngit commit -m .\ngit push"
-  },
-  {
-    "objectID": "posts/day4.html#실습49-배쉬커널의-이해",
-    "href": "posts/day4.html#실습49-배쉬커널의-이해",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습49: 배쉬커널의 이해",
-    "text": "실습49: 배쉬커널의 이해\n\n```bash\nlst = ('\n```"
   },
   {
     "objectID": "posts/day4.html#실습50-스크립트-파일의-위치",
@@ -581,25 +399,11 @@
     "text": "실습51: 실행파일들의 위치"
   },
   {
-    "objectID": "posts/day4.html#실습52-ls의-이름바꾸기-실습x",
-    "href": "posts/day4.html#실습52-ls의-이름바꾸기-실습x",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습52: ls의 이름바꾸기 (실습X)",
-    "text": "실습52: ls의 이름바꾸기 (실습X)"
-  },
-  {
     "objectID": "posts/day4.html#실습52-ls의-이름바꾸기-실습추천x",
     "href": "posts/day4.html#실습52-ls의-이름바꾸기-실습추천x",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습52: ls의 이름바꾸기 (실습추천X)",
     "text": "실습52: ls의 이름바꾸기 (실습추천X)"
-  },
-  {
-    "objectID": "posts/day4.html#실습53-배쉬커널의-이해",
-    "href": "posts/day4.html#실습53-배쉬커널의-이해",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습53: 배쉬커널의 이해",
-    "text": "실습53: 배쉬커널의 이해"
   },
   {
     "objectID": "posts/day4.html#실습53-bash커널의-이해",
@@ -609,18 +413,11 @@
     "text": "실습53: bash커널의 이해\n- 예비학습: 파이썬 커널\n- 예시1\na='askdfj;alskdjf;klajsdf'\na\n$a\necho $a\n- 예시2\na=('개' '고양이' '토끼')\necho $a \necho ${a}\necho ${a[0]}\necho ${a[1]}\necho ${a[@]}\n- 예시3\ncmd_list=(ls \"ls -a\") \n${cmd_list}\n${cmd_list[0]}\n${cmd_list[1]}\n- 걱정: 근데 그러면 내 리눅스에는 평생 a, cmd_list 라는 변수가 있는거야?"
   },
   {
-    "objectID": "posts/day4.html#실습54",
-    "href": "posts/day4.html#실습54",
+    "objectID": "posts/day4.html#실습54-path-우분투에-저장된-영구변수",
+    "href": "posts/day4.html#실습54-path-우분투에-저장된-영구변수",
     "title": "Day4: 실습41 - 실습??",
-    "section": "실습54:",
-    "text": "실습54:"
-  },
-  {
-    "objectID": "posts/day4.html#실습54-여러가지-프로그램-여러가지-설치방법",
-    "href": "posts/day4.html#실습54-여러가지-프로그램-여러가지-설치방법",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습54: 여러가지 프로그램, 여러가지 설치방법",
-    "text": "실습54: 여러가지 프로그램, 여러가지 설치방법\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- 질문1: pip install vs conda install\n\n설치되는 레벨의 차이\n설치에서 느껴지는 편안함의 차이\n삭제할때 느껴지는 불편함의 차이\npip install pandas는 사실 install.packages(\"tidyverse\")에 대응되는 것임\n\n- 질문2: 언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, autogluon"
+    "section": "실습54: PATH – 우분투에 저장된 영구변수",
+    "text": "실습54: PATH – 우분투에 저장된 영구변수\n- 깨끗한 우분투에서\n$PATH # 쳐보세요\n- 아나콘다가 설치된 우분투에서\n$PATH # 쳐보세요"
   },
   {
     "objectID": "posts/day4.html#실습54-용어의-정리",
@@ -630,25 +427,11 @@
     "text": "실습54: 용어의 정리\n- 폴더와 파일\n\n폴더: 끝에 /로 끝남. (근데 생략가능함)\n파일: 끝에 /로 끝나지 않음.\n\n- 개념: 모든것은 파일과 폴더의 집합이다.\n- 183번 컴퓨터로 가보자.\n- 우분투컴퓨터에 guebin이라는 유저를 새롭게 추가했다 = /home/guebin/ 를 만듦\n- 우분투에서 깃을 설치했다 = 우분투에서 sudo apt-get install git을 실행했다. = /usr/bin/에 git이라는 파일이 생겼다. = /usr/bin/git 생성\n- ls는 우분투에 이미 내장되어있는 기능이다. = ls는 우분투에 이미 내장되어있는 명령파일이다. = 우분투를 설치하면 /usr/bin/에 ls라는 파일이 이미 있다.\n- 우분투에 guebin이라는 유저를 등록했다. 이후에 guebin이라는 유저가 아나콘다를 설치했다. = 우분투에 guebin이라는 유저를 등록했다. 이후에 guebin이라는 유저는 아나콘다를 이용하여 가상의 (base)환경을 만들었다. = /home/guebin/anaconda3/폴더가 만들어졌다는 의미.\n- 우분투에 guebin이라는 (슈퍼)유저를 등록했다. 이후에 guebin이라는 (슈퍼)유저가 루트권한을 이용하여 git을 설치했다. = /home/guebin/ 이 만들어짐 + /usr/bin/git 생성"
   },
   {
-    "objectID": "posts/day4.html#실습55-여러가지-컴퓨터-레벨",
-    "href": "posts/day4.html#실습55-여러가지-컴퓨터-레벨",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습55: 여러가지 컴퓨터 레벨",
-    "text": "실습55: 여러가지 컴퓨터 레벨"
-  },
-  {
     "objectID": "posts/day4.html#실습55-폴더의-레벨",
     "href": "posts/day4.html#실습55-폴더의-레벨",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습55: 폴더의 레벨",
     "text": "실습55: 폴더의 레벨\n- 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n- 186번 컴퓨터에는 3개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nroot우분투-(base)\nroot우분투-(py310)\n\n- guebin이라는 윈도우유저가 anaconda (base)를 이용하는 경우 2개의 컴퓨터가 존재한다.\n\nguebin윈도우\nguebin윈도우-(base)"
-  },
-  {
-    "objectID": "posts/day4.html#실습56-여러가지-프로그램-여러가지-설치방법",
-    "href": "posts/day4.html#실습56-여러가지-프로그램-여러가지-설치방법",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습56: 여러가지 프로그램, 여러가지 설치방법",
-    "text": "실습56: 여러가지 프로그램, 여러가지 설치방법\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경(=py310)에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- 질문1: pip install vs conda install\n\n설치되는 레벨의 차이\n설치에서 느껴지는 편안함의 차이\n삭제할때 느껴지는 불편함의 차이\npip install pandas는 사실 install.packages(\"tidyverse\")에 대응되는 것임\n\n- 질문2: 언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, autogluon"
   },
   {
     "objectID": "posts/day4.html#실습56-난-어디에서-깃을-설치했어",
@@ -658,25 +441,11 @@
     "text": "실습56: 난 어디에서 깃을 설치했어?\n- 문제1: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 깃을 설치했다.\n(base) sudo apt-get install git \n깃은 어디에 설치되어있는가?\n- 문제2: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래와 같이 깃을 설치했다.\n(py310) sudo apt-get install git \n깃은 어디에 설치되어있는가?\n- 문제3: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 깃을 설치했다.\n(py310) conda install -c conda-forge git \n깃은 어디에 설치되어있는가?\n- 문제4: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래와 같이 깃을 설치했다.\n(base) conda install -c conda-forge git\n깃은 어디에 설치되어있는가? (이때는 base에 설치된 git이 다른환경에 영향을 주지 않음)"
   },
   {
-    "objectID": "posts/day4.html#실습57-여러가지-프로그램-여러가지-설치방법",
-    "href": "posts/day4.html#실습57-여러가지-프로그램-여러가지-설치방법",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습57: 여러가지 프로그램, 여러가지 설치방법",
-    "text": "실습57: 여러가지 프로그램, 여러가지 설치방법\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경(=py310)에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- 질문1: pip install vs conda install\n\n설치되는 레벨의 차이\n설치에서 느껴지는 편안함의 차이\n삭제할때 느껴지는 불편함의 차이\npip install pandas는 사실 install.packages(\"tidyverse\")에 대응되는 것임\n\n- 질문2: 언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, autogluon"
-  },
-  {
     "objectID": "posts/day4.html#실습57-난-어디에서-quarto를-설치했어",
     "href": "posts/day4.html#실습57-난-어디에서-quarto를-설치했어",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습57: 난 어디에서 quarto를 설치했어?",
     "text": "실습57: 난 어디에서 quarto를 설치했어?\n- 문제1: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 quarto를 설치했다.\n(base) wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\n(base) sudo dpkg -i quarto-1.4.533-linux-amd64.deb \nquarto는 어디에 설치되어있는가?\n- 문제2: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 quarto를 설치했다.\n(base) wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\n(base) conda activate py310 \n(py310) sudo dpkg -i quarto-1.4.533-linux-amd64.deb \nquarto는 어디에 설치되어있는가?\n- 문제3: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 quarto를 설치했다.\n(py310) wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\n(py310) sudo dpkg -i quarto-1.4.533-linux-amd64.deb \nquarto는 어디에 설치되어있는가?\n- 문제4: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 quarto를 설치했다.\n(py310) wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\n(py310) conda activate base \n(base) sudo dpkg -i quarto-1.4.533-linux-amd64.deb \nquarto는 어디에 설치되어있는가?"
-  },
-  {
-    "objectID": "posts/day4.html#실습54-path-우분투에-저장된-영구변수",
-    "href": "posts/day4.html#실습54-path-우분투에-저장된-영구변수",
-    "title": "Day4: 실습41 - 실습??",
-    "section": "실습54: PATH – 우분투에 저장된 영구변수",
-    "text": "실습54: PATH – 우분투에 저장된 영구변수\n- 깨끗한 우분투에서\n$PATH # 쳐보세요\n- 아나콘다가 설치된 우분투에서\n$PATH # 쳐보세요"
   },
   {
     "objectID": "posts/day4.html#실습58-난-어디에서-upload.sh를-설치했어",
