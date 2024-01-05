@@ -1,0 +1,15 @@
+{
+  "hash": "fba20090b84ed6f60ecffb2793f1d410",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"test\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---\n\n\n`-` 시작해볼까.. \n\n- 목록1\n- 목록2\n\n`-` 회귀분석 공부해보자. \n\n$${\\bf y} = {\\bf X} {\\boldsymbol \\beta} + {\\boldsymbol \\epsilon}$$\n\n`-` 코드삽입\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc(1,2,3)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 1 2 3\n```\n\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
