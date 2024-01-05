@@ -5,6 +5,8 @@ project:
 website:
   title: "2024-01-DSTBX2024"
   navbar:
+    left: 
+      - day4.qmd  
     right:
       - icon: github
         href: https://github.com/guebin/DSTBX2024

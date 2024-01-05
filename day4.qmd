@@ -1,0 +1,13 @@
+---
+title: "**day4예제**"
+listing:
+  contents: /day4hw
+  sort: "date desc"
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  page-size: 9999
+page-layout: full
+title-block-banner: false
+---
