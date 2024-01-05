@@ -264,25 +264,45 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 </section>
 <section id="실습46-py310.qmd-co.qmd-hw" class="level2">
 <h2 class="anchored" data-anchor-id="실습46-py310.qmd-co.qmd-hw">실습46: py310.qmd / co.qmd (hw)</h2>
-<p><code>-</code> 해보기1: 적당힌 <code>?.qmd</code> 파일을 만들고 아래와 같은 포스트를 올려보자.</p>
-<p><code>-</code> 해보기2: 적당힌 <code>?.qmd</code> 파일을 만들고 아래와 같은 포스트를 올려보자.</p>
+<p><code>-</code> 해보기1: 아래와 같이 <code>py310.qmd</code> 파일을 만들고 (py310)에서 preview 해보기</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>py310.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb13" data-filename="py310.qmd"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span><span class="ex">{python}</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> pandas as pd</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">df</span> = pd.DataFrame<span class="er">(</span><span class="dt">{</span><span class="st">'A'</span><span class="dt">:[2143</span><span class="op">,</span><span class="dt">2143]</span><span class="op">,</span><span class="st">'B'</span><span class="dt">:[</span><span class="st">'-'</span><span class="op">,</span><span class="dt">3456]}</span><span class="kw">)</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="ex">df.map</span><span class="er">(</span><span class="ex">lambda</span> x: 0 if x == <span class="st">'-'</span> else x<span class="kw">)</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>-</code> 해보기2: 아래와 같이 <code>co.qmd</code> 파일을 만들고 (co)에서 preview 해보기</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>co.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb14" data-filename="co.qmd"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span><span class="ex">{python}</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">import</span> pandas as pd</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">df</span> = pd.DataFrame<span class="er">(</span><span class="dt">{</span><span class="st">'A'</span><span class="dt">:[2143</span><span class="op">,</span><span class="dt">2143]</span><span class="op">,</span><span class="st">'B'</span><span class="dt">:[</span><span class="st">'-'</span><span class="op">,</span><span class="dt">3456]}</span><span class="kw">)</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="ex">df.map</span><span class="er">(</span><span class="ex">lambda</span> x: 0 if x == <span class="st">'-'</span> else x<span class="kw">)</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="실습47-rpython-사용가능한-개발환경-만들기" class="level2">
 <h2 class="anchored" data-anchor-id="실습47-rpython-사용가능한-개발환경-만들기">실습47: R+Python 사용가능한 개발환경 만들기</h2>
 <p><code>-</code> 아래를 실행</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> rpy </span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge r-essentials</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge plotly</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge rpy2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> rpy </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge r-essentials</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge plotly</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge rpy2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 여기에서 <code>conda install -c conda-forge r-essentials</code>로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.</p>
 <p><code>-</code> 또한 R에는 이미 <code>tidyverse</code>, <code>IRkernel</code> 등의 패키지가 기본으로 깔려있다.</p>
 <p><code>-</code> R이 설치된 경로를 찾아보자.</p>
 <p><code>-</code> 수틀리면 이 R을 지우면 된다.</p>
 <p><code>-</code> R이 설치될 수 있는 3가지 시나리오</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install r-base <span class="co"># r 공식홈페이지, 수틀리면 리눅스 포맷  </span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 아나콘다 삭제해야함. </span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">rpy</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 가상환경 삭제 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install r-base <span class="co"># r 공식홈페이지, 수틀리면 리눅스 포맷  </span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 아나콘다 삭제해야함. </span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">rpy</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 가상환경 삭제 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습48-포스트-업로드" class="level2">
 <h2 class="anchored" data-anchor-id="실습48-포스트-업로드">실습48: 포스트 업로드</h2>
@@ -297,10 +317,10 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <div class="code-with-filename-file">
 <pre><strong>upload</strong></pre>
 </div>
-<div class="sourceCode" id="cb15" data-filename="upload"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17" data-filename="upload"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="실습50-스크립트-파일의-위치" class="level2">
@@ -308,12 +328,12 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <p><code>-</code> 아래파일을 어디에 두면 좋을까?</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>upload</strong></pre>
+<pre><strong>upload.sh</strong></pre>
 </div>
-<div class="sourceCode" id="cb16" data-filename="upload"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18" data-filename="upload.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><code>-</code> 저는 뭐 그냥.. 홈에두긴해요</p>
 </section>
@@ -327,30 +347,30 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <h2 class="anchored" data-anchor-id="실습53-bash커널의-이해">실습53: <code>bash</code>커널의 이해</h2>
 <p><code>-</code> 예비학습: 파이썬 커널</p>
 <p><code>-</code> 예시1</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="va">a</span><span class="op">=</span><span class="st">'askdfj;alskdjf;klajsdf'</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="ex">a</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="va">$a</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="va">a</span><span class="op">=</span><span class="st">'askdfj;alskdjf;klajsdf'</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">a</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="va">$a</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 예시2</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="va">a</span><span class="op">=</span><span class="va">(</span><span class="st">'개'</span> <span class="st">'고양이'</span> <span class="st">'토끼'</span><span class="va">)</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$a</span> </span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a}</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a</span><span class="op">[</span><span class="dv">0</span><span class="op">]</span><span class="va">}</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a</span><span class="op">[</span><span class="dv">1</span><span class="op">]</span><span class="va">}</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a</span><span class="op">[@]</span><span class="va">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="va">a</span><span class="op">=</span><span class="va">(</span><span class="st">'개'</span> <span class="st">'고양이'</span> <span class="st">'토끼'</span><span class="va">)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$a</span> </span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a}</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a</span><span class="op">[</span><span class="dv">0</span><span class="op">]</span><span class="va">}</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a</span><span class="op">[</span><span class="dv">1</span><span class="op">]</span><span class="va">}</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">${a</span><span class="op">[@]</span><span class="va">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 예시3</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="va">cmd_list</span><span class="op">=</span><span class="va">(</span>ls <span class="st">"ls -a"</span><span class="va">)</span> </span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="va">${cmd_list}</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="va">${cmd_list</span><span class="op">[</span><span class="dv">0</span><span class="op">]</span><span class="va">}</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="va">${cmd_list</span><span class="op">[</span><span class="dv">1</span><span class="op">]</span><span class="va">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="va">cmd_list</span><span class="op">=</span><span class="va">(</span>ls <span class="st">"ls -a"</span><span class="va">)</span> </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="va">${cmd_list}</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="va">${cmd_list</span><span class="op">[</span><span class="dv">0</span><span class="op">]</span><span class="va">}</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="va">${cmd_list</span><span class="op">[</span><span class="dv">1</span><span class="op">]</span><span class="va">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 걱정: 근데 그러면 내 리눅스에는 평생 <code>a</code>, <code>cmd_list</code> 라는 변수가 있는거야?</p>
 </section>
 <section id="실습54-path-우분투에-저장된-영구변수" class="level2">
 <h2 class="anchored" data-anchor-id="실습54-path-우분투에-저장된-영구변수">실습54: <code>PATH</code> – 우분투에 저장된 영구변수</h2>
 <p><code>-</code> 깨끗한 우분투에서</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="va">$PATH</span> <span class="co"># 쳐보세요</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="va">$PATH</span> <span class="co"># 쳐보세요</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아나콘다가 설치된 우분투에서</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="va">$PATH</span> <span class="co"># 쳐보세요</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="va">$PATH</span> <span class="co"># 쳐보세요</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습54-용어의-정리" class="level2">
 <h2 class="anchored" data-anchor-id="실습54-용어의-정리">실습54: 용어의 정리</h2>
@@ -398,7 +418,7 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래의 명령을 통하여 깃을 설치했다.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">sudo</span> apt-get install git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">sudo</span> apt-get install git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>깃은 어디에 설치되어있는가?</p>
 <p><code>-</code> 문제2: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.</p>
 <ol type="1">
@@ -408,7 +428,7 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래와 같이 깃을 설치했다.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">sudo</span> apt-get install git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">sudo</span> apt-get install git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>깃은 어디에 설치되어있는가?</p>
 <p><code>-</code> 문제3: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.</p>
 <ol type="1">
@@ -418,7 +438,7 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래의 명령을 통하여 깃을 설치했다.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>깃은 어디에 설치되어있는가?</p>
 <p><code>-</code> 문제4: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.</p>
 <ol type="1">
@@ -428,7 +448,7 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래와 같이 깃을 설치했다.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>깃은 어디에 설치되어있는가? (이때는 base에 설치된 git이 다른환경에 영향을 주지 않음)</p>
 </section>
 <section id="실습57-난-어디에서-quarto를-설치했어" class="level2">
@@ -441,8 +461,8 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래의 명령을 통하여 quarto를 설치했다.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>quarto는 어디에 설치되어있는가?</p>
 <p><code>-</code> 문제2: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.</p>
 <ol type="1">
@@ -452,9 +472,9 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래의 명령을 통하여 quarto를 설치했다.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> activate py310 </span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> activate py310 </span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>quarto는 어디에 설치되어있는가?</p>
 <p><code>-</code> 문제3: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.</p>
 <ol type="1">
@@ -464,8 +484,8 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래의 명령을 통하여 quarto를 설치했다.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>quarto는 어디에 설치되어있는가?</p>
 <p><code>-</code> 문제4: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.</p>
 <ol type="1">
@@ -475,9 +495,9 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>guebin우분투-(py310)</li>
 </ol>
 <p>아래의 명령을 통하여 quarto를 설치했다.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="ex">conda</span> activate base </span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="fu">wget</span> https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310</span><span class="kw">)</span> <span class="ex">conda</span> activate base </span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>quarto는 어디에 설치되어있는가?</p>
 </section>
 <section id="실습58-난-어디에서-upload.sh를-설치했어" class="level2">
@@ -491,12 +511,12 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음</li>
 <li>우분투 자체의 프로그램을 설치하는 방법들</li>
 </ul>
-<div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install git </span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git </span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> Anaconda3-2019.03-Linux-x86_64.sh</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gdebi rstudio-server-1.2.5033-amd64.deb</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install git </span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> Anaconda3-2019.03-Linux-x86_64.sh</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gdebi rstudio-server-1.2.5033-amd64.deb</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아나콘다(=base)에 종속된 프로그램</p>
 <ul>
 <li>아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter</li>
@@ -540,20 +560,35 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <section id="실습61-rpy에서-ept라는-r패키지-설치하고-위치파악하기" class="level2">
 <h2 class="anchored" data-anchor-id="실습61-rpy에서-ept라는-r패키지-설치하고-위치파악하기">실습61: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기</h2>
 <p><code>-</code> R을 실행</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 또다른 터미널을 열고 아래의 폴더로 이동 + 패키지확인</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>cd <span class="sc">~</span><span class="er">/</span>anaconda3<span class="sc">/</span>envs<span class="sc">/</span>rpy<span class="sc">/</span>lib<span class="sc">/</span>R<span class="sc">/</span>library</span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>cd <span class="sc">~</span><span class="er">/</span>anaconda3<span class="sc">/</span>envs<span class="sc">/</span>rpy<span class="sc">/</span>lib<span class="sc">/</span>R<span class="sc">/</span>library</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> EPT패키지 설치</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"EPT"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"EPT"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> <code>~/anaconda3/envs/rpy/lib/R/library</code>에서 확인</p>
 </section>
 <section id="실습62-rpy에-설치된-r과-주피터-연결하기" class="level2">
 <h2 class="anchored" data-anchor-id="실습62-rpy에-설치된-r과-주피터-연결하기">실습62: (rpy)에 설치된 R과 주피터 연결하기</h2>
 <p><code>-</code> R을 실행</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 주피터 실행</p>
+</section>
+<section id="실습63-대시보드-프리젠테이션-베끼기" class="level2">
+<h2 class="anchored" data-anchor-id="실습63-대시보드-프리젠테이션-베끼기">실습63: 대시보드, 프리젠테이션 베끼기</h2>
+<p><code>-</code> ref: <a href="https://guebin.github.io/DV2023/posts/14wk-1.html" class="uri">https://guebin.github.io/DV2023/posts/14wk-1.html</a></p>
+<p><code>-</code> 대시보드</p>
+<ul>
+<li><a href="https://guebin.github.io/DASH" class="uri">https://guebin.github.io/DASH</a></li>
+<li><a href="https://github.com/seoyeonc" class="uri">https://github.com/seoyeonc</a></li>
+<li><a href="https://quarto.org/docs/dashboards/" class="uri">https://quarto.org/docs/dashboards/</a></li>
+</ul>
+<p><code>-</code> 프리젠테이션</p>
+<ul>
+<li><a href="https://quarto.org/docs/presentations/revealjs/demo/#/interactive-slides-1" class="uri">https://quarto.org/docs/presentations/revealjs/demo/#/interactive-slides-1</a></li>
+<li><a href="https://quarto.org/docs/presentations/revealjs/" class="uri">https://quarto.org/docs/presentations/revealjs/</a></li>
+</ul>
 
 
 </section>

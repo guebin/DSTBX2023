@@ -368,7 +368,7 @@
     "href": "posts/day4.html#실습46-py310.qmd-co.qmd-hw",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습46: py310.qmd / co.qmd (hw)",
-    "text": "실습46: py310.qmd / co.qmd (hw)\n- 해보기1: 적당힌 ?.qmd 파일을 만들고 아래와 같은 포스트를 올려보자.\n- 해보기2: 적당힌 ?.qmd 파일을 만들고 아래와 같은 포스트를 올려보자."
+    "text": "실습46: py310.qmd / co.qmd (hw)\n- 해보기1: 아래와 같이 py310.qmd 파일을 만들고 (py310)에서 preview 해보기\n\n\npy310.qmd\n\n```{python}\nimport pandas as pd\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n```\n\n- 해보기2: 아래와 같이 co.qmd 파일을 만들고 (co)에서 preview 해보기\n\n\nco.qmd\n\n```{python}\nimport pandas as pd\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n```"
   },
   {
     "objectID": "posts/day4.html#실습47-rpython-사용가능한-개발환경-만들기",
@@ -396,7 +396,7 @@
     "href": "posts/day4.html#실습50-스크립트-파일의-위치",
     "title": "Day4: 실습41 - 실습??",
     "section": "실습50: 스크립트 파일의 위치?",
-    "text": "실습50: 스크립트 파일의 위치?\n- 아래파일을 어디에 두면 좋을까?\n\n\nupload\n\nquarto render \ngit add .\ngit commit -m .\ngit push \n\n- 저는 뭐 그냥.. 홈에두긴해요"
+    "text": "실습50: 스크립트 파일의 위치?\n- 아래파일을 어디에 두면 좋을까?\n\n\nupload.sh\n\nquarto render \ngit add .\ngit commit -m .\ngit push \n\n- 저는 뭐 그냥.. 홈에두긴해요"
   },
   {
     "objectID": "posts/day4.html#실습51-실행파일들의-위치",
@@ -488,6 +488,13 @@
     "title": "Day4: 실습41 - 실습??",
     "section": "실습62: (rpy)에 설치된 R과 주피터 연결하기",
     "text": "실습62: (rpy)에 설치된 R과 주피터 연결하기\n- R을 실행\nIRkernel::installspec()\n- 주피터 실행"
+  },
+  {
+    "objectID": "posts/day4.html#실습63-대시보드-프리젠테이션-베끼기",
+    "href": "posts/day4.html#실습63-대시보드-프리젠테이션-베끼기",
+    "title": "Day4: 실습41 - 실습??",
+    "section": "실습63: 대시보드, 프리젠테이션 베끼기",
+    "text": "실습63: 대시보드, 프리젠테이션 베끼기\n- ref: https://guebin.github.io/DV2023/posts/14wk-1.html\n- 대시보드\n\nhttps://guebin.github.io/DASH\nhttps://github.com/seoyeonc\nhttps://quarto.org/docs/dashboards/\n\n- 프리젠테이션\n\nhttps://quarto.org/docs/presentations/revealjs/demo/#/interactive-slides-1\nhttps://quarto.org/docs/presentations/revealjs/"
   },
   {
     "objectID": "day4hw/rplot.html",
