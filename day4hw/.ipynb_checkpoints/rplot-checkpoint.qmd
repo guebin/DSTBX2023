@@ -1,0 +1,10 @@
+---
+title: "R plot"
+author: "최규빈"
+date: "01/05/2024"
+---
+
+```{r}
+x<-rnorm(100)
+plot(x)
+```

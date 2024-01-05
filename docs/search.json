@@ -11,7 +11,7 @@
     "href": "day4.html",
     "title": "day4예제",
     "section": "",
-    "text": "Author\n\n\n\n\n\n\n \n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 5, 2024\n\n\nR plot\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/day1.html",
@@ -490,24 +490,10 @@
     "text": "실습62: (rpy)에 설치된 R과 주피터 연결하기\n- R을 실행\nIRkernel::installspec()\n- 주피터 실행"
   },
   {
-    "objectID": "day4hw/Untitled.html",
-    "href": "day4hw/Untitled.html",
-    "title": "2024-01-DSTBX2024",
+    "objectID": "day4hw/rplot.html",
+    "href": "day4hw/rplot.html",
+    "title": "R plot",
     "section": "",
-    "text": "1+1\n\n2"
-  },
-  {
-    "objectID": "day4hw/py310.html",
-    "href": "day4hw/py310.html",
-    "title": "py310",
-    "section": "",
-    "text": "import pandas as pd\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n\n\n\n\n\n\n\n\nA\nB\n\n\n\n\n0\n2143\n0\n\n\n1\n2143\n3456"
-  },
-  {
-    "objectID": "day4hw/co.html",
-    "href": "day4hw/co.html",
-    "title": "py310",
-    "section": "",
-    "text": "import pandas as pd\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n\nAttributeError: 'DataFrame' object has no attribute 'map'"
+    "text": "x&lt;-rnorm(100)\nplot(x)"
   }
 ]
