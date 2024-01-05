@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-01-04">
 
-<title>2024-01-DSTBX2024 - Day3: 실습26 - 실습??</title>
+<title>2024-01-DSTBX2024 - Day3: 실습26 - 실습40</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day3: 실습26 - 실습??</h1>
+<h1 class="title">Day3: 실습26 - 실습40</h1>
 </div>
 
 
@@ -447,105 +447,17 @@ zlib                      1.2.13               h5eee18b_0  </code></pre>
 <p>없다면 아래를 이용하여 만들자.</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> notebook <span class="at">--generate-config</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아래의 내용을 변경</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>c.ServerApp.ip <span class="op">=</span> <span class="st">"0.0.0.0"</span> </span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>c.ServerApp.port <span class="op">=</span> <span class="dv">8888</span> <span class="co"># 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 </span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>c.ServerApp.allow_root <span class="op">=</span> <span class="va">True</span> </span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>c.ServerApp.allow_remote_access <span class="op">=</span> <span class="va">True</span> <span class="co"># 당장필요한건 아닌데요.. 해놓으세여 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.ip <span class="op">=</span> <span class="st">'0.0.0.0'</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.port <span class="op">=</span> <span class="dv">8888</span> <span class="co"># 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 </span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.allow_root <span class="op">=</span> <span class="va">True</span> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.allow_remote_access <span class="op">=</span> <span class="va">True</span> <span class="co"># 당장필요한건 아닌데요.. 해놓으세여 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 이제 켜보세요..</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습40-주피터랩-평생-켜놓기" class="level2">
 <h2 class="anchored" data-anchor-id="실습40-주피터랩-평생-켜놓기">실습40: 주피터랩 평생 켜놓기</h2>
 <p><code>-</code> 아래와 같이 하면 됩니다.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> jupyter lab <span class="at">--ip</span><span class="op">=</span><span class="st">"0.0.0.0"</span> <span class="at">--port</span><span class="op">=</span>{MY-PORT} <span class="at">--allow-root</span> <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="실습41-rpython-사용가능한-개발환경-만들기" class="level2">
-<h2 class="anchored" data-anchor-id="실습41-rpython-사용가능한-개발환경-만들기">실습41: R+Python 사용가능한 개발환경 만들기</h2>
-<p><code>-</code> 아래를 실행</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> rpy </span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge r-essentials</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge plotly</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge rpy2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 여기에서 <code>conda install -c conda-forge r-essentials</code>로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.</p>
-<p><code>-</code> 또한 R에는 이미 <code>tidyverse</code>, <code>IRkernel</code> 등의 패키지가 기본으로 깔려있다.</p>
-<p><code>-</code> R이 설치된 경로를 찾아보자.</p>
-<p><code>-</code> 수틀리면 이 R을 지우면 된다.</p>
-<p><code>-</code> R이 설치될 수 있는 3가지 시나리오</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install r-base <span class="co"># r 공식홈페이지, 수틀리면 리눅스 포맷  </span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 아나콘다 삭제해야함. </span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">rpy</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 가상환경 삭제 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="실습42-여러가지-프로그램-여러가지-설치방법" class="level2">
-<h2 class="anchored" data-anchor-id="실습42-여러가지-프로그램-여러가지-설치방법">실습42: 여러가지 프로그램, 여러가지 설치방법</h2>
-<p><code>-</code> 우분투자체의 프로그램</p>
-<ul>
-<li>우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode</li>
-<li>우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음</li>
-<li>우분투 자체의 프로그램을 설치하는 방법들</li>
-</ul>
-<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install git </span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git </span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> quarto-1.4.533-linux-amd64.deb </span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> Anaconda3-2019.03-Linux-x86_64.sh</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gdebi rstudio-server-1.2.5033-amd64.deb</span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 아나콘다(=base)에 종속된 프로그램</p>
-<ul>
-<li>아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter</li>
-<li>아나콘다에 종속된 프로그램은 <code>anaconda3</code> 폴더안에 있음.</li>
-</ul>
-<p><code>-</code> 아나콘다환경에 종속시킬 수 “있는” 프로그램</p>
-<ul>
-<li>아나콘다내에 종속된 프로그램의 예시: python, R, jupyter</li>
-<li>아나콘다환경에 종속된 프로그램은 <code>anaconda3/envs/py310</code> 와 같은 형식의 폴더안에 있음.</li>
-</ul>
-<p><code>-</code> 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)</p>
-<ul>
-<li>파이썬에 종속된 프로그램 예시: numpy, pandas</li>
-<li>얘네들이 어디에 깔리는지는 그때그때 다름</li>
-<li>지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)</li>
-</ul>
-<p><code>-</code> R에 종속된 프로그램 (=R패키지=R라이브러리)</p>
-<ul>
-<li>R에 종속된 프로그램의 예시: tidyverse</li>
-<li>얘들이 어디 깔리는지도 그때그때 다름</li>
-<li>지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)</li>
-</ul>
-<p><code>-</code> 질문1: <code>pip install</code> vs <code>conda install</code></p>
-<ul>
-<li>설치되는 레벨의 차이</li>
-<li>설치에서 느껴지는 편안함의 차이</li>
-<li>삭제할때 느껴지는 불편함의 차이</li>
-<li><code>pip install pandas</code>는 사실 <code>install.packages("tidyverse")</code>에 대응되는 것임</li>
-</ul>
-<p><code>-</code> 질문2: 언제 <code>pip install</code>을 쓰고 언제 <code>conda install</code>을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)</p>
-<ul>
-<li>만만한 패키지는 pip install 로 설치: numpy, pandas</li>
-<li>까다로운 패키지는 conda install 로 설치: torch, autogluon</li>
-</ul>
-</section>
-<section id="실습43-base에서-rpy에-있는-r-실행" class="level2">
-<h2 class="anchored" data-anchor-id="실습43-base에서-rpy에-있는-r-실행">실습43: (base)에서 (rpy)에 있는 R 실행</h2>
-<p><code>-</code> 원래는 불가능한 일이겠죠?</p>
-<p><code>-</code> 억지로 가능하게 하려면?</p>
-</section>
-<section id="실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기" class="level2">
-<h2 class="anchored" data-anchor-id="실습44-rpy에서-ept라는-r패키지-설치하고-위치파악하기">실습44: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기</h2>
-<p><code>-</code> R을 실행</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 또다른 터미널을 열고 아래의 폴더로 이동 + 패키지확인</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cd <span class="sc">~</span><span class="er">/</span>anaconda3<span class="sc">/</span>envs<span class="sc">/</span>rpy<span class="sc">/</span>lib<span class="sc">/</span>R<span class="sc">/</span>library</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> EPT패키지 설치</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"EPT"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> <code>~/anaconda3/envs/rpy/lib/R/library</code>에서 확인</p>
-</section>
-<section id="실습45-rpy에-설치된-r과-주피터-연결하기" class="level2">
-<h2 class="anchored" data-anchor-id="실습45-rpy에-설치된-r과-주피터-연결하기">실습45: (rpy)에 설치된 R과 주피터 연결하기</h2>
-<p><code>-</code> R을 실행</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 주피터 실행</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> jupyter lab <span class="at">--ip</span><span class="op">=</span><span class="st">"0.0.0.0"</span> <span class="at">--port</span><span class="op">=</span>{MY-PORT} <span class="at">--allow-root</span> <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
