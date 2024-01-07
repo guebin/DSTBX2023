@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.521">
+<meta name="generator" content="quarto-1.4.520">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-01-05">
 
-<title>2024-01-DSTBX2024 - Day4: 실습41 - 실습??????????????????????????</title>
+<title>2024-01-DSTBX2024 - Day4: 실습41 - 실습??</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day4: 실습41 - 실습??????????????????????????</h1>
+<h1 class="title">Day4: 실습41 - 실습??</h1>
 </div>
 
 
@@ -290,11 +290,10 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <section id="실습47-rpython-사용가능한-개발환경-만들기" class="level2">
 <h2 class="anchored" data-anchor-id="실습47-rpython-사용가능한-개발환경-만들기">실습47: R+Python 사용가능한 개발환경 만들기</h2>
 <p><code>-</code> 아래를 실행</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> rpy </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> r </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate r</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge r-essentials</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge plotly</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge rpy2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge plotly</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 여기에서 <code>conda install -c conda-forge r-essentials</code>로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.</p>
 <p><code>-</code> 또한 R에는 이미 <code>tidyverse</code>, <code>IRkernel</code> 등의 패키지가 기본으로 깔려있다.</p>
 <p><code>-</code> R이 설치된 경로를 찾아보자.</p>
@@ -302,7 +301,7 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <p><code>-</code> R이 설치될 수 있는 3가지 시나리오</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install r-base <span class="co"># r 공식홈페이지, 수틀리면 리눅스 포맷  </span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 아나콘다 삭제해야함. </span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">rpy</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 가상환경 삭제 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">r</span><span class="kw">)</span> <span class="ex">conda</span> install <span class="at">-c</span> conda-forge ... <span class="co"># 수틀리면 가상환경 삭제 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습48-포스트-업로드" class="level2">
 <h2 class="anchored" data-anchor-id="실습48-포스트-업로드">실습48: 포스트 업로드</h2>
@@ -502,6 +501,7 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 </section>
 <section id="실습58-난-어디에서-upload.sh를-설치했어" class="level2">
 <h2 class="anchored" data-anchor-id="실습58-난-어디에서-upload.sh를-설치했어">실습58: 난 어디에서 upload.sh를 설치했어?</h2>
+<p><code>-</code> 어떤 폴더에 넣느냐에 따라서 다르겠죠.</p>
 </section>
 <section id="실습59-여러가지-프로그램-여러가지-설치방법" class="level2">
 <h2 class="anchored" data-anchor-id="실습59-여러가지-프로그램-여러가지-설치방법">실습59: 여러가지 프로그램, 여러가지 설치방법</h2>
@@ -552,13 +552,13 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <li>까다로운 패키지는 conda install 로 설치: torch, autogluon</li>
 </ul>
 </section>
-<section id="실습60-base에서-rpy에-있는-r-실행" class="level2">
-<h2 class="anchored" data-anchor-id="실습60-base에서-rpy에-있는-r-실행">실습60: (base)에서 (rpy)에 있는 R 실행</h2>
+<section id="실습60-base에서-r에-있는-r-실행" class="level2">
+<h2 class="anchored" data-anchor-id="실습60-base에서-r에-있는-r-실행">실습60: (base)에서 (r)에 있는 R 실행</h2>
 <p><code>-</code> 원래는 불가능한 일이겠죠?</p>
 <p><code>-</code> 억지로 가능하게 하려면?</p>
 </section>
-<section id="실습61-rpy에서-ept라는-r패키지-설치하고-위치파악하기" class="level2">
-<h2 class="anchored" data-anchor-id="실습61-rpy에서-ept라는-r패키지-설치하고-위치파악하기">실습61: (rpy)에서 EPT라는 R패키지 설치하고 위치파악하기</h2>
+<section id="실습61-r에서-ept라는-r패키지-설치하고-위치파악하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습61-r에서-ept라는-r패키지-설치하고-위치파악하기">실습61: (r)에서 EPT라는 R패키지 설치하고 위치파악하기</h2>
 <p><code>-</code> R을 실행</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate rpy</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -569,8 +569,8 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <div class="sourceCode" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"EPT"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> <code>~/anaconda3/envs/rpy/lib/R/library</code>에서 확인</p>
 </section>
-<section id="실습62-rpy에-설치된-r과-주피터-연결하기" class="level2">
-<h2 class="anchored" data-anchor-id="실습62-rpy에-설치된-r과-주피터-연결하기">실습62: (rpy)에 설치된 R과 주피터 연결하기</h2>
+<section id="실습62-r에-설치된-r과-주피터-연결하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습62-r에-설치된-r과-주피터-연결하기">실습62: (r)에 설치된 R과 주피터 연결하기</h2>
 <p><code>-</code> R을 실행</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 주피터 실행</p>
@@ -581,7 +581,6 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <p><code>-</code> 대시보드</p>
 <ul>
 <li><a href="https://guebin.github.io/DASH" class="uri">https://guebin.github.io/DASH</a></li>
-<li><a href="https://github.com/seoyeonc" class="uri">https://github.com/seoyeonc</a></li>
 <li><a href="https://quarto.org/docs/dashboards/" class="uri">https://quarto.org/docs/dashboards/</a></li>
 </ul>
 <p><code>-</code> 프리젠테이션</p>
