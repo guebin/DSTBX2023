@@ -322,18 +322,11 @@
     "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
   },
   {
-    "objectID": "posts/day4.html",
-    "href": "posts/day4.html",
-    "title": "Day4: 실습41 - 실습63",
-    "section": "",
-    "text": "- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 23052 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :23052\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:23052 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
-  },
-  {
     "objectID": "posts/day4.html#실습41-포트정리-lsof",
     "href": "posts/day4.html#실습41-포트정리-lsof",
     "title": "Day4: 실습41 - 실습63",
-    "section": "",
-    "text": "- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 23052 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :23052\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:23052 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
+    "section": "실습41: 포트정리 (lsof)",
+    "text": "실습41: 포트정리 (lsof)\n- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 23052 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :23052\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:23052 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
   },
   {
     "objectID": "posts/day4.html#실습42-py310-co-환경에-주피터를-설치",
