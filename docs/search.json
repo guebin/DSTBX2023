@@ -508,7 +508,14 @@
     "href": "posts/day5.html#실습65-docker로-ubuntu-실행하기실습실-컴퓨터",
     "title": "Day5: 실습64 - 실습??",
     "section": "실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)",
-    "text": "실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)"
+    "text": "실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)\n- 우분투 이미지 다운로드\ndocker pull ubuntu\n- 실행\ndocker run -ti -d -t ubuntu /bin/bash\ndocker exec -ti guebin bash"
+  },
+  {
+    "objectID": "posts/day5.html#실습65-docker로-ubuntu-실행하기-183컴퓨터",
+    "href": "posts/day5.html#실습65-docker로-ubuntu-실행하기-183컴퓨터",
+    "title": "Day5: 실습64 - 실습??",
+    "section": "실습65: docker로 ubuntu 실행하기 (183컴퓨터)",
+    "text": "실습65: docker로 ubuntu 실행하기 (183컴퓨터)\n- 우분투안에서 우분투 실행\ndocker run -ti -d -t -p ?????:????? --name guebin ubuntu /bin/bash\ndocker exec -ti guebin bash \n- 아래를 수행\npasswd root\napt update \napt install gcc\napt install build-essential\napt install vim"
   },
   {
     "objectID": "posts/day5.html#실습66-코드스페이스-사용하기",
