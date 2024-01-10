@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="최규빈">
+<meta name="dcterms.date" content="2024-01-10">
 
-<title>2024-01-DSTBX2024 - 데이터과학 툴박스 (2024)</title>
+<title>2024-01-DSTBX2024 - Day5: 실습64 - 실습??</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,50 +102,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">2024-01-DSTBX2024</span>
     </a>
   </div>
@@ -122,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./day4.html"> 
+    <a class="nav-link" href="../day4.html"> 
 <span class="menu-text"><strong>day4예제</strong></span></a>
   </li>  
 </ul>
@@ -145,25 +148,35 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">데이터과학 툴박스 (2024)</h1>
+<h1 class="title">Day5: 실습64 - 실습??</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>최규빈 </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 10, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -173,99 +186,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>수업계획</strong></p>
+<section id="실습64-docker로-rstudio-실행하기실습실-컴퓨터" class="level2">
+<h2 class="anchored" data-anchor-id="실습64-docker로-rstudio-실행하기실습실-컴퓨터">실습64: docker로 Rstudio 실행하기(실습실 컴퓨터)</h2>
+<p>ref: <a href="https://rocker-project.org/" class="uri">https://rocker-project.org/</a></p>
+<p><code>-</code> 다커실행파일 다운로드</p>
 <ul>
-<li>1월2일(화) – 18:00~21:00 day1 수업</li>
-<li>1월3일(수) – 18:00~21:00 day2 수업</li>
-<li>1월4일(목) – 18:00~21:00 day3 수업</li>
-<li>1월5일(금) – 18:00~21:00 day4 수업</li>
-<li>1월8일(월) – 19:00~21:00 Q&amp;A</li>
-<li>1월9일(화) – 18:00~21:00 Q&amp;A</li>
-<li>1월10일(수) – 18:00~21:00 day5 수업</li>
-<li>1월11일(목) – 수업 X, Q&amp;A X</li>
-<li>1월12일(금) – 18:00~21:00 day6 수업</li>
+<li><a href="https://docs.docker.com/desktop/install/windows-install/" class="uri">https://docs.docker.com/desktop/install/windows-install/</a></li>
 </ul>
+<p><code>-</code> docker 이미지 다운로드</p>
+<p><strong>방법1</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull rocker/rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>방법2</strong></p>
+<ul>
+<li>사실 잘 몰라요 ㅎㅎ</li>
+</ul>
+<p><code>-</code> 다운받은 이미지 확인하기</p>
+<p><strong>방법1</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> images</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>방법2</strong></p>
+<ul>
+<li>GUI</li>
+</ul>
+<p><code>-</code> 이미지에서 컨테이너생성 (컨테이너는 인스턴스라고 생각하자..)</p>
+<p><strong>방법1</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-e</span> PASSWORD=<span class="st">'jbnu'</span> <span class="at">-p</span> 8787:8787 rocker/rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>방법2</strong></p>
+<ul>
+<li>GUI</li>
+</ul>
+<p><code>-</code> Rstudio 사용</p>
+</section>
+<section id="실습65-docker로-ubuntu-실행하기실습실-컴퓨터" class="level2">
+<h2 class="anchored" data-anchor-id="실습65-docker로-ubuntu-실행하기실습실-컴퓨터">실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)</h2>
+</section>
+<section id="실습66-코드스페이스-사용하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습66-코드스페이스-사용하기">실습66: 코드스페이스 사용하기</h2>
+<p><code>-</code> 아래를 이용하여 코드스페이스 설치</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt-get</span> install curl</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-Lk</span> <span class="st">'https://code.visualstudio.com/sha/download?build=stable&amp;os=cli-alpine-x64'</span> <span class="at">--output</span> vscode_cli.tar.gz</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xf</span> vscode_cli.tar.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 아래를 이용하여 초기설정</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./code</span> tunnel </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>컴퓨터 이름 잘 써야해요…</li>
+<li>외워야 하는 이름이에요..</li>
+</ul>
+<p><code>-</code> 코드스페이스 평생켜놓기</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> ./code tunnel <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 코드스페이스의 장점</p>
+<ul>
+<li>별도의 포트를 먹지 않는다.</li>
+<li>하나의 창에서 모든 가상환경을 동시에 이용할 수 있다. &lt;– 제가 이거때문에 씁니당..</li>
+<li>보안접속이 가능하다.</li>
+</ul>
+</section>
+<section id="실습67-rstudio-사용하기" class="level2">
+<h2 class="anchored" data-anchor-id="실습67-rstudio-사용하기">실습67: Rstudio 사용하기</h2>
+<p><code>-</code> 아래를 이용하여 Rstudio를 설치 (base환경인지 r환경인지는 무의미)</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install gdebi-core</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gdebi rstudio-server-2022.12.0-353-amd64.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> <code>grst</code>가 만든 <code>rstudio-server-conda</code>를 클론</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/grst/rstudio-server-conda.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 내용을 수정</p>
+<p><code>{.bash filename= "~/rstudio-server-conda/local/start_rstudio_server.sh"} ... blalba ... /usr/lib/rstudio-server/bin/rserver --server-daemonize=0 \   --www-port=????? \ ### &lt;--- 여기 수정!!!!!   --auth-minimum-user-id=0 \ ### &lt;--- 여기 추가!!!!!   --secure-cookie-key-file=$COOKIE_KEY_PATH \   --server-pid-file="$CWD/rstudio-server.pid" \   --server-data-dir="$CWD/rstudio-server" \   --rsession-which-r=$(which R) \   --rsession-ld-library-path=$CONDA_PREFIX/lib \   --rsession-path="$CWD/rsession.sh" \   --server-user $USER \   --database-config-file "$CWD/database.conf" \   $REVOCATION_LIST_PAR</code></p>
+<p><code>-</code> <code>start_rstudio_server.sh</code>를 실행</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Author
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1704812400000" data-listing-file-modified-sort="1704875568605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="181" data-listing-title-sort="Day5: 실습64 - 실습??" data-listing-filename-sort="day5.ipynb">
-<td>
-<span class="listing-date">Jan 10, 2024</span>
-</td>
-<td>
-<a href="./posts/day5.html" class="title listing-title">Day5: 실습64 - 실습??</a>
-</td>
-<td>
-<span class="listing-author">최규빈 </span>
-</td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1704380400000" data-listing-file-modified-sort="1704709883823" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1376" data-listing-title-sort="Day4: 실습41 - 실습63" data-listing-filename-sort="day4.ipynb">
-<td>
-<span class="listing-date">Jan 5, 2024</span>
-</td>
-<td>
-<a href="./posts/day4.html" class="title listing-title">Day4: 실습41 - 실습63</a>
-</td>
-<td>
-<span class="listing-author">최규빈 </span>
-</td>
-</tr>
-<tr data-index="2" data-listing-date-sort="1704294000000" data-listing-file-modified-sort="1704443605000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2893" data-listing-title-sort="Day3: 실습26 - 실습40" data-listing-filename-sort="day3.ipynb">
-<td>
-<span class="listing-date">Jan 4, 2024</span>
-</td>
-<td>
-<a href="./posts/day3.html" class="title listing-title">Day3: 실습26 - 실습40</a>
-</td>
-<td>
-<span class="listing-author">최규빈 </span>
-</td>
-</tr>
-<tr data-index="3" data-listing-date-sort="1704207600000" data-listing-file-modified-sort="1704443605000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293" data-listing-title-sort="Day2: 실습13 - 실습25" data-listing-filename-sort="day2.ipynb">
-<td>
-<span class="listing-date">Jan 3, 2024</span>
-</td>
-<td>
-<a href="./posts/day2.html" class="title listing-title">Day2: 실습13 - 실습25</a>
-</td>
-<td>
-<span class="listing-author">최규빈 </span>
-</td>
-</tr>
-<tr data-index="4" data-listing-date-sort="1704121200000" data-listing-file-modified-sort="1704443605000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227" data-listing-title-sort="Day1: 실습1 - 실습12" data-listing-filename-sort="day1.ipynb">
-<td>
-<span class="listing-date">Jan 2, 2024</span>
-</td>
-<td>
-<a href="./posts/day1.html" class="title listing-title">Day1: 실습1 - 실습12</a>
-</td>
-<td>
-<span class="listing-author">최규빈 </span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
