@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "데이터과학 툴박스 (2024)",
     "section": "",
-    "text": "수업계획\n\n1월2일(화) – 18:00~21:00 day1 수업\n1월3일(수) – 18:00~21:00 day2 수업\n1월4일(목) – 18:00~21:00 day3 수업\n1월5일(금) – 18:00~21:00 day4 수업\n1월8일(월) – 19:00~21:00 Q&A\n1월9일(화) – 18:00~21:00 Q&A\n1월10일(수) – 18:00~21:00 day5 수업\n1월11일(목) – 수업 X, Q&A X\n1월12일(금) – 18:00~21:00 day6 수업\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 10, 2024\n\n\nDay5: 실습64 - 실습67\n\n\n최규빈 \n\n\n\n\nJan 5, 2024\n\n\nDay4: 실습41 - 실습63\n\n\n최규빈 \n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습40\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+    "text": "수업계획\n\n1월2일(화) – 18:00~21:00 day1 수업\n1월3일(수) – 18:00~21:00 day2 수업\n1월4일(목) – 18:00~21:00 day3 수업\n1월5일(금) – 18:00~21:00 day4 수업\n1월8일(월) – 19:00~21:00 Q&A\n1월9일(화) – 18:00~21:00 Q&A\n1월10일(수) – 18:00~21:00 day5 수업\n1월11일(목) – 수업 X, Q&A X\n1월12일(금) – 18:00~21:00 day6 수업\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 10, 2024\n\n\nDay6: 실습68 - 실습??\n\n\n최규빈 \n\n\n\n\nJan 10, 2024\n\n\nDay5: 실습64 - 실습67\n\n\n최규빈 \n\n\n\n\nJan 5, 2024\n\n\nDay4: 실습41 - 실습63\n\n\n최규빈 \n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습40\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "day4.html",
@@ -12,6 +12,342 @@
     "title": "day4예제",
     "section": "",
     "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 5, 2024\n\n\nR plot\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/day6.html",
+    "href": "posts/day6.html",
+    "title": "Day6: 실습68 - 실습??",
+    "section": "",
+    "text": "- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
+  },
+  {
+    "objectID": "posts/day6.html#실습68-100mb-충돌",
+    "href": "posts/day6.html#실습68-100mb-충돌",
+    "title": "Day6: 실습68 - 실습??",
+    "section": "",
+    "text": "- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
+  },
+  {
+    "objectID": "posts/day6.html#실습69-git-ignore",
+    "href": "posts/day6.html#실습69-git-ignore",
+    "title": "Day6: 실습68 - 실습??",
+    "section": "실습69: git ignore",
+    "text": "실습69: git ignore\n- 다시 아래의 상황을 만듦.\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \n- .gitignore 파일 생성\n\n\n~/dinner/.gitignore\n\n*csv\n\n- 아래를 시도\ngit add .\ngit commit -m .\ngit push \n- 하위폴더도 영향받음을 확인\n\ndata라는 폴더를 생성\nfashion-mnist_train.csv 를 data 폴더로 이동\nls data &gt; ./data/data_list.txt 실행 (무슨뜻?)\ngithub으로 push"
+  },
+  {
+    "objectID": "posts/day6.html#실습70-블로그-제목이-update-되지-않을때",
+    "href": "posts/day6.html#실습70-블로그-제목이-update-되지-않을때",
+    "title": "Day6: 실습68 - 실습??",
+    "section": "실습70: 블로그 제목이 update 되지 않을때",
+    "text": "실습70: 블로그 제목이 update 되지 않을때"
+  },
+  {
+    "objectID": "posts/day1.html",
+    "href": "posts/day1.html",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "",
+    "text": "dir\nmkdir asdf\ncd\ncd.."
+  },
+  {
+    "objectID": "posts/day1.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
+    "href": "posts/day1.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "",
+    "text": "dir\nmkdir asdf\ncd\ncd.."
+  },
+  {
+    "objectID": "posts/day1.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
+    "href": "posts/day1.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)",
+    "text": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)\n- 질문1: 파이썬코드가 실행되는 속도는 어떤 컴퓨터의 spec에 결정될까?"
+  },
+  {
+    "objectID": "posts/day1.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
+    "href": "posts/day1.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)",
+    "text": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)\n!dir\n!mkdir asdf"
+  },
+  {
+    "objectID": "posts/day1.html#실습4-원격제어-맥북",
+    "href": "posts/day1.html#실습4-원격제어-맥북",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습4: 원격제어 (맥북)",
+    "text": "실습4: 원격제어 (맥북)\n- 실습시간에 눈으로 보여줌!\n- 질문2: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?"
+  },
+  {
+    "objectID": "posts/day1.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
+    "href": "posts/day1.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)",
+    "text": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)\n- 깃 다운로드: https://git-scm.com/downloads\n- 토큰생성 및 복사: https://github.com/settings/tokens\n- 원격과 로칼의 연결"
+  },
+  {
+    "objectID": "posts/day1.html#실습6-코드스페이스-코드스페이스",
+    "href": "posts/day1.html#실습6-코드스페이스-코드스페이스",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습6: 코드스페이스 (코드스페이스)",
+    "text": "실습6: 코드스페이스 (코드스페이스)\n- 원격제어 + 깃을 동시에 이해해야함.\n- 터미널에서 “컨트롤(커맨드) C + 컨트롤(커맨드) V” 가능하도록 허용\n- “컨트롤(커맨드) + 쉬프트 + P” -&gt; jupyter 입력 -&gt; 새로운 노트북파일 만들기"
+  },
+  {
+    "objectID": "posts/day1.html#실습7-vi-벼락치기-코드스페이스",
+    "href": "posts/day1.html#실습7-vi-벼락치기-코드스페이스",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습7: VI 벼락치기 (코드스페이스)",
+    "text": "실습7: VI 벼락치기 (코드스페이스)\n- i, esc 차이점.\n- Vi를 이용하여 파일만들기, Vi를 이용하여 파일수정하기\n- 복사 & 붙여넣기\n- Vi에서 편집후 저장 후 종료, 그냥 종료, 강제종료\n- 찾기: /asdf \\(\\to\\) 엔터 \\(\\to\\) n / shift+n\n- 단어끝으로 이동=e, 단어처음으로 이동=b"
+  },
+  {
+    "objectID": "posts/day1.html#실습8-서버접속-강의용-윈도우-컴퓨터",
+    "href": "posts/day1.html#실습8-서버접속-강의용-윈도우-컴퓨터",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습8: 서버접속 (강의용 윈도우 컴퓨터)",
+    "text": "실습8: 서버접속 (강의용 윈도우 컴퓨터)\n- 접속하기\nssh toolbox@210.117.173.182\n- 비밀번호는 jbnu"
+  },
+  {
+    "objectID": "posts/day1.html#실습9-서버접속2-개인-노트북",
+    "href": "posts/day1.html#실습9-서버접속2-개인-노트북",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습9: 서버접속2 (개인 노트북)",
+    "text": "실습9: 서버접속2 (개인 노트북)\n- 휴대폰 테더링으로 인터넷연결하고 본인 노트북으로 해보세요.\n- 실패할거에요"
+  },
+  {
+    "objectID": "posts/day1.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
+    "href": "posts/day1.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)",
+    "text": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)\n- quarto 설치: https://quarto.org/docs/download/\n- 아래를 실행\nquarto create-project --type website:blog \ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
+    "href": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)",
+    "text": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)\n- 클론\ngit clone ??\n- 몇 가지 변경\n\nindex.qmd 에서 자기소개 추가하기\n_quarto.yml에서 블로그 타이틀 설정하기\n\n- 변경사항 업데이트\ngit add .\ngit commit -m .\ngit push\nquarto publish --no-browser --no-prompt"
+  },
+  {
+    "objectID": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
+    "href": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
+    "title": "Day1: 실습1 - 실습12",
+    "section": "실습12: 블로그 포스트 업로드 (코드스페이스)",
+    "text": "실습12: 블로그 포스트 업로드 (코드스페이스)\n- 숙제: 아래내용 공부 - https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html - https://guebin.github.io/IR2021/2021/10/14/(6주차)-10월14일-특강.html\n- 공부한것을 바탕으로 포싀트작성. 포스트 작성시 최상단에 raw 셀로 아래의 내용입력\n---\ntitle: \"my title\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---"
+  },
+  {
+    "objectID": "posts/day2.html",
+    "href": "posts/day2.html",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "",
+    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../day1hw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../day1hw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../day1hw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../day1hw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../day1hw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n계정을 생성한 방법: 그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../day1hw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
+  },
+  {
+    "objectID": "posts/day2.html#실습13-숙제검사",
+    "href": "posts/day2.html#실습13-숙제검사",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "",
+    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../day1hw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../day1hw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../day1hw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../day1hw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../day1hw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n계정을 생성한 방법: 그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../day1hw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
+  },
+  {
+    "objectID": "posts/day2.html#실습14-183-컴퓨터-접속-passwd",
+    "href": "posts/day2.html#실습14-183-컴퓨터-접속-passwd",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습14: 183 컴퓨터 접속 + passwd",
+    "text": "실습14: 183 컴퓨터 접속 + passwd\n- 183번 컴퓨터에 접속하기\nssh ????@???.???.???.183 \n- 비밀번호 변경하기\npasswd"
+  },
+  {
+    "objectID": "posts/day2.html#실습15-183에서-git의-설치-및-연결",
+    "href": "posts/day2.html#실습15-183에서-git의-설치-및-연결",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습15: 183에서 git의 설치 및 연결",
+    "text": "실습15: 183에서 git의 설치 및 연결\nwhich git # git의 생성\nsudo apt-get install git # git 설치\nsudo apt-get remove git # git 삭제"
+  },
+  {
+    "objectID": "posts/day2.html#실습16-183에서-quarto의-설치",
+    "href": "posts/day2.html#실습16-183에서-quarto의-설치",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습16: 183에서 quarto의 설치",
+    "text": "실습16: 183에서 quarto의 설치\nwhich quarto \nwget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nsudo dpkg -r quarto"
+  },
+  {
+    "objectID": "posts/day2.html#실습17-183에서-아나콘다-설치",
+    "href": "posts/day2.html#실습17-183에서-아나콘다-설치",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습17: 183에서 아나콘다 설치",
+    "text": "실습17: 183에서 아나콘다 설치\n- https://www.anaconda.com/download &lt;- 여기서 다운받을 수 있는 주소 get 하세여\nbash Anaconda3-2019.03-Linux-x86_64.sh\n- 질문: Anaconda3와 git/quarto의 차이는?"
+  },
+  {
+    "objectID": "posts/day2.html#실습18-183에서-주피터랩-설치",
+    "href": "posts/day2.html#실습18-183에서-주피터랩-설치",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습18: 183에서 주피터랩 설치",
+    "text": "실습18: 183에서 주피터랩 설치\n- 가상환경 셋팅\nconda create py310 python=3.10 # 가상환경생성 \nconda activate py310 # 가상환경 활성화 \nconda install -c conda-forge jupyterlab # 주피터랩설치\nconda install -c conda-forge notebook # 노트북설치 \n- 접속하는 방법1\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n이후에\nhttp://127.0.0.1:8052/lab?token=???? 와 같은 주소 형식을 http://210.117.173.183:8052/lab?token=???? 와 같이 바꾸고 들어오세요\n- 접속하는 방법2\njupyter notebook password\n를 이용하여 passwd를 설정한 뒤 다시 아래를 실행\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}"
+  },
+  {
+    "objectID": "posts/day2.html#실습19-1일차-숙제-쉽게-하는-방법",
+    "href": "posts/day2.html#실습19-1일차-숙제-쉽게-하는-방법",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습19: 1일차 숙제 쉽게 하는 방법",
+    "text": "실습19: 1일차 숙제 쉽게 하는 방법\n- 숙제위치: https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\n- 깃헙에서 홈페이지 만들경우 대응하는 레포지토리를 찾으면 쉽게 복사가능.\n\n#!wget \"https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb\""
+  },
+  {
+    "objectID": "posts/day2.html#실습20-블로그-꾸미기",
+    "href": "posts/day2.html#실습20-블로그-꾸미기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습20: 블로그 꾸미기",
+    "text": "실습20: 블로그 꾸미기\n- 보람 블로그\n\nhttps://boram-coco.github.io/coco/"
+  },
+  {
+    "objectID": "posts/day2.html#실습21-주피터노트북파일에-이미지-넣기",
+    "href": "posts/day2.html#실습21-주피터노트북파일에-이미지-넣기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습21: 주피터노트북파일에 이미지 넣기",
+    "text": "실습21: 주피터노트북파일에 이미지 넣기\n- 방법1\n\n!wget https://imgs.xkcd.com/comics/sandwich.png\n\n--2024-01-03 14:08:48--  https://imgs.xkcd.com/comics/sandwich.png\nResolving imgs.xkcd.com (imgs.xkcd.com)... 146.75.48.67, 2a04:4e42:7c::67\nConnecting to imgs.xkcd.com (imgs.xkcd.com)|146.75.48.67|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 11828 (12K) [image/png]\nSaving to: ‘sandwich.png’\n\nsandwich.png        100%[===================&gt;]  11.55K  --.-KB/s    in 0s      \n\n2024-01-03 14:08:48 (69.3 MB/s) - ‘sandwich.png’ saved [11828/11828]\n\n\n\n\n- 방법2\n\n- 방법3: 스크린샷"
+  },
+  {
+    "objectID": "posts/day2.html#실습22-182-ssh차단-우회하기",
+    "href": "posts/day2.html#실습22-182-ssh차단-우회하기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습22: 182 ssh차단 우회하기",
+    "text": "실습22: 182 ssh차단 우회하기\n- 내용없음."
+  },
+  {
+    "objectID": "posts/day2.html#실습23-186-컴퓨터-접속",
+    "href": "posts/day2.html#실습23-186-컴퓨터-접속",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습23: 186 컴퓨터 접속",
+    "text": "실습23: 186 컴퓨터 접속\n- ssh를 이용하여 접속\nssh {이후의 코드는 보안상 비밀임}"
+  },
+  {
+    "objectID": "posts/day2.html#실습24-186-ssh차단-우회하기",
+    "href": "posts/day2.html#실습24-186-ssh차단-우회하기",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습24: 186 ssh차단 우회하기",
+    "text": "실습24: 186 ssh차단 우회하기\n- 내용없음."
+  },
+  {
+    "objectID": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기-hw",
+    "href": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기-hw",
+    "title": "Day2: 실습13 - 실습25",
+    "section": "실습25: 186 컴퓨터 개발환경 셋팅하기 (HW)",
+    "text": "실습25: 186 컴퓨터 개발환경 셋팅하기 (HW)\n- ref: https://guebin.github.io/MP2023/offline/231128.html\n여기에서 2-E, 2-G 빼고 하기"
+  },
+  {
+    "objectID": "posts/day3.html",
+    "href": "posts/day3.html",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "",
+    "text": "- 186에서 깃+깃헙연결할때 어려운점.\n\n토큰을 쳐야한다는게 어려움.\n윈도우에서는 직접로그인으로 인증했음. 코드스페이스에서는 별도의 인증과정이 필요없었음.\n일반서버에서는 토큰으로 해결해야함. (다른 방법도 있는데 그냥 이게 젤 편함)\n\n- 비밀번호 치는게 귀찮으면?\ngit config credential.helper store # 이걸실행하고 이후에 한번만 푸시하면 된다. \ngit add .\ngit commit -m . \ngit push"
+  },
+  {
+    "objectID": "posts/day3.html#실습26-186-컴퓨터에서-깃깃헙연결하기",
+    "href": "posts/day3.html#실습26-186-컴퓨터에서-깃깃헙연결하기",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "",
+    "text": "- 186에서 깃+깃헙연결할때 어려운점.\n\n토큰을 쳐야한다는게 어려움.\n윈도우에서는 직접로그인으로 인증했음. 코드스페이스에서는 별도의 인증과정이 필요없었음.\n일반서버에서는 토큰으로 해결해야함. (다른 방법도 있는데 그냥 이게 젤 편함)\n\n- 비밀번호 치는게 귀찮으면?\ngit config credential.helper store # 이걸실행하고 이후에 한번만 푸시하면 된다. \ngit add .\ngit commit -m . \ngit push"
+  },
+  {
+    "objectID": "posts/day3.html#실습27-작업하던-블로그를-강의실-윈도우로-clone",
+    "href": "posts/day3.html#실습27-작업하던-블로그를-강의실-윈도우로-clone",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습27: 작업하던 블로그를 강의실 윈도우로 clone",
+    "text": "실습27: 작업하던 블로그를 강의실 윈도우로 clone\n- 아래를 실행하면 됩니당\ngit clone {repo-name} # 처음부터 새로만듦"
+  },
+  {
+    "objectID": "posts/day3.html#실습28-블로그-생성원리-이해하기",
+    "href": "posts/day3.html#실습28-블로그-생성원리-이해하기",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습28: 블로그 생성원리 이해하기",
+    "text": "실습28: 블로그 생성원리 이해하기\n- 아래를 실행하고 git switch를 사용할시 무슨일이 생기는지 파악\n# git add . \n# git commit -m . # 이거 2개가 깃에서의 save 라고 생각하자. \ngit switch gh-pages\ngit switch main \n- 위의 과정을 반복해보면서 폴더를 관찰. 느낀점 서술\n- git switch gh-pages한 상태에서 폴더에 존재하는 html파일들을 열어볼 것."
+  },
+  {
+    "objectID": "posts/day3.html#실습29-블로그-깨기",
+    "href": "posts/day3.html#실습29-블로그-깨기",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습29: 블로그 깨기",
+    "text": "실습29: 블로그 깨기\n- git swtich gh-pages한 상태에서 폴더에 존재하는 모든 파일을 삭제 \\(\\to\\) 본인 홈페이지에 가보자. 홈페이지는 살아 있는가?\n- 아래를 실행하고 본인홈페이지에 방문해보자. 홈페이지는 살아있는가?\ngit add . \ngit commit -m .\ngit push\n- 왜 죽었다고 생각하는가?\n- 깃헙 특수기능 중 하나인 웹페이지 배포능력에 대하여 스스로 이해한 바를 서술해보자."
+  },
+  {
+    "objectID": "posts/day3.html#실습30-코드를-숨기는-블로그-야메",
+    "href": "posts/day3.html#실습30-코드를-숨기는-블로그-야메",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습30: 코드를 숨기는 블로그 (야메)",
+    "text": "실습30: 코드를 숨기는 블로그 (야메)\n- 주피터다운로드 후 블로그를 만드는 것은 포스트를 엄청 빠르게 만드는 사기적 능력임\n\nhttps://scikit-learn.org/stable/auto_examples/index.html\nhttps://matplotlib.org/stable/gallery/index.html\n\n- 내가 베낄때는 좋지만 누군가가 내 블로그를 베낀다 생각하면 기분나쁠 수 있음\n- 실습29를 응용하여 코드가 없는 블로그를 만들어보자"
+  },
+  {
+    "objectID": "posts/day3.html#실습31-코드를-숨기는-블로그-합법",
+    "href": "posts/day3.html#실습31-코드를-숨기는-블로그-합법",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습31: 코드를 숨기는 블로그 (합법)",
+    "text": "실습31: 코드를 숨기는 블로그 (합법)\n- 의문점: 그런데 작업내용을 블로그에 올릴때 꼭\ngit add . \ngit commit -m . \ngit push\nquarto publish --no-browser --no-prompt\n순서로 업로드 해야하는가? 그냥 단순히\nquarto publish --no-browser --no-prompt\n만 하면 안되는가? (경험상 되던데요?)\n- 코드를 숨길 수 있는 블로그를 만들고 싶다면? 어떻게 하면 좋을지 생각해보자."
+  },
+  {
+    "objectID": "posts/day3.html#실습32-pull-push-잘-쓰면-편해",
+    "href": "posts/day3.html#실습32-pull-push-잘-쓰면-편해",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습32: pull + push (잘 쓰면 편해)",
+    "text": "실습32: pull + push (잘 쓰면 편해)\n- 186 컴퓨터 (혹은 본인이 주로 쓰는 서버 컴퓨터) 에서 pull\n- 186 컴퓨터에서 수정 \\(\\to\\) push\n- 실습실 컴퓨터에서 다시 pull\n- 실습실 컴퓨터에서 수정 \\(\\to\\) push\n- 소감:"
+  },
+  {
+    "objectID": "posts/day3.html#실습33-pull-push-난-불편해",
+    "href": "posts/day3.html#실습33-pull-push-난-불편해",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습33: pull + push (난 불편해)",
+    "text": "실습33: pull + push (난 불편해)\n- 186 컴퓨터 (혹은 본인이 주로 쓰는 서버 컴퓨터) 에서 pull\n- 186 컴퓨터에서 수정 \\(\\to\\) push 안함\n- 실습실 컴퓨터에서 수정 \\(\\to\\) push\n- 186컴퓨터는 뭐야? \\(\\to\\) push 시도.. \\(\\to\\) 실패\n- 해결책:"
+  },
+  {
+    "objectID": "posts/day3.html#실습34-gh-pages에서-만들기-싫다면..",
+    "href": "posts/day3.html#실습34-gh-pages에서-만들기-싫다면..",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습34: gh-pages에서 만들기 싫다면..?",
+    "text": "실습34: gh-pages에서 만들기 싫다면..?\n- 생각해보니까 딱히 내 코드가 비밀은 아님\n- 브랜치를 쓰는게 이론상 깔끔하긴 한데 막상 쓰려니까 불편함. (그 파일이 순간적으로 없어지는 거잖아요?.. 엄청 찝찝해요)\n- quarto publish는 아래동작의 결합이다.\nquarto render \n# html파일들이 어딘가 만들어져있음. \ngit switch gh-pages\n# 만들어진 html파일들이 복사됨. \ngit add .\ngit commit -m . \ngit push \ngit switch main \n- 아래와 같이 수정하고 싶다면?\nquarto render \n# html파일들을 docs라는 폴더에 저장\ngit add .\ngit commit -m . \ngit push \n그리고 깃헙설정을 변경한다면?\n- 하는방법\nstep1\ngit push origin --delete gh-pages # 로칼에서 브랜치삭제 + 원격으로 업데이트\ngit add .\ngit commit -m .\ngit push \nstep2\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs # &lt;- 이거 추가하세요\n# 이 아래는 수정필요없음 \n\nstep3\n이후 https://github.com/{user-name}/{repo-name}/settings/pages 로 이동하여 셋팅을 변경하면 된다."
+  },
+  {
+    "objectID": "posts/day3.html#실습35-파이썬-버전확인하기",
+    "href": "posts/day3.html#실습35-파이썬-버전확인하기",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습35: 파이썬 버전확인하기",
+    "text": "실습35: 파이썬 버전확인하기\n- 기본명령\npython --version \n- 이걸 이용해서 코랩의 파이썬 버전을 확인해보자."
+  },
+  {
+    "objectID": "posts/day3.html#실습36-가상환경-py310생성-pip으로-판다스-설치하고-버전확인",
+    "href": "posts/day3.html#실습36-가상환경-py310생성-pip으로-판다스-설치하고-버전확인",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습36: 가상환경 py310생성 + pip으로 판다스 설치하고 버전확인",
+    "text": "실습36: 가상환경 py310생성 + pip으로 판다스 설치하고 버전확인\n- 우리의 무기1: pip list\npip list \nPackage    Version\n---------- -------\npip        23.3.1\nsetuptools 68.2.2\nwheel      0.41.2\n- 우리의 무기2: conda list\nconda list \n# packages in environment at /root/anaconda3/envs/py310:\n#\n# Name                    Version                   Build  Channel\n_libgcc_mutex             0.1                        main  \n_openmp_mutex             5.1                       1_gnu  \nbzip2                     1.0.8                h7b6447c_0  \nca-certificates           2023.12.12           h06a4308_0  \nld_impl_linux-64          2.38                 h1181459_1  \nlibffi                    3.4.4                h6a678d5_0  \nlibgcc-ng                 11.2.0               h1234567_1  \nlibgomp                   11.2.0               h1234567_1  \nlibstdcxx-ng              11.2.0               h1234567_1  \nlibuuid                   1.41.5               h5eee18b_0  \nncurses                   6.4                  h6a678d5_0  \nopenssl                   3.0.12               h7f8727e_0  \npip                       23.3.1          py310h06a4308_0  \npython                    3.10.13              h955ad1f_0  \nreadline                  8.2                  h5eee18b_0  \nsetuptools                68.2.2          py310h06a4308_0  \nsqlite                    3.41.2               h5eee18b_0  \ntk                        8.6.12               h1ccaba5_0  \ntzdata                    2023c                h04d1e81_0  \nwheel                     0.41.2          py310h06a4308_0  \nxz                        5.4.5                h5eee18b_0  \nzlib                      1.2.13               h5eee18b_0  \n- 판다스의 설치\npip install pandas # 터미널에서 하는게 적성입니다. 나머지 야메에요\n- pip list로 확인\nPackage         Version\n--------------- ------------\nnumpy           1.26.3\npandas          2.1.4\npip             23.3.1\npython-dateutil 2.8.2\npytz            2023.3.post1\nsetuptools      68.2.2\nsix             1.16.0\ntzdata          2023.4\nwheel           0.41.2\n- conda list로 확인\n# packages in environment at /root/anaconda3/envs/py310:\n#\n# Name                    Version                   Build  Channel\n_libgcc_mutex             0.1                        main  \n_openmp_mutex             5.1                       1_gnu  \nbzip2                     1.0.8                h7b6447c_0  \nca-certificates           2023.12.12           h06a4308_0  \nld_impl_linux-64          2.38                 h1181459_1  \nlibffi                    3.4.4                h6a678d5_0  \nlibgcc-ng                 11.2.0               h1234567_1  \nlibgomp                   11.2.0               h1234567_1  \nlibstdcxx-ng              11.2.0               h1234567_1  \nlibuuid                   1.41.5               h5eee18b_0  \nncurses                   6.4                  h6a678d5_0  \nnumpy                     1.26.3                   pypi_0    pypi\nopenssl                   3.0.12               h7f8727e_0  \npandas                    2.1.4                    pypi_0    pypi\npip                       23.3.1          py310h06a4308_0  \npython                    3.10.13              h955ad1f_0  \npython-dateutil           2.8.2                    pypi_0    pypi\npytz                      2023.3.post1             pypi_0    pypi\nreadline                  8.2                  h5eee18b_0  \nsetuptools                68.2.2          py310h06a4308_0  \nsix                       1.16.0                   pypi_0    pypi\nsqlite                    3.41.2               h5eee18b_0  \ntk                        8.6.12               h1ccaba5_0  \ntzdata                    2023.4                   pypi_0    pypi\nwheel                     0.41.2          py310h06a4308_0  \nxz                        5.4.5                h5eee18b_0  \nzlib                      1.2.13               h5eee18b_0  \n- 방법3: 파이썬에서\nimport pandas as pd\npd.__version__"
+  },
+  {
+    "objectID": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
+    "href": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습37: 저의 가장 최신 흑역사 재현",
+    "text": "실습37: 저의 가장 최신 흑역사 재현\n- 기억하고 싶지 않았음: https://guebin.github.io/DV2023/posts/13wk-2.html\n- py310 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- colab 환경의 python과 pandas 버전을 조사하고 유사환경을 만든다.\n# 이렇게 하면됩니당\nconda create -n co python=3.10.12\nconda activate co \npip install pandas==1.5.3\n- 아래의 코드를 실행해보자.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n다시 아나콘다 깔고 1-13을 반복함.\n\n- 부작용: 아나콘다 트라우마 발생해서 “리눅스에서 쓰는 모든 명령” 을 (base) 상태에서 실행해야하는지 (py310) 상태에서 실행해야 하는지 알고 싶어하고, 그게 명확하지 않을 경우 두려워함.\n- 부작용을 극복하는 방법: 서버사용하세요. 막 쓰세요. 컴퓨터 망가뜨리면 찾아오세요. 모든 자료는 언제든 클론가능하게 깃헙에 저장하세요."
+  },
+  {
+    "objectID": "posts/day3.html#실습38-여러개의-가상환경-생성",
+    "href": "posts/day3.html#실습38-여러개의-가상환경-생성",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습38: 여러개의 가상환경 생성",
+    "text": "실습38: 여러개의 가상환경 생성\n- 가능하면 프로젝트별로 환경을 분리하는게 좋다.\n- 하나의 환경에 모든 패키지를 때려밖아 설치하는건 패키지 충돌나라고 기도하는 꼴이다."
+  },
+  {
+    "objectID": "posts/day3.html#실습39-주피터랩-설정변경",
+    "href": "posts/day3.html#실습39-주피터랩-설정변경",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습39: 주피터랩 설정변경",
+    "text": "실습39: 주피터랩 설정변경\n- root유저의 홈에서 ls, ls -a를 쳐보자.\n- 들어가서 jupyter_notebook_config.py를 열어보자.\n없다면 아래를 이용하여 만들자.\njupyter notebook --generate-config\n- 아래의 내용을 변경\nc.NotebookApp.ip = '0.0.0.0'\nc.NotebookApp.port = 8888 # 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 \nc.NotebookApp.allow_root = True \nc.NotebookApp.allow_remote_access = True # 당장필요한건 아닌데요.. 해놓으세여 \n- 이제 켜보세요..\njupyter lab"
+  },
+  {
+    "objectID": "posts/day3.html#실습40-주피터랩-평생-켜놓기",
+    "href": "posts/day3.html#실습40-주피터랩-평생-켜놓기",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "실습40: 주피터랩 평생 켜놓기",
+    "text": "실습40: 주피터랩 평생 켜놓기\n- 아래와 같이 하면 됩니다.\nnohup jupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --allow-root &gt; /dev/null 2&gt;&1 &"
+  },
+  {
+    "objectID": "posts/day3.html#footnotes",
+    "href": "posts/day3.html#footnotes",
+    "title": "Day3: 실습26 - 실습40",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
   },
   {
     "objectID": "posts/day4.html#실습41-포트정리-lsof",
@@ -182,326 +518,18 @@
     "text": "실습63: 대시보드, 프리젠테이션 베끼기\n- ref: https://guebin.github.io/DV2023/posts/14wk-1.html\n- 대시보드\n\nhttps://guebin.github.io/DASH\nhttps://quarto.org/docs/dashboards/\n\n- 프리젠테이션\n\nhttps://quarto.org/docs/presentations/revealjs/demo/#/interactive-slides-1\nhttps://quarto.org/docs/presentations/revealjs/"
   },
   {
-    "objectID": "posts/day3.html",
-    "href": "posts/day3.html",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "",
-    "text": "- 186에서 깃+깃헙연결할때 어려운점.\n\n토큰을 쳐야한다는게 어려움.\n윈도우에서는 직접로그인으로 인증했음. 코드스페이스에서는 별도의 인증과정이 필요없었음.\n일반서버에서는 토큰으로 해결해야함. (다른 방법도 있는데 그냥 이게 젤 편함)\n\n- 비밀번호 치는게 귀찮으면?\ngit config credential.helper store # 이걸실행하고 이후에 한번만 푸시하면 된다. \ngit add .\ngit commit -m . \ngit push"
-  },
-  {
-    "objectID": "posts/day3.html#실습26-186-컴퓨터에서-깃깃헙연결하기",
-    "href": "posts/day3.html#실습26-186-컴퓨터에서-깃깃헙연결하기",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "",
-    "text": "- 186에서 깃+깃헙연결할때 어려운점.\n\n토큰을 쳐야한다는게 어려움.\n윈도우에서는 직접로그인으로 인증했음. 코드스페이스에서는 별도의 인증과정이 필요없었음.\n일반서버에서는 토큰으로 해결해야함. (다른 방법도 있는데 그냥 이게 젤 편함)\n\n- 비밀번호 치는게 귀찮으면?\ngit config credential.helper store # 이걸실행하고 이후에 한번만 푸시하면 된다. \ngit add .\ngit commit -m . \ngit push"
-  },
-  {
-    "objectID": "posts/day3.html#실습27-작업하던-블로그를-강의실-윈도우로-clone",
-    "href": "posts/day3.html#실습27-작업하던-블로그를-강의실-윈도우로-clone",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습27: 작업하던 블로그를 강의실 윈도우로 clone",
-    "text": "실습27: 작업하던 블로그를 강의실 윈도우로 clone\n- 아래를 실행하면 됩니당\ngit clone {repo-name} # 처음부터 새로만듦"
-  },
-  {
-    "objectID": "posts/day3.html#실습28-블로그-생성원리-이해하기",
-    "href": "posts/day3.html#실습28-블로그-생성원리-이해하기",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습28: 블로그 생성원리 이해하기",
-    "text": "실습28: 블로그 생성원리 이해하기\n- 아래를 실행하고 git switch를 사용할시 무슨일이 생기는지 파악\n# git add . \n# git commit -m . # 이거 2개가 깃에서의 save 라고 생각하자. \ngit switch gh-pages\ngit switch main \n- 위의 과정을 반복해보면서 폴더를 관찰. 느낀점 서술\n- git switch gh-pages한 상태에서 폴더에 존재하는 html파일들을 열어볼 것."
-  },
-  {
-    "objectID": "posts/day3.html#실습29-블로그-깨기",
-    "href": "posts/day3.html#실습29-블로그-깨기",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습29: 블로그 깨기",
-    "text": "실습29: 블로그 깨기\n- git swtich gh-pages한 상태에서 폴더에 존재하는 모든 파일을 삭제 \\(\\to\\) 본인 홈페이지에 가보자. 홈페이지는 살아 있는가?\n- 아래를 실행하고 본인홈페이지에 방문해보자. 홈페이지는 살아있는가?\ngit add . \ngit commit -m .\ngit push\n- 왜 죽었다고 생각하는가?\n- 깃헙 특수기능 중 하나인 웹페이지 배포능력에 대하여 스스로 이해한 바를 서술해보자."
-  },
-  {
-    "objectID": "posts/day3.html#실습30-코드를-숨기는-블로그-야메",
-    "href": "posts/day3.html#실습30-코드를-숨기는-블로그-야메",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습30: 코드를 숨기는 블로그 (야메)",
-    "text": "실습30: 코드를 숨기는 블로그 (야메)\n- 주피터다운로드 후 블로그를 만드는 것은 포스트를 엄청 빠르게 만드는 사기적 능력임\n\nhttps://scikit-learn.org/stable/auto_examples/index.html\nhttps://matplotlib.org/stable/gallery/index.html\n\n- 내가 베낄때는 좋지만 누군가가 내 블로그를 베낀다 생각하면 기분나쁠 수 있음\n- 실습29를 응용하여 코드가 없는 블로그를 만들어보자"
-  },
-  {
-    "objectID": "posts/day3.html#실습31-코드를-숨기는-블로그-합법",
-    "href": "posts/day3.html#실습31-코드를-숨기는-블로그-합법",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습31: 코드를 숨기는 블로그 (합법)",
-    "text": "실습31: 코드를 숨기는 블로그 (합법)\n- 의문점: 그런데 작업내용을 블로그에 올릴때 꼭\ngit add . \ngit commit -m . \ngit push\nquarto publish --no-browser --no-prompt\n순서로 업로드 해야하는가? 그냥 단순히\nquarto publish --no-browser --no-prompt\n만 하면 안되는가? (경험상 되던데요?)\n- 코드를 숨길 수 있는 블로그를 만들고 싶다면? 어떻게 하면 좋을지 생각해보자."
-  },
-  {
-    "objectID": "posts/day3.html#실습32-pull-push-잘-쓰면-편해",
-    "href": "posts/day3.html#실습32-pull-push-잘-쓰면-편해",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습32: pull + push (잘 쓰면 편해)",
-    "text": "실습32: pull + push (잘 쓰면 편해)\n- 186 컴퓨터 (혹은 본인이 주로 쓰는 서버 컴퓨터) 에서 pull\n- 186 컴퓨터에서 수정 \\(\\to\\) push\n- 실습실 컴퓨터에서 다시 pull\n- 실습실 컴퓨터에서 수정 \\(\\to\\) push\n- 소감:"
-  },
-  {
-    "objectID": "posts/day3.html#실습33-pull-push-난-불편해",
-    "href": "posts/day3.html#실습33-pull-push-난-불편해",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습33: pull + push (난 불편해)",
-    "text": "실습33: pull + push (난 불편해)\n- 186 컴퓨터 (혹은 본인이 주로 쓰는 서버 컴퓨터) 에서 pull\n- 186 컴퓨터에서 수정 \\(\\to\\) push 안함\n- 실습실 컴퓨터에서 수정 \\(\\to\\) push\n- 186컴퓨터는 뭐야? \\(\\to\\) push 시도.. \\(\\to\\) 실패\n- 해결책:"
-  },
-  {
-    "objectID": "posts/day3.html#실습34-gh-pages에서-만들기-싫다면..",
-    "href": "posts/day3.html#실습34-gh-pages에서-만들기-싫다면..",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습34: gh-pages에서 만들기 싫다면..?",
-    "text": "실습34: gh-pages에서 만들기 싫다면..?\n- 생각해보니까 딱히 내 코드가 비밀은 아님\n- 브랜치를 쓰는게 이론상 깔끔하긴 한데 막상 쓰려니까 불편함. (그 파일이 순간적으로 없어지는 거잖아요?.. 엄청 찝찝해요)\n- quarto publish는 아래동작의 결합이다.\nquarto render \n# html파일들이 어딘가 만들어져있음. \ngit switch gh-pages\n# 만들어진 html파일들이 복사됨. \ngit add .\ngit commit -m . \ngit push \ngit switch main \n- 아래와 같이 수정하고 싶다면?\nquarto render \n# html파일들을 docs라는 폴더에 저장\ngit add .\ngit commit -m . \ngit push \n그리고 깃헙설정을 변경한다면?\n- 하는방법\nstep1\ngit push origin --delete gh-pages # 로칼에서 브랜치삭제 + 원격으로 업데이트\ngit add .\ngit commit -m .\ngit push \nstep2\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs # &lt;- 이거 추가하세요\n# 이 아래는 수정필요없음 \n\nstep3\n이후 https://github.com/{user-name}/{repo-name}/settings/pages 로 이동하여 셋팅을 변경하면 된다."
-  },
-  {
-    "objectID": "posts/day3.html#실습35-파이썬-버전확인하기",
-    "href": "posts/day3.html#실습35-파이썬-버전확인하기",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습35: 파이썬 버전확인하기",
-    "text": "실습35: 파이썬 버전확인하기\n- 기본명령\npython --version \n- 이걸 이용해서 코랩의 파이썬 버전을 확인해보자."
-  },
-  {
-    "objectID": "posts/day3.html#실습36-가상환경-py310생성-pip으로-판다스-설치하고-버전확인",
-    "href": "posts/day3.html#실습36-가상환경-py310생성-pip으로-판다스-설치하고-버전확인",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습36: 가상환경 py310생성 + pip으로 판다스 설치하고 버전확인",
-    "text": "실습36: 가상환경 py310생성 + pip으로 판다스 설치하고 버전확인\n- 우리의 무기1: pip list\npip list \nPackage    Version\n---------- -------\npip        23.3.1\nsetuptools 68.2.2\nwheel      0.41.2\n- 우리의 무기2: conda list\nconda list \n# packages in environment at /root/anaconda3/envs/py310:\n#\n# Name                    Version                   Build  Channel\n_libgcc_mutex             0.1                        main  \n_openmp_mutex             5.1                       1_gnu  \nbzip2                     1.0.8                h7b6447c_0  \nca-certificates           2023.12.12           h06a4308_0  \nld_impl_linux-64          2.38                 h1181459_1  \nlibffi                    3.4.4                h6a678d5_0  \nlibgcc-ng                 11.2.0               h1234567_1  \nlibgomp                   11.2.0               h1234567_1  \nlibstdcxx-ng              11.2.0               h1234567_1  \nlibuuid                   1.41.5               h5eee18b_0  \nncurses                   6.4                  h6a678d5_0  \nopenssl                   3.0.12               h7f8727e_0  \npip                       23.3.1          py310h06a4308_0  \npython                    3.10.13              h955ad1f_0  \nreadline                  8.2                  h5eee18b_0  \nsetuptools                68.2.2          py310h06a4308_0  \nsqlite                    3.41.2               h5eee18b_0  \ntk                        8.6.12               h1ccaba5_0  \ntzdata                    2023c                h04d1e81_0  \nwheel                     0.41.2          py310h06a4308_0  \nxz                        5.4.5                h5eee18b_0  \nzlib                      1.2.13               h5eee18b_0  \n- 판다스의 설치\npip install pandas # 터미널에서 하는게 적성입니다. 나머지 야메에요\n- pip list로 확인\nPackage         Version\n--------------- ------------\nnumpy           1.26.3\npandas          2.1.4\npip             23.3.1\npython-dateutil 2.8.2\npytz            2023.3.post1\nsetuptools      68.2.2\nsix             1.16.0\ntzdata          2023.4\nwheel           0.41.2\n- conda list로 확인\n# packages in environment at /root/anaconda3/envs/py310:\n#\n# Name                    Version                   Build  Channel\n_libgcc_mutex             0.1                        main  \n_openmp_mutex             5.1                       1_gnu  \nbzip2                     1.0.8                h7b6447c_0  \nca-certificates           2023.12.12           h06a4308_0  \nld_impl_linux-64          2.38                 h1181459_1  \nlibffi                    3.4.4                h6a678d5_0  \nlibgcc-ng                 11.2.0               h1234567_1  \nlibgomp                   11.2.0               h1234567_1  \nlibstdcxx-ng              11.2.0               h1234567_1  \nlibuuid                   1.41.5               h5eee18b_0  \nncurses                   6.4                  h6a678d5_0  \nnumpy                     1.26.3                   pypi_0    pypi\nopenssl                   3.0.12               h7f8727e_0  \npandas                    2.1.4                    pypi_0    pypi\npip                       23.3.1          py310h06a4308_0  \npython                    3.10.13              h955ad1f_0  \npython-dateutil           2.8.2                    pypi_0    pypi\npytz                      2023.3.post1             pypi_0    pypi\nreadline                  8.2                  h5eee18b_0  \nsetuptools                68.2.2          py310h06a4308_0  \nsix                       1.16.0                   pypi_0    pypi\nsqlite                    3.41.2               h5eee18b_0  \ntk                        8.6.12               h1ccaba5_0  \ntzdata                    2023.4                   pypi_0    pypi\nwheel                     0.41.2          py310h06a4308_0  \nxz                        5.4.5                h5eee18b_0  \nzlib                      1.2.13               h5eee18b_0  \n- 방법3: 파이썬에서\nimport pandas as pd\npd.__version__"
-  },
-  {
-    "objectID": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
-    "href": "posts/day3.html#실습37-저의-가장-최신-흑역사-재현",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습37: 저의 가장 최신 흑역사 재현",
-    "text": "실습37: 저의 가장 최신 흑역사 재현\n- 기억하고 싶지 않았음: https://guebin.github.io/DV2023/posts/13wk-2.html\n- py310 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- colab 환경의 python과 pandas 버전을 조사하고 유사환경을 만든다.\n# 이렇게 하면됩니당\nconda create -n co python=3.10.12\nconda activate co \npip install pandas==1.5.3\n- 아래의 코드를 실행해보자.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n다시 아나콘다 깔고 1-13을 반복함.\n\n- 부작용: 아나콘다 트라우마 발생해서 “리눅스에서 쓰는 모든 명령” 을 (base) 상태에서 실행해야하는지 (py310) 상태에서 실행해야 하는지 알고 싶어하고, 그게 명확하지 않을 경우 두려워함.\n- 부작용을 극복하는 방법: 서버사용하세요. 막 쓰세요. 컴퓨터 망가뜨리면 찾아오세요. 모든 자료는 언제든 클론가능하게 깃헙에 저장하세요."
-  },
-  {
-    "objectID": "posts/day3.html#실습38-여러개의-가상환경-생성",
-    "href": "posts/day3.html#실습38-여러개의-가상환경-생성",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습38: 여러개의 가상환경 생성",
-    "text": "실습38: 여러개의 가상환경 생성\n- 가능하면 프로젝트별로 환경을 분리하는게 좋다.\n- 하나의 환경에 모든 패키지를 때려밖아 설치하는건 패키지 충돌나라고 기도하는 꼴이다."
-  },
-  {
-    "objectID": "posts/day3.html#실습39-주피터랩-설정변경",
-    "href": "posts/day3.html#실습39-주피터랩-설정변경",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습39: 주피터랩 설정변경",
-    "text": "실습39: 주피터랩 설정변경\n- root유저의 홈에서 ls, ls -a를 쳐보자.\n- 들어가서 jupyter_notebook_config.py를 열어보자.\n없다면 아래를 이용하여 만들자.\njupyter notebook --generate-config\n- 아래의 내용을 변경\nc.NotebookApp.ip = '0.0.0.0'\nc.NotebookApp.port = 8888 # 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 \nc.NotebookApp.allow_root = True \nc.NotebookApp.allow_remote_access = True # 당장필요한건 아닌데요.. 해놓으세여 \n- 이제 켜보세요..\njupyter lab"
-  },
-  {
-    "objectID": "posts/day3.html#실습40-주피터랩-평생-켜놓기",
-    "href": "posts/day3.html#실습40-주피터랩-평생-켜놓기",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "실습40: 주피터랩 평생 켜놓기",
-    "text": "실습40: 주피터랩 평생 켜놓기\n- 아래와 같이 하면 됩니다.\nnohup jupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --allow-root &gt; /dev/null 2&gt;&1 &"
-  },
-  {
-    "objectID": "posts/day3.html#footnotes",
-    "href": "posts/day3.html#footnotes",
-    "title": "Day3: 실습26 - 실습40",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
-  },
-  {
-    "objectID": "posts/day2.html",
-    "href": "posts/day2.html",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "",
-    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../day1hw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../day1hw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../day1hw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../day1hw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../day1hw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n계정을 생성한 방법: 그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../day1hw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
-  },
-  {
-    "objectID": "posts/day2.html#실습13-숙제검사",
-    "href": "posts/day2.html#실습13-숙제검사",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "",
-    "text": "- 이거 클론하세요\n- 방법1\n\n!ls ../day1hw \n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\n!cat ../day1hw/baek_gm.txt\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\n\n\n\n!cat ../day1hw/choyun.txt\n\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\n\n\n- 방법2\n\n!ls ../day1hw &gt; fnames.txt \n\n\n!chmod +x show.sh\n\n\n!./show.sh\n\ngithub : https://github.com/baekgyeongmin\nblog : https://baekgyeongmin.github.io/blogggg/\n201821967 백경민\ngithub : https://github.com/jeongchoyun\n202350543 정초윤 https://jeongchoyun.github.io/TBX2024/\ncoco(김보람),202250926, https://github.com/boram-coco, https://boram-coco.io/240102\ndaehyeon\n201319536\ngithub:https://github.com/kobron\n최규빈,2021-43052,https://github.com/guebin,https://guebin.github.io/DSTBX2023/\n한도희\n지구환경과학과\n201916288\nhttps://github.com/handoehee\n전현지\n201918834\ngithub.com/hyeonji07\nhttps://hyeonji07.github.io/blog_last/\nijeongmin 202115820\ngithub =&gt; https://github.com/amondmomo\n이정민\nhttps://amondmomo.github.io/blog_test/ \n김진실\n201920273\nhttps://github.com/jinisili\nhttps://jinisili.github.io/blog-please\n전준한,2020-16239,https://github.com/Pogjunan\n\nquarto blog 제작중입니다.\n\nleejeongjae 202021333 https://github.com/leejjae, https://leejjae.github.io/blog_test/\n강민구, 2023-50653, https://github.com/min9kan9, https://min9kan9.github.io/blog5/\n유성준,201810648,\nhttps://sjoon0305.github.io/blog_test2/\n양승훈 201916332 https://github.com/yangsh12\n\n권순원 201816897 https://github.com/sw1kwon\n201916240 김수환 https://github.com/swany00\n\n\n- 방법3: 아래의 파일을 생성하고 출력\n\n\nshow2.sh\n\nfnames=(\n    \"baek_gm.txt\" \"guebin.txt\" \"jinsil.txt\" \"seongjoon.txt\"\n    \"choyun.txt\" \"handoehee.txt\" \"junhan.txt\" \"seunghoon.txt\"\n    \"coco.txt\" \"hyeonji.txt\" \"leejjae.txt\" \"soonwon.txt\"\n    \"daehyeon.txt\" \"jeongmin.txt\" \"mingu.txt\" \"suwhan.txt\"\n)\nfor fname in \"${fnames[@]}\"; do\n    echo \"File: $fname\"\n    cat \"../day1hw/$fname\"\n    echo \"----------------\"\ndone\n\n\n#!bash show2.sh\n\n- ./show2.sh 와 bash show2.sh 의 차이?\n\n스크립트의 권한, 셸 지정\n잘 모르겠어요\n\n\n저 숙제를 바탕으로 183 컴퓨터에 계정을 생성했습니다.\n계정을 생성한 방법: 그냥 참고용.. 이렇게도 가능함 ㅎㅎ\n\n!ls ../day1hw/\n\nbaek_gm.txt   guebin.txt     jinsil.txt   seongjoon.txt\nchoyun.txt    handoehee.txt  junhan.txt   seunghoon.txt\ncoco.txt      hyeonji.txt    leejjae.txt  soonwon.txt\ndaehyeon.txt  jeongmin.txt   mingu.txt    suwhan.txt\n\n\n\nfile_names = [\n    \"baek_gm\", \"guebin\", \"jinsil\", \"seongjoon\",\n    \"choyun\", \"handoehee\", \"junhan\", \"seunghoon\",\n    \"coco\", \"hyeonji\", \"leejjae\", \"soonwon\",\n    \"daehyeon\", \"jeongmin\", \"mingu\", \"suwhan\"\n]\n\n\nfor username in file_names:\n    print(f'adduser {username} --gecos \"\" --disabled-password && echo \"{username}:jbnu\" | chpasswd && usermod -aG sudo {username}')\n\nadduser baek_gm --gecos \"\" --disabled-password && echo \"baek_gm:jbnu\" | chpasswd && usermod -aG sudo baek_gm\nadduser guebin --gecos \"\" --disabled-password && echo \"guebin:jbnu\" | chpasswd && usermod -aG sudo guebin\nadduser jinsil --gecos \"\" --disabled-password && echo \"jinsil:jbnu\" | chpasswd && usermod -aG sudo jinsil\nadduser seongjoon --gecos \"\" --disabled-password && echo \"seongjoon:jbnu\" | chpasswd && usermod -aG sudo seongjoon\nadduser choyun --gecos \"\" --disabled-password && echo \"choyun:jbnu\" | chpasswd && usermod -aG sudo choyun\nadduser handoehee --gecos \"\" --disabled-password && echo \"handoehee:jbnu\" | chpasswd && usermod -aG sudo handoehee\nadduser junhan --gecos \"\" --disabled-password && echo \"junhan:jbnu\" | chpasswd && usermod -aG sudo junhan\nadduser seunghoon --gecos \"\" --disabled-password && echo \"seunghoon:jbnu\" | chpasswd && usermod -aG sudo seunghoon\nadduser coco --gecos \"\" --disabled-password && echo \"coco:jbnu\" | chpasswd && usermod -aG sudo coco\nadduser hyeonji --gecos \"\" --disabled-password && echo \"hyeonji:jbnu\" | chpasswd && usermod -aG sudo hyeonji\nadduser leejjae --gecos \"\" --disabled-password && echo \"leejjae:jbnu\" | chpasswd && usermod -aG sudo leejjae\nadduser soonwon --gecos \"\" --disabled-password && echo \"soonwon:jbnu\" | chpasswd && usermod -aG sudo soonwon\nadduser daehyeon --gecos \"\" --disabled-password && echo \"daehyeon:jbnu\" | chpasswd && usermod -aG sudo daehyeon\nadduser jeongmin --gecos \"\" --disabled-password && echo \"jeongmin:jbnu\" | chpasswd && usermod -aG sudo jeongmin\nadduser mingu --gecos \"\" --disabled-password && echo \"mingu:jbnu\" | chpasswd && usermod -aG sudo mingu\nadduser suwhan --gecos \"\" --disabled-password && echo \"suwhan:jbnu\" | chpasswd && usermod -aG sudo suwhan"
-  },
-  {
-    "objectID": "posts/day2.html#실습14-183-컴퓨터-접속-passwd",
-    "href": "posts/day2.html#실습14-183-컴퓨터-접속-passwd",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습14: 183 컴퓨터 접속 + passwd",
-    "text": "실습14: 183 컴퓨터 접속 + passwd\n- 183번 컴퓨터에 접속하기\nssh ????@???.???.???.183 \n- 비밀번호 변경하기\npasswd"
-  },
-  {
-    "objectID": "posts/day2.html#실습15-183에서-git의-설치-및-연결",
-    "href": "posts/day2.html#실습15-183에서-git의-설치-및-연결",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습15: 183에서 git의 설치 및 연결",
-    "text": "실습15: 183에서 git의 설치 및 연결\nwhich git # git의 생성\nsudo apt-get install git # git 설치\nsudo apt-get remove git # git 삭제"
-  },
-  {
-    "objectID": "posts/day2.html#실습16-183에서-quarto의-설치",
-    "href": "posts/day2.html#실습16-183에서-quarto의-설치",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습16: 183에서 quarto의 설치",
-    "text": "실습16: 183에서 quarto의 설치\nwhich quarto \nwget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.533/quarto-1.4.533-linux-amd64.deb\nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nsudo dpkg -r quarto"
-  },
-  {
-    "objectID": "posts/day2.html#실습17-183에서-아나콘다-설치",
-    "href": "posts/day2.html#실습17-183에서-아나콘다-설치",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습17: 183에서 아나콘다 설치",
-    "text": "실습17: 183에서 아나콘다 설치\n- https://www.anaconda.com/download &lt;- 여기서 다운받을 수 있는 주소 get 하세여\nbash Anaconda3-2019.03-Linux-x86_64.sh\n- 질문: Anaconda3와 git/quarto의 차이는?"
-  },
-  {
-    "objectID": "posts/day2.html#실습18-183에서-주피터랩-설치",
-    "href": "posts/day2.html#실습18-183에서-주피터랩-설치",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습18: 183에서 주피터랩 설치",
-    "text": "실습18: 183에서 주피터랩 설치\n- 가상환경 셋팅\nconda create py310 python=3.10 # 가상환경생성 \nconda activate py310 # 가상환경 활성화 \nconda install -c conda-forge jupyterlab # 주피터랩설치\nconda install -c conda-forge notebook # 노트북설치 \n- 접속하는 방법1\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n이후에\nhttp://127.0.0.1:8052/lab?token=???? 와 같은 주소 형식을 http://210.117.173.183:8052/lab?token=???? 와 같이 바꾸고 들어오세요\n- 접속하는 방법2\njupyter notebook password\n를 이용하여 passwd를 설정한 뒤 다시 아래를 실행\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}"
-  },
-  {
-    "objectID": "posts/day2.html#실습19-1일차-숙제-쉽게-하는-방법",
-    "href": "posts/day2.html#실습19-1일차-숙제-쉽게-하는-방법",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습19: 1일차 숙제 쉽게 하는 방법",
-    "text": "실습19: 1일차 숙제 쉽게 하는 방법\n- 숙제위치: https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html\n- 깃헙에서 홈페이지 만들경우 대응하는 레포지토리를 찾으면 쉽게 복사가능.\n\n#!wget \"https://raw.githubusercontent.com/guebin/IP2022/master/_notebooks/2022-03-28-(4%EC%A3%BC%EC%B0%A8)%203%EC%9B%9428%EC%9D%BC.ipynb\""
-  },
-  {
-    "objectID": "posts/day2.html#실습20-블로그-꾸미기",
-    "href": "posts/day2.html#실습20-블로그-꾸미기",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습20: 블로그 꾸미기",
-    "text": "실습20: 블로그 꾸미기\n- 보람 블로그\n\nhttps://boram-coco.github.io/coco/"
-  },
-  {
-    "objectID": "posts/day2.html#실습21-주피터노트북파일에-이미지-넣기",
-    "href": "posts/day2.html#실습21-주피터노트북파일에-이미지-넣기",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습21: 주피터노트북파일에 이미지 넣기",
-    "text": "실습21: 주피터노트북파일에 이미지 넣기\n- 방법1\n\n!wget https://imgs.xkcd.com/comics/sandwich.png\n\n--2024-01-03 14:08:48--  https://imgs.xkcd.com/comics/sandwich.png\nResolving imgs.xkcd.com (imgs.xkcd.com)... 146.75.48.67, 2a04:4e42:7c::67\nConnecting to imgs.xkcd.com (imgs.xkcd.com)|146.75.48.67|:443... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 11828 (12K) [image/png]\nSaving to: ‘sandwich.png’\n\nsandwich.png        100%[===================&gt;]  11.55K  --.-KB/s    in 0s      \n\n2024-01-03 14:08:48 (69.3 MB/s) - ‘sandwich.png’ saved [11828/11828]\n\n\n\n\n- 방법2\n\n- 방법3: 스크린샷"
-  },
-  {
-    "objectID": "posts/day2.html#실습22-182-ssh차단-우회하기",
-    "href": "posts/day2.html#실습22-182-ssh차단-우회하기",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습22: 182 ssh차단 우회하기",
-    "text": "실습22: 182 ssh차단 우회하기\n- 내용없음."
-  },
-  {
-    "objectID": "posts/day2.html#실습23-186-컴퓨터-접속",
-    "href": "posts/day2.html#실습23-186-컴퓨터-접속",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습23: 186 컴퓨터 접속",
-    "text": "실습23: 186 컴퓨터 접속\n- ssh를 이용하여 접속\nssh {이후의 코드는 보안상 비밀임}"
-  },
-  {
-    "objectID": "posts/day2.html#실습24-186-ssh차단-우회하기",
-    "href": "posts/day2.html#실습24-186-ssh차단-우회하기",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습24: 186 ssh차단 우회하기",
-    "text": "실습24: 186 ssh차단 우회하기\n- 내용없음."
-  },
-  {
-    "objectID": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기-hw",
-    "href": "posts/day2.html#실습25-186-컴퓨터-개발환경-셋팅하기-hw",
-    "title": "Day2: 실습13 - 실습25",
-    "section": "실습25: 186 컴퓨터 개발환경 셋팅하기 (HW)",
-    "text": "실습25: 186 컴퓨터 개발환경 셋팅하기 (HW)\n- ref: https://guebin.github.io/MP2023/offline/231128.html\n여기에서 2-E, 2-G 빼고 하기"
-  },
-  {
-    "objectID": "posts/day1.html",
-    "href": "posts/day1.html",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "",
-    "text": "dir\nmkdir asdf\ncd\ncd.."
-  },
-  {
-    "objectID": "posts/day1.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
-    "href": "posts/day1.html#실습1-터미널의-이해-강의용-윈도우-컴퓨터",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "",
-    "text": "dir\nmkdir asdf\ncd\ncd.."
-  },
-  {
-    "objectID": "posts/day1.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
-    "href": "posts/day1.html#실습2-터미널에서-실행하는-파이썬-강의용-윈도우-컴퓨터",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)",
-    "text": "실습2: 터미널에서 실행하는 파이썬 (강의용 윈도우 컴퓨터)\n- 질문1: 파이썬코드가 실행되는 속도는 어떤 컴퓨터의 spec에 결정될까?"
-  },
-  {
-    "objectID": "posts/day1.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
-    "href": "posts/day1.html#실습3-주피터에서-터미널-명령-활용하기-강의용-윈도우-컴퓨터",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)",
-    "text": "실습3: 주피터에서 터미널 명령 활용하기 (강의용 윈도우 컴퓨터)\n!dir\n!mkdir asdf"
-  },
-  {
-    "objectID": "posts/day1.html#실습4-원격제어-맥북",
-    "href": "posts/day1.html#실습4-원격제어-맥북",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습4: 원격제어 (맥북)",
-    "text": "실습4: 원격제어 (맥북)\n- 실습시간에 눈으로 보여줌!\n- 질문2: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?"
-  },
-  {
-    "objectID": "posts/day1.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
-    "href": "posts/day1.html#실습5-깃의-설치-강의용-윈도우-컴퓨터",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)",
-    "text": "실습5: 깃의 설치 (강의용 윈도우 컴퓨터)\n- 깃 다운로드: https://git-scm.com/downloads\n- 토큰생성 및 복사: https://github.com/settings/tokens\n- 원격과 로칼의 연결"
-  },
-  {
-    "objectID": "posts/day1.html#실습6-코드스페이스-코드스페이스",
-    "href": "posts/day1.html#실습6-코드스페이스-코드스페이스",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습6: 코드스페이스 (코드스페이스)",
-    "text": "실습6: 코드스페이스 (코드스페이스)\n- 원격제어 + 깃을 동시에 이해해야함.\n- 터미널에서 “컨트롤(커맨드) C + 컨트롤(커맨드) V” 가능하도록 허용\n- “컨트롤(커맨드) + 쉬프트 + P” -&gt; jupyter 입력 -&gt; 새로운 노트북파일 만들기"
-  },
-  {
-    "objectID": "posts/day1.html#실습7-vi-벼락치기-코드스페이스",
-    "href": "posts/day1.html#실습7-vi-벼락치기-코드스페이스",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습7: VI 벼락치기 (코드스페이스)",
-    "text": "실습7: VI 벼락치기 (코드스페이스)\n- i, esc 차이점.\n- Vi를 이용하여 파일만들기, Vi를 이용하여 파일수정하기\n- 복사 & 붙여넣기\n- Vi에서 편집후 저장 후 종료, 그냥 종료, 강제종료\n- 찾기: /asdf \\(\\to\\) 엔터 \\(\\to\\) n / shift+n\n- 단어끝으로 이동=e, 단어처음으로 이동=b"
-  },
-  {
-    "objectID": "posts/day1.html#실습8-서버접속-강의용-윈도우-컴퓨터",
-    "href": "posts/day1.html#실습8-서버접속-강의용-윈도우-컴퓨터",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습8: 서버접속 (강의용 윈도우 컴퓨터)",
-    "text": "실습8: 서버접속 (강의용 윈도우 컴퓨터)\n- 접속하기\nssh toolbox@210.117.173.182\n- 비밀번호는 jbnu"
-  },
-  {
-    "objectID": "posts/day1.html#실습9-서버접속2-개인-노트북",
-    "href": "posts/day1.html#실습9-서버접속2-개인-노트북",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습9: 서버접속2 (개인 노트북)",
-    "text": "실습9: 서버접속2 (개인 노트북)\n- 휴대폰 테더링으로 인터넷연결하고 본인 노트북으로 해보세요.\n- 실패할거에요"
-  },
-  {
-    "objectID": "posts/day1.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
-    "href": "posts/day1.html#실습10-윈도우에서-블로그-생성-강의용-윈도우-컴퓨터",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)",
-    "text": "실습10: 윈도우에서 블로그 생성 (강의용 윈도우 컴퓨터)\n- quarto 설치: https://quarto.org/docs/download/\n- 아래를 실행\nquarto create-project --type website:blog \ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages"
-  },
-  {
-    "objectID": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
-    "href": "posts/day1.html#실습11-코드스페이스에서-블로그-생성-코드스페이스",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)",
-    "text": "실습11: 코드스페이스에서 블로그 생성 (코드스페이스)\n- 클론\ngit clone ??\n- 몇 가지 변경\n\nindex.qmd 에서 자기소개 추가하기\n_quarto.yml에서 블로그 타이틀 설정하기\n\n- 변경사항 업데이트\ngit add .\ngit commit -m .\ngit push\nquarto publish --no-browser --no-prompt"
-  },
-  {
-    "objectID": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
-    "href": "posts/day1.html#실습12-블로그-포스트-업로드-코드스페이스",
-    "title": "Day1: 실습1 - 실습12",
-    "section": "실습12: 블로그 포스트 업로드 (코드스페이스)",
-    "text": "실습12: 블로그 포스트 업로드 (코드스페이스)\n- 숙제: 아래내용 공부 - https://guebin.github.io/IP2022/2022/03/28/(4주차)-3월28일.html - https://guebin.github.io/IR2021/2021/10/14/(6주차)-10월14일-특강.html\n- 공부한것을 바탕으로 포싀트작성. 포스트 작성시 최상단에 raw 셀로 아래의 내용입력\n---\ntitle: \"my title\"\nauthor: \"최규빈\"\ndate: \"01/02/2024\"\n---"
-  },
-  {
     "objectID": "posts/day5.html",
     "href": "posts/day5.html",
     "title": "Day5: 실습64 - 실습67",
     "section": "",
-    "text": "ref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\ndocker pull rocker/rstudio\n- 다운받은 이미지 확인하기\ndocker images\n- 이미지에서 컨테이너생성 + 확인\ndocker run -ti -e PASSWORD=\"jbnu\" -p 8787:8787 rocker/rstudio # 이미지에서 컨테이너 생성\ndocker ps # 확인 \n- 실행중인 컨테이너 중지 및 재시작 (stop,start) 해보고 의미 파악하기\ndocker stop {컨테이너ID}\ndocker start {컨테이너ID}\n- 아래명령의 차이는?\ndocker ps \ndocker ps -a \n- 아래명령의 차이는?\ndocker rm {컨테이너ID}\ndocker stop {컨테이너ID}\n- 이미지를 지우는 방법\ndocker image rm {이미지ID}"
+    "text": "docker를 사용하는 부분은 window로 실습한 부분이라 촬영이 불가능했습니다."
   },
   {
     "objectID": "posts/day5.html#실습64-docker로-rstudio-실행하기실습실-컴퓨터",
     "href": "posts/day5.html#실습64-docker로-rstudio-실행하기실습실-컴퓨터",
     "title": "Day5: 실습64 - 실습67",
-    "section": "",
-    "text": "ref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\ndocker pull rocker/rstudio\n- 다운받은 이미지 확인하기\ndocker images\n- 이미지에서 컨테이너생성 + 확인\ndocker run -ti -e PASSWORD=\"jbnu\" -p 8787:8787 rocker/rstudio # 이미지에서 컨테이너 생성\ndocker ps # 확인 \n- 실행중인 컨테이너 중지 및 재시작 (stop,start) 해보고 의미 파악하기\ndocker stop {컨테이너ID}\ndocker start {컨테이너ID}\n- 아래명령의 차이는?\ndocker ps \ndocker ps -a \n- 아래명령의 차이는?\ndocker rm {컨테이너ID}\ndocker stop {컨테이너ID}\n- 이미지를 지우는 방법\ndocker image rm {이미지ID}"
+    "section": "실습64: docker로 Rstudio 실행하기(실습실 컴퓨터)",
+    "text": "실습64: docker로 Rstudio 실행하기(실습실 컴퓨터)\nref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\ndocker pull rocker/rstudio\n- 다운받은 이미지 확인하기\ndocker images\n- 이미지에서 컨테이너생성 + 확인\ndocker run -ti -e PASSWORD=\"jbnu\" -p 8787:8787 rocker/rstudio # 이미지에서 컨테이너 생성\ndocker ps # 확인 \n- 실행중인 컨테이너 중지 및 재시작 (stop,start) 해보고 의미 파악하기\ndocker stop {컨테이너ID}\ndocker start {컨테이너ID}\n- 아래명령의 차이는?\ndocker ps \ndocker ps -a \n- 아래명령의 차이는?\ndocker rm {컨테이너ID}\ndocker stop {컨테이너ID}\n- 이미지를 지우는 방법\ndocker image rm {이미지ID}"
   },
   {
     "objectID": "posts/day5.html#실습65-docker로-ubuntu-실행하기실습실-컴퓨터",
