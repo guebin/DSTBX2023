@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-01-10">
 
-<title>2024-01-DSTBX2024 - Day5: 실습64 - 실습??</title>
+<title>2024-01-DSTBX2024 - Day5: 실습64 - 실습67</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day5: 실습64 - 실습??</h1>
+<h1 class="title">Day5: 실습64 - 실습67</h1>
 </div>
 
 
@@ -194,62 +194,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://docs.docker.com/desktop/install/windows-install/" class="uri">https://docs.docker.com/desktop/install/windows-install/</a></li>
 </ul>
 <p><code>-</code> docker 이미지 다운로드</p>
-<p><strong>방법1</strong></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull rocker/rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>방법2</strong></p>
-<ul>
-<li>사실 잘 몰라요 ㅎㅎ</li>
-</ul>
 <p><code>-</code> 다운받은 이미지 확인하기</p>
-<p><strong>방법1</strong></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> images</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>방법2</strong></p>
-<ul>
-<li>GUI</li>
-</ul>
-<p><code>-</code> 이미지에서 컨테이너생성 (컨테이너는 인스턴스라고 생각하자..)</p>
-<p><strong>방법1</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-e</span> PASSWORD=<span class="st">'jbnu'</span> <span class="at">-p</span> 8787:8787 rocker/rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>방법2</strong></p>
-<ul>
-<li>GUI</li>
-</ul>
-<p><code>-</code> Rstudio 사용</p>
+<p><code>-</code> 이미지에서 컨테이너생성 + 확인</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-e</span> PASSWORD=<span class="st">"jbnu"</span> <span class="at">-p</span> 8787:8787 rocker/rstudio <span class="co"># 이미지에서 컨테이너 생성</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> ps <span class="co"># 확인 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 실행중인 컨테이너 중지 및 재시작 (stop,start) 해보고 의미 파악하기</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> stop {컨테이너ID}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> start {컨테이너ID}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 아래명령의 차이는?</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> ps </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> ps <span class="at">-a</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 아래명령의 차이는?</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> rm {컨테이너ID}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> stop {컨테이너ID}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 이미지를 지우는 방법</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> image rm {이미지ID}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습65-docker로-ubuntu-실행하기실습실-컴퓨터" class="level2">
 <h2 class="anchored" data-anchor-id="실습65-docker로-ubuntu-실행하기실습실-컴퓨터">실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)</h2>
 <p><code>-</code> 우분투 이미지 다운로드</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull ubuntu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull ubuntu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 실행</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-d</span> <span class="at">-t</span> ubuntu /bin/bash</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-ti</span> guebin bash </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-d</span> <span class="at">-t</span> ubuntu /bin/bash <span class="co"># 이미지에서 컨테이너 생성</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-ti</span> guebin bash <span class="co"># 컨테이너로 in </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습65-docker로-ubuntu-실행하기-183컴퓨터" class="level2">
 <h2 class="anchored" data-anchor-id="실습65-docker로-ubuntu-실행하기-183컴퓨터">실습65: docker로 ubuntu 실행하기 (183컴퓨터)</h2>
 <p><code>-</code> 우분투안에서 우분투 실행</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-d</span> <span class="at">-t</span> <span class="at">-p</span> <span class="pp">?????</span>:<span class="pp">?????</span> <span class="at">--name</span> guebin ubuntu /bin/bash</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-ti</span> guebin bash </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-ti</span> <span class="at">-d</span> <span class="at">-t</span> <span class="at">-p</span> <span class="pp">?????</span>:<span class="pp">?????</span> <span class="at">--name</span> guebin ubuntu /bin/bash</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-ti</span> guebin bash </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아래를 수행</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">passwd</span> root</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gcc</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install build-essential</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install vim </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">passwd</span> root</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> update </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install gcc</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install build-essential</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ex">apt</span> install vim </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="실습66-코드스페이스-사용하기" class="level2">
 <h2 class="anchored" data-anchor-id="실습66-코드스페이스-사용하기">실습66: 코드스페이스 사용하기</h2>
 <p><code>-</code> 아래를 이용하여 코드스페이스 설치</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt-get</span> install curl</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-Lk</span> <span class="st">'https://code.visualstudio.com/sha/download?build=stable&amp;os=cli-alpine-x64'</span> <span class="at">--output</span> vscode_cli.tar.gz</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xf</span> vscode_cli.tar.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt-get</span> install curl</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-Lk</span> <span class="st">'https://code.visualstudio.com/sha/download?build=stable&amp;os=cli-alpine-x64'</span> <span class="at">--output</span> vscode_cli.tar.gz</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xf</span> vscode_cli.tar.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아래를 이용하여 초기설정</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./code</span> tunnel </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./code</span> tunnel </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>컴퓨터 이름 잘 써야해요…</li>
 <li>외워야 하는 이름이에요..</li>
 </ul>
 <p><code>-</code> 코드스페이스 평생켜놓기</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> ./code tunnel <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> ./code tunnel <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 코드스페이스의 장점</p>
 <ul>
 <li>별도의 포트를 먹지 않는다.</li>
@@ -260,13 +256,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="실습67-rstudio-사용하기" class="level2">
 <h2 class="anchored" data-anchor-id="실습67-rstudio-사용하기">실습67: Rstudio 사용하기</h2>
 <p><code>-</code> 아래를 이용하여 Rstudio를 설치 (base환경인지 r환경인지는 무의미)</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install gdebi-core</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gdebi rstudio-server-2022.12.0-353-amd64.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install gdebi-core</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gdebi rstudio-server-2022.12.0-353-amd64.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> <code>grst</code>가 만든 <code>rstudio-server-conda</code>를 클론</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/grst/rstudio-server-conda.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/grst/rstudio-server-conda.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 내용을 수정</p>
-<p><code>{.bash filename= ~/rstudio-server-conda/local/start_rstudio_server.sh} ... blalba ... /usr/lib/rstudio-server/bin/rserver --server-daemonize=0 \   --www-port=????? \ ### &lt;--- 여기 수정!!!!!   --auth-minimum-user-id=0 \ ### &lt;--- 여기 추가!!!!!   --secure-cookie-key-file=$COOKIE_KEY_PATH \   --server-pid-file="$CWD/rstudio-server.pid" \   --server-data-dir="$CWD/rstudio-server" \   --rsession-which-r=$(which R) \   --rsession-ld-library-path=$CONDA_PREFIX/lib \   --rsession-path="$CWD/rsession.sh" \   --server-user $USER \   --database-config-file "$CWD/database.conf" \   $REVOCATION_LIST_PAR</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>~/rstudio-server-conda/local/start_rstudio_server.sh</strong></pre>
+</div>
+<div class="sourceCode" id="cb17" data-filename="~/rstudio-server-conda/local/start_rstudio_server.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="ex">아래쪽으로</span> 쭉 가면...</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="ex">/usr/lib/rstudio-server/bin/rserver</span> <span class="at">--server-daemonize</span><span class="op">=</span>0 <span class="dt">\</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--www-port</span><span class="op">=</span><span class="pp">?????</span> <span class="dt">\ </span>### <span class="op">&lt;</span>--- 여기 수정!!!!!</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">--auth-minimum-user-id=0</span> <span class="dt">\ </span>### <span class="op">&lt;</span>--- 여기 추가!!!!!</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="ex">--secure-cookie-key-file=</span><span class="va">$COOKIE_KEY_PATH</span> <span class="dt">\</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-pid-file</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rstudio-server.pid"</span> <span class="dt">\</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-data-dir</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rstudio-server"</span> <span class="dt">\</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-which-r</span><span class="op">=</span><span class="va">$(</span><span class="fu">which</span> R<span class="va">)</span> <span class="dt">\</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-ld-library-path</span><span class="op">=</span><span class="va">$CONDA_PREFIX</span>/lib <span class="dt">\</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-path</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rsession.sh"</span> <span class="dt">\</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-user</span> <span class="va">$USER</span> <span class="dt">\</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">--database-config-file</span> <span class="st">"</span><span class="va">$CWD</span><span class="st">/database.conf"</span> <span class="dt">\</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>  <span class="va">$REVOCATION_LIST_PAR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><code>-</code> <code>start_rstudio_server.sh</code>를 실행</p>
 
 

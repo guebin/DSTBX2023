@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "데이터과학 툴박스 (2024)",
     "section": "",
-    "text": "수업계획\n\n1월2일(화) – 18:00~21:00 day1 수업\n1월3일(수) – 18:00~21:00 day2 수업\n1월4일(목) – 18:00~21:00 day3 수업\n1월5일(금) – 18:00~21:00 day4 수업\n1월8일(월) – 19:00~21:00 Q&A\n1월9일(화) – 18:00~21:00 Q&A\n1월10일(수) – 18:00~21:00 day5 수업\n1월11일(목) – 수업 X, Q&A X\n1월12일(금) – 18:00~21:00 day6 수업\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 10, 2024\n\n\nDay5: 실습64 - 실습??\n\n\n최규빈 \n\n\n\n\nJan 5, 2024\n\n\nDay4: 실습41 - 실습63\n\n\n최규빈 \n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습40\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+    "text": "수업계획\n\n1월2일(화) – 18:00~21:00 day1 수업\n1월3일(수) – 18:00~21:00 day2 수업\n1월4일(목) – 18:00~21:00 day3 수업\n1월5일(금) – 18:00~21:00 day4 수업\n1월8일(월) – 19:00~21:00 Q&A\n1월9일(화) – 18:00~21:00 Q&A\n1월10일(수) – 18:00~21:00 day5 수업\n1월11일(목) – 수업 X, Q&A X\n1월12일(금) – 18:00~21:00 day6 수업\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 10, 2024\n\n\nDay5: 실습64 - 실습67\n\n\n최규빈 \n\n\n\n\nJan 5, 2024\n\n\nDay4: 실습41 - 실습63\n\n\n최규빈 \n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습40\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "day4.html",
@@ -492,44 +492,44 @@
   {
     "objectID": "posts/day5.html",
     "href": "posts/day5.html",
-    "title": "Day5: 실습64 - 실습??",
+    "title": "Day5: 실습64 - 실습67",
     "section": "",
-    "text": "ref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\n방법1\ndocker pull rocker/rstudio\n방법2\n\n사실 잘 몰라요 ㅎㅎ\n\n- 다운받은 이미지 확인하기\n방법1\ndocker images\n방법2\n\nGUI\n\n- 이미지에서 컨테이너생성 (컨테이너는 인스턴스라고 생각하자..)\n방법1\ndocker run -ti -e PASSWORD='jbnu' -p 8787:8787 rocker/rstudio\n방법2\n\nGUI\n\n- Rstudio 사용"
+    "text": "ref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\ndocker pull rocker/rstudio\n- 다운받은 이미지 확인하기\ndocker images\n- 이미지에서 컨테이너생성 + 확인\ndocker run -ti -e PASSWORD=\"jbnu\" -p 8787:8787 rocker/rstudio # 이미지에서 컨테이너 생성\ndocker ps # 확인 \n- 실행중인 컨테이너 중지 및 재시작 (stop,start) 해보고 의미 파악하기\ndocker stop {컨테이너ID}\ndocker start {컨테이너ID}\n- 아래명령의 차이는?\ndocker ps \ndocker ps -a \n- 아래명령의 차이는?\ndocker rm {컨테이너ID}\ndocker stop {컨테이너ID}\n- 이미지를 지우는 방법\ndocker image rm {이미지ID}"
   },
   {
     "objectID": "posts/day5.html#실습64-docker로-rstudio-실행하기실습실-컴퓨터",
     "href": "posts/day5.html#실습64-docker로-rstudio-실행하기실습실-컴퓨터",
-    "title": "Day5: 실습64 - 실습??",
+    "title": "Day5: 실습64 - 실습67",
     "section": "",
-    "text": "ref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\n방법1\ndocker pull rocker/rstudio\n방법2\n\n사실 잘 몰라요 ㅎㅎ\n\n- 다운받은 이미지 확인하기\n방법1\ndocker images\n방법2\n\nGUI\n\n- 이미지에서 컨테이너생성 (컨테이너는 인스턴스라고 생각하자..)\n방법1\ndocker run -ti -e PASSWORD='jbnu' -p 8787:8787 rocker/rstudio\n방법2\n\nGUI\n\n- Rstudio 사용"
+    "text": "ref: https://rocker-project.org/\n- 다커실행파일 다운로드\n\nhttps://docs.docker.com/desktop/install/windows-install/\n\n- docker 이미지 다운로드\ndocker pull rocker/rstudio\n- 다운받은 이미지 확인하기\ndocker images\n- 이미지에서 컨테이너생성 + 확인\ndocker run -ti -e PASSWORD=\"jbnu\" -p 8787:8787 rocker/rstudio # 이미지에서 컨테이너 생성\ndocker ps # 확인 \n- 실행중인 컨테이너 중지 및 재시작 (stop,start) 해보고 의미 파악하기\ndocker stop {컨테이너ID}\ndocker start {컨테이너ID}\n- 아래명령의 차이는?\ndocker ps \ndocker ps -a \n- 아래명령의 차이는?\ndocker rm {컨테이너ID}\ndocker stop {컨테이너ID}\n- 이미지를 지우는 방법\ndocker image rm {이미지ID}"
   },
   {
     "objectID": "posts/day5.html#실습65-docker로-ubuntu-실행하기실습실-컴퓨터",
     "href": "posts/day5.html#실습65-docker로-ubuntu-실행하기실습실-컴퓨터",
-    "title": "Day5: 실습64 - 실습??",
+    "title": "Day5: 실습64 - 실습67",
     "section": "실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)",
-    "text": "실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)\n- 우분투 이미지 다운로드\ndocker pull ubuntu\n- 실행\ndocker run -ti -d -t ubuntu /bin/bash\ndocker exec -ti guebin bash"
+    "text": "실습65: docker로 ubuntu 실행하기(실습실 컴퓨터)\n- 우분투 이미지 다운로드\ndocker pull ubuntu\n- 실행\ndocker run -ti -d -t ubuntu /bin/bash # 이미지에서 컨테이너 생성\ndocker exec -ti guebin bash # 컨테이너로 in"
   },
   {
     "objectID": "posts/day5.html#실습65-docker로-ubuntu-실행하기-183컴퓨터",
     "href": "posts/day5.html#실습65-docker로-ubuntu-실행하기-183컴퓨터",
-    "title": "Day5: 실습64 - 실습??",
+    "title": "Day5: 실습64 - 실습67",
     "section": "실습65: docker로 ubuntu 실행하기 (183컴퓨터)",
     "text": "실습65: docker로 ubuntu 실행하기 (183컴퓨터)\n- 우분투안에서 우분투 실행\ndocker run -ti -d -t -p ?????:????? --name guebin ubuntu /bin/bash\ndocker exec -ti guebin bash \n- 아래를 수행\npasswd root\napt update \napt install gcc\napt install build-essential\napt install vim"
   },
   {
     "objectID": "posts/day5.html#실습66-코드스페이스-사용하기",
     "href": "posts/day5.html#실습66-코드스페이스-사용하기",
-    "title": "Day5: 실습64 - 실습??",
+    "title": "Day5: 실습64 - 실습67",
     "section": "실습66: 코드스페이스 사용하기",
     "text": "실습66: 코드스페이스 사용하기\n- 아래를 이용하여 코드스페이스 설치\napt-get install curl\ncurl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz\ntar -xf vscode_cli.tar.gz\n- 아래를 이용하여 초기설정\n./code tunnel \n\n컴퓨터 이름 잘 써야해요…\n외워야 하는 이름이에요..\n\n- 코드스페이스 평생켜놓기\nnohup ./code tunnel &gt; /dev/null 2&gt;&1 &\n- 코드스페이스의 장점\n\n별도의 포트를 먹지 않는다.\n하나의 창에서 모든 가상환경을 동시에 이용할 수 있다. &lt;– 제가 이거때문에 씁니당..\n보안접속이 가능하다."
   },
   {
     "objectID": "posts/day5.html#실습67-rstudio-사용하기",
     "href": "posts/day5.html#실습67-rstudio-사용하기",
-    "title": "Day5: 실습64 - 실습??",
+    "title": "Day5: 실습64 - 실습67",
     "section": "실습67: Rstudio 사용하기",
-    "text": "실습67: Rstudio 사용하기\n- 아래를 이용하여 Rstudio를 설치 (base환경인지 r환경인지는 무의미)\nsudo apt-get install gdebi-core\nwget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb\nsudo gdebi rstudio-server-2022.12.0-353-amd64.deb\n- grst가 만든 rstudio-server-conda를 클론\ngit clone https://github.com/grst/rstudio-server-conda.git\n- 내용을 수정\n{.bash filename= ~/rstudio-server-conda/local/start_rstudio_server.sh} ... blalba ... /usr/lib/rstudio-server/bin/rserver --server-daemonize=0 \\   --www-port=????? \\ ### &lt;--- 여기 수정!!!!!   --auth-minimum-user-id=0 \\ ### &lt;--- 여기 추가!!!!!   --secure-cookie-key-file=$COOKIE_KEY_PATH \\   --server-pid-file=\"$CWD/rstudio-server.pid\" \\   --server-data-dir=\"$CWD/rstudio-server\" \\   --rsession-which-r=$(which R) \\   --rsession-ld-library-path=$CONDA_PREFIX/lib \\   --rsession-path=\"$CWD/rsession.sh\" \\   --server-user $USER \\   --database-config-file \"$CWD/database.conf\" \\   $REVOCATION_LIST_PAR\n- start_rstudio_server.sh를 실행"
+    "text": "실습67: Rstudio 사용하기\n- 아래를 이용하여 Rstudio를 설치 (base환경인지 r환경인지는 무의미)\nsudo apt-get install gdebi-core\nwget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb\nsudo gdebi rstudio-server-2022.12.0-353-amd64.deb\n- grst가 만든 rstudio-server-conda를 클론\ngit clone https://github.com/grst/rstudio-server-conda.git\n- 내용을 수정\n\n\n~/rstudio-server-conda/local/start_rstudio_server.sh\n\n\n아래쪽으로 쭉 가면...\n\n/usr/lib/rstudio-server/bin/rserver --server-daemonize=0 \\\n  --www-port=????? \\ ### &lt;--- 여기 수정!!!!!\n  --auth-minimum-user-id=0 \\ ### &lt;--- 여기 추가!!!!!\n  --secure-cookie-key-file=$COOKIE_KEY_PATH \\\n  --server-pid-file=\"$CWD/rstudio-server.pid\" \\\n  --server-data-dir=\"$CWD/rstudio-server\" \\\n  --rsession-which-r=$(which R) \\\n  --rsession-ld-library-path=$CONDA_PREFIX/lib \\\n  --rsession-path=\"$CWD/rsession.sh\" \\\n  --server-user $USER \\\n  --database-config-file \"$CWD/database.conf\" \\\n  $REVOCATION_LIST_PAR\n\n- start_rstudio_server.sh를 실행"
   },
   {
     "objectID": "day4hw/rplot.html",
