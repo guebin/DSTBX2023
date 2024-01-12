@@ -18,28 +18,28 @@
     "href": "posts/day6.html",
     "title": "Day6: 실습68 - 실습77",
     "section": "",
-    "text": "- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
+    "text": "{{ &lt;video https://youtu.be/playlist?list=PLQqh36zP38-zhZfjE1qo5d6ei5Y6w0IpQ&si=CDET6dfpgUeAXMkX&gt; }}"
   },
   {
     "objectID": "posts/day6.html#실습68-100mb-충돌",
     "href": "posts/day6.html#실습68-100mb-충돌",
     "title": "Day6: 실습68 - 실습77",
-    "section": "",
-    "text": "- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
+    "section": "실습68: 100MB 충돌",
+    "text": "실습68: 100MB 충돌\n- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
   },
   {
     "objectID": "posts/day6.html#실습69-git-ignore",
     "href": "posts/day6.html#실습69-git-ignore",
     "title": "Day6: 실습68 - 실습77",
     "section": "실습69: git ignore",
-    "text": "실습69: git ignore\n- 다시 아래의 상황을 만듦.\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \n- .gitignore 파일 생성\n\n\n~/dinner/.gitignore\n\n*csv\n\n- 아래를 시도\ngit add .\ngit commit -m .\ngit push \n- 하위폴더도 영향받음을 확인\n\ndata라는 폴더를 생성\nfashion-mnist_train.csv 를 data 폴더로 이동\nls data &gt; ./data/data_list.txt 실행 (무슨뜻?)\ngithub으로 push"
+    "text": "실습69: git ignore\n- 다시 아래의 상황을 만듦.\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \n- .gitignore 파일 생성\n\n\n~/dinner/.gitignore\n\n*csv\n\n- 아래를 시도\ngit add .\ngit commit -m .\ngit push \n- 하위폴더도 영향받음을 확인\n\ndata라는 폴더를 생성\nfashion-mnist_train.csv 를 data 폴더로 이동\nls data &gt; ./data/data_list.txt 실행 (무슨뜻?)\ngithub으로 push\n\n- .gitignore를 잘 사용하는 방법들은 (예를들어서 특정 폴더안에 있는 파일은 모두 git에서 무시하고 싶을때) ChatGPT를 이용하여 스스로 터득할 것"
   },
   {
     "objectID": "posts/day6.html#실습70-블로그-제목이-update-되지-않을때",
     "href": "posts/day6.html#실습70-블로그-제목이-update-되지-않을때",
     "title": "Day6: 실습68 - 실습77",
     "section": "실습70: 블로그 제목이 update 되지 않을때",
-    "text": "실습70: 블로그 제목이 update 되지 않을때"
+    "text": "실습70: 블로그 제목이 update 되지 않을때\n- 아래를 수행\nrm -rf docs\ngit add .\ngit commit -m .\ngit push\nquarto render \ngit add .\ngit commit -m .\ngit push"
   },
   {
     "objectID": "posts/day6.html#실습71-dinner를-codespace로-만들기",
@@ -88,14 +88,14 @@
     "href": "posts/day6.html#실습77-merge-와-rebase의-차이점",
     "title": "Day6: 실습68 - 실습77",
     "section": "실습77: merge 와 rebase의 차이점",
-    "text": "실습77: merge 와 rebase의 차이점"
+    "text": "실습77: merge 와 rebase의 차이점\n- 이거 제가 영상에서 설명을 좀 버벅였는데요.. 큰 차이는 없고 git merge를 하면 “재정렬”이 일어나지 않고 git rebase는 “재정렬”이 일어나며 이전에 했던 작업들에 새로운 hash가 부여된다는 점이 차이점입니다."
   },
   {
     "objectID": "posts/day6.html#실습78-제가-쓰는-방식",
     "href": "posts/day6.html#실습78-제가-쓰는-방식",
     "title": "Day6: 실습68 - 실습77",
     "section": "실습78: 제가 쓰는 방식",
-    "text": "실습78: 제가 쓰는 방식"
+    "text": "실습78: 제가 쓰는 방식\n- 브랜치쓰지 않음.\n- git revert, git reset 정도만 활용"
   },
   {
     "objectID": "posts/day1.html",
@@ -578,7 +578,7 @@
     "href": "posts/day5.html",
     "title": "Day5: 실습64 - 실습67",
     "section": "",
-    "text": "docker를 사용하는 부분은 window로 실습한 부분이라 촬영이 불가능했습니다."
+    "text": "{{ &lt;video https://youtu.be/playlist?list=PLQqh36zP38-zNewy_xkCk3ywz5ZIupOlf&si=yHHcZx42HwvWkCBt&gt; }}"
   },
   {
     "objectID": "posts/day5.html#실습64-docker로-rstudio-실행하기실습실-컴퓨터",
