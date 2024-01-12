@@ -77,11 +77,11 @@
     "text": "실습75: git과 github의 차이점"
   },
   {
-    "objectID": "posts/day6.html#실습76-브랜치사용",
-    "href": "posts/day6.html#실습76-브랜치사용",
+    "objectID": "posts/day6.html#실습76-git-branch",
+    "href": "posts/day6.html#실습76-git-branch",
     "title": "Day6: 실습68 - 실습77",
-    "section": "실습76: 브랜치사용",
-    "text": "실습76: 브랜치사용"
+    "section": "실습76: git branch",
+    "text": "실습76: git branch"
   },
   {
     "objectID": "posts/day6.html#실습77-merge-와-rebase의-차이점",
@@ -89,6 +89,13 @@
     "title": "Day6: 실습68 - 실습77",
     "section": "실습77: merge 와 rebase의 차이점",
     "text": "실습77: merge 와 rebase의 차이점"
+  },
+  {
+    "objectID": "posts/day6.html#실습78-제가-쓰는-방식",
+    "href": "posts/day6.html#실습78-제가-쓰는-방식",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습78: 제가 쓰는 방식",
+    "text": "실습78: 제가 쓰는 방식"
   },
   {
     "objectID": "posts/day1.html",
