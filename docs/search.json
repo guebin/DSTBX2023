@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "데이터과학 툴박스 (2024)",
     "section": "",
-    "text": "수업계획\n\n1월2일(화) – 18:00~21:00 day1 수업\n1월3일(수) – 18:00~21:00 day2 수업\n1월4일(목) – 18:00~21:00 day3 수업\n1월5일(금) – 18:00~21:00 day4 수업\n1월8일(월) – 19:00~21:00 Q&A\n1월9일(화) – 18:00~21:00 Q&A\n1월10일(수) – 18:00~21:00 day5 수업\n1월11일(목) – 수업 X, Q&A X\n1월12일(금) – 18:00~21:00 day6 수업\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 10, 2024\n\n\nDay6: 실습68 - 실습??\n\n\n최규빈 \n\n\n\n\nJan 10, 2024\n\n\nDay5: 실습64 - 실습67\n\n\n최규빈 \n\n\n\n\nJan 5, 2024\n\n\nDay4: 실습41 - 실습63\n\n\n최규빈 \n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습40\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+    "text": "수업계획\n\n1월2일(화) – 18:00~21:00 day1 수업\n1월3일(수) – 18:00~21:00 day2 수업\n1월4일(목) – 18:00~21:00 day3 수업\n1월5일(금) – 18:00~21:00 day4 수업\n1월8일(월) – 19:00~21:00 Q&A\n1월9일(화) – 18:00~21:00 Q&A\n1월10일(수) – 18:00~21:00 day5 수업\n1월11일(목) – 수업 X, Q&A X\n1월12일(금) – 18:00~21:00 day6 수업\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 10, 2024\n\n\nDay6: 실습68 - 실습77\n\n\n최규빈 \n\n\n\n\nJan 10, 2024\n\n\nDay5: 실습64 - 실습67\n\n\n최규빈 \n\n\n\n\nJan 5, 2024\n\n\nDay4: 실습41 - 실습63\n\n\n최규빈 \n\n\n\n\nJan 4, 2024\n\n\nDay3: 실습26 - 실습40\n\n\n최규빈 \n\n\n\n\nJan 3, 2024\n\n\nDay2: 실습13 - 실습25\n\n\n최규빈 \n\n\n\n\nJan 2, 2024\n\n\nDay1: 실습1 - 실습12\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "day4.html",
@@ -16,30 +16,79 @@
   {
     "objectID": "posts/day6.html",
     "href": "posts/day6.html",
-    "title": "Day6: 실습68 - 실습??",
+    "title": "Day6: 실습68 - 실습77",
     "section": "",
     "text": "- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
   },
   {
     "objectID": "posts/day6.html#실습68-100mb-충돌",
     "href": "posts/day6.html#실습68-100mb-충돌",
-    "title": "Day6: 실습68 - 실습??",
+    "title": "Day6: 실습68 - 실습77",
     "section": "",
     "text": "- 100MB가 넘는 파일을 upload할 경우 생기는 충돌 재현\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \ngit add .\ngit commit -m .\ngit push \n#여기서 1차당황\n- 삭제후 다시 push\nrm fashion-mnist_train.csv \ngit add .\ngit commit -m .\ngit push \n# 여기서 2차당황\n- 해결책? local에서 깃폴더삭제하고 다시 clone"
   },
   {
     "objectID": "posts/day6.html#실습69-git-ignore",
     "href": "posts/day6.html#실습69-git-ignore",
-    "title": "Day6: 실습68 - 실습??",
+    "title": "Day6: 실습68 - 실습77",
     "section": "실습69: git ignore",
     "text": "실습69: git ignore\n- 다시 아래의 상황을 만듦.\ngit clone https://github.com/guebin/dinner.git # 각자 레포를 만들고 클론할것 \ncd dinner # 클론한 repo로 이동\ngit config credential.helper store # git 등록 \nwget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv # 100MB넘는 csv다운로드 \n- .gitignore 파일 생성\n\n\n~/dinner/.gitignore\n\n*csv\n\n- 아래를 시도\ngit add .\ngit commit -m .\ngit push \n- 하위폴더도 영향받음을 확인\n\ndata라는 폴더를 생성\nfashion-mnist_train.csv 를 data 폴더로 이동\nls data &gt; ./data/data_list.txt 실행 (무슨뜻?)\ngithub으로 push"
   },
   {
     "objectID": "posts/day6.html#실습70-블로그-제목이-update-되지-않을때",
     "href": "posts/day6.html#실습70-블로그-제목이-update-되지-않을때",
-    "title": "Day6: 실습68 - 실습??",
+    "title": "Day6: 실습68 - 실습77",
     "section": "실습70: 블로그 제목이 update 되지 않을때",
     "text": "실습70: 블로그 제목이 update 되지 않을때"
+  },
+  {
+    "objectID": "posts/day6.html#실습71-dinner를-codespace로-만들기",
+    "href": "posts/day6.html#실습71-dinner를-codespace로-만들기",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습71: dinner를 codespace로 만들기",
+    "text": "실습71: dinner를 codespace로 만들기"
+  },
+  {
+    "objectID": "posts/day6.html#실습72-revert-vs-reset",
+    "href": "posts/day6.html#실습72-revert-vs-reset",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습72: revert vs reset",
+    "text": "실습72: revert vs reset"
+  },
+  {
+    "objectID": "posts/day6.html#실습73-한꺼풀씩-revert",
+    "href": "posts/day6.html#실습73-한꺼풀씩-revert",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습73: 한꺼풀씩 revert",
+    "text": "실습73: 한꺼풀씩 revert"
+  },
+  {
+    "objectID": "posts/day6.html#실습74-revert-reset이-가능한-이유",
+    "href": "posts/day6.html#실습74-revert-reset이-가능한-이유",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습74: revert, reset이 가능한 이유?",
+    "text": "실습74: revert, reset이 가능한 이유?"
+  },
+  {
+    "objectID": "posts/day6.html#실습75-git과-github의-차이점",
+    "href": "posts/day6.html#실습75-git과-github의-차이점",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습75: git과 github의 차이점",
+    "text": "실습75: git과 github의 차이점"
+  },
+  {
+    "objectID": "posts/day6.html#실습76-브랜치사용",
+    "href": "posts/day6.html#실습76-브랜치사용",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습76: 브랜치사용",
+    "text": "실습76: 브랜치사용"
+  },
+  {
+    "objectID": "posts/day6.html#실습77-merge-와-rebase의-차이점",
+    "href": "posts/day6.html#실습77-merge-와-rebase의-차이점",
+    "title": "Day6: 실습68 - 실습77",
+    "section": "실습77: merge 와 rebase의 차이점",
+    "text": "실습77: merge 와 rebase의 차이점"
   },
   {
     "objectID": "posts/day1.html",
